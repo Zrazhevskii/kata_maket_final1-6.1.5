@@ -1,7 +1,3 @@
 import './index.html';
-// import './index.css';
+import './blocks/blocks'
 import './index.scss'
-
-const mult = (a, b) => a * b;
-
-console.log(mult(2, 8));
