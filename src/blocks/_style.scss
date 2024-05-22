@@ -1,12 +1,17 @@
+@import './header/header.scss';
+
 body {
     font-family: $font;
+    background-color: rgb(208, 74, 74);
+
 }
 
 .box {
     width: 70px;
     height: 70px;
-    // background-color: $light_green;
-    background: url('./img/call.png') no-repeat;
+    // background-color: black;
+    background: url('./img/burger.png') no-repeat;
     background-size: cover;
     margin: auto;
+    bottom: 0;
 }

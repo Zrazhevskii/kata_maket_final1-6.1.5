@@ -5,7 +5,8 @@ const target = devMode ? 'web' : 'browserlist';
 const devtool = devMode ? 'source-map' : undefined;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode,
@@ -16,15 +17,29 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
         filename: '[name].[contenthash].js',
+        assetModuleFilename: 'assets/images/[name][ext]',
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src', 'index.html'),
+            inject: true,
+            minify: {
+                removeComments: true,
+                collapseWhitespace: false,
+            },
         }),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',
         }),
-        new CleanWebpackPlugin(),
+        new CopyWebpackPlugin({
+            patterns: [
+              {
+                from: path.resolve(__dirname, './src/img'),
+                to: path.resolve(__dirname, './images')
+              }
+            ]
+          })
+        // new CleanWebpackPlugin(),
     ],
     module: {
         rules: [
@@ -43,7 +58,7 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                // include: path.resolve(__dirname, 'src/js'),
+                include: path.join(__dirname, 'src', 'index.js'),
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
@@ -56,17 +71,18 @@ module.exports = {
                 test: /\.(eot|ttf|woff|woff2)$/,
                 use: [
                     {
-                        loader: 'file-loader?name=./fonts/[name].[ext]',
+                        loader: 'file-loader?name=./fonts/[name][ext]',
                     },
                 ],
             },
             {
                 test: /\.(svg|png|jpg|jpeg|webp)$/,
-                use: [
-                    {
-                        loader: 'file-loader?name=./static/[name].[ext]',
-                    },
-                ],
+                type: 'asset/resource'
+                // use: [
+                //     {
+                //         loader: 'file-loader?name=./static/[name].[ext]',
+                //     },
+                // ],
             },
         ],
     },
