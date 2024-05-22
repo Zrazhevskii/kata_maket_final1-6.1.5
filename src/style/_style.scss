@@ -1,0 +1,12 @@
+body {
+    font-family: $font;
+}
+
+.box {
+    width: 70px;
+    height: 70px;
+    // background-color: $light_green;
+    background: url('./img/call.png') no-repeat;
+    background-size: cover;
+    margin: auto;
+}

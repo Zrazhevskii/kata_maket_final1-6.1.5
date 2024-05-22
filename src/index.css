@@ -1,3 +1,10 @@
 body {
-    background-color: brown;
+    background-color: rgb(185, 104, 104);
 }
+
+/* .box {
+    width: 40px;
+    height: 40px;
+    background: url('./img/call.png');
+    margin: auto;
+} */
