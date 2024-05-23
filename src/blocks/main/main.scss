@@ -1,0 +1,106 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: $light_grey;
+    padding-top: 0;
+
+    .main__services {
+        display: flex;
+        flex-direction: column;
+        background-color: $light_grey;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        .main__servises-items {
+            display: flex;
+            flex-direction: row;
+            // overflow: hidden;
+            overflow: auto;
+
+            .main__item {
+                box-sizing: content-box;
+                font-family: $font;
+                font-weight: 500;
+                font-size: 16px;
+                width: 246px;
+                height: 40px;
+
+                .main__item-link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 216px;
+                    text-decoration: none;
+                    color: $grey;
+                    height: 40px;
+                    background-color: $light_grey;
+                }
+
+                .main__item-link-active {
+                    min-width: 246px;
+                    border: 2px solid $light_green;
+                    background-color: $duty_wight;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .main__content {
+        display: flex;
+        flex-direction: column;
+        max-height: 90%;
+        padding-top: 24px;
+
+        .main__content-wrapper-text {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .main__content-icon {
+            position: relative;
+            flex-direction: row;
+            padding-top: 16px;
+            padding-bottom: 16px;
+
+            // .main__icon {
+            //     width: 24px;
+            //     height: 24px;
+            //     background-image: url('img/expand.png');
+            // }
+
+            .main__content-ownards-btn {
+                font-family: $font;
+                background-color: $light_grey;
+                border: none;
+                padding-left: 32px;
+            }
+
+            .main__content-ownards-btn:hover {
+                cursor: pointer;
+            }
+
+            .main__content-ownards-btn::before {
+                position: absolute;
+                display: block;
+                content: '';
+                background: url('img/expand.png') no-repeat;
+                width: 24px;
+                height: 24px;
+                left: -8px;
+                top: 12px;
+            }
+        }
+    }
+
+    .main__content-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .main__servises-items::-webkit-scrollbar,
+    .main__content-more-text,
+    .main__content-text--hidden {
+        display: none;
+    }
+}
