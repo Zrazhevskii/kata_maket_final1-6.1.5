@@ -1,17 +1,23 @@
 @import './header/header.scss';
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: $font;
     background-color: rgb(208, 74, 74);
 
 }
 
-.box {
-    width: 70px;
-    height: 70px;
-    // background-color: black;
-    background: url('./img/burger.png') no-repeat;
-    background-size: cover;
-    margin: auto;
-    bottom: 0;
-}
+// .box {
+//     width: 70px;
+//     height: 70px;
+//     // background-color: black;
+//     background: url('./img/burger.png') no-repeat;
+//     background-size: cover;
+//     margin: auto;
+//     bottom: 0;
+// }
