@@ -19,6 +19,9 @@ module.exports = {
         filename: '[name].[contenthash].js',
         assetModuleFilename: 'assets/images/[name][ext]',
     },
+    watchOptions: {
+        aggregateTimeout: 200,
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src', 'index.html'),

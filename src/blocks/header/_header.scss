@@ -169,12 +169,16 @@
         }
     }
 
-    .header__conteiner-title {
+    .header .header__conteiner-title {
         padding-bottom: 32px;
         padding-left: 24px;
 
         .header__conteiner-button {
             display: none;
+        }
+
+        .header__title::before {
+            top: 20px;
         }
     }
 }
@@ -238,6 +242,10 @@
             border: none;
             width: 220px;
             height: 40px;
+        }
+
+        .header__button:hover {
+            cursor: pointer;
         }
 
         .repair {
