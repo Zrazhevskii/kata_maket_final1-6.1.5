@@ -1,0 +1,25 @@
+.wrapper__sliders {
+    box-sizing: border-box;
+    height: 250px;
+    overflow: hidden;
+    background-color: $light_grey;
+    border-top: 1px solid $light_green;
+
+    .wrapper__sliders__title {
+        display: flex;
+        align-items: center;
+
+        .title {
+            height: 80px;
+            background: linear-gradient(to right, #dddddd 0%, #fff 50%);
+        }
+
+        .title__text {
+            font-weight: 400;
+            font-size: 16px;
+            color: #7e7e82;
+            padding-left: 16px;
+            padding-top: 16px;
+        }
+    }
+}

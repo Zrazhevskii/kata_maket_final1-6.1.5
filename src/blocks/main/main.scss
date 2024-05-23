@@ -1,8 +1,15 @@
+@import './wrapper__sliders/wrapper__sliders.scss';
+
 .main {
+    height: auto;
+}
+
+.main__main__description {
     display: flex;
     flex-direction: column;
     background-color: $light_grey;
     padding-top: 0;
+    padding-bottom: 24px;
 
     .main__services {
         display: flex;
@@ -57,17 +64,11 @@
             padding-right: 16px;
         }
 
-        .main__content-icon {
+        .main__content__wrapper__btn {
             position: relative;
             flex-direction: row;
             padding-top: 16px;
             padding-bottom: 16px;
-
-            // .main__icon {
-            //     width: 24px;
-            //     height: 24px;
-            //     background-image: url('img/expand.png');
-            // }
 
             .main__content-ownards-btn {
                 font-family: $font;
@@ -107,7 +108,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1199.99px) {
-    .main {
+    .main__main__description {
         min-height: 370px;
         padding-left: 24px;
         padding-right: 24px;
@@ -146,7 +147,7 @@
                     }
                 }
 
-                .main__content-icon {
+                .main__content__wrapper__btn {
                     padding-top: 0;
 
                     .main__icon {
@@ -177,7 +178,7 @@
 }
 
 @media (min-width: 1200px) {
-    .main {
+    .main__main__description {
         max-width: 1200px;
         min-height: 490px;
         // padding-left: 35px;
@@ -212,7 +213,7 @@
                 padding-right: 30px;
             }
 
-            .main__content-icon {
+            .main__content__wrapper__btn {
                 padding-top: 0;
 
                 .main__icon {
