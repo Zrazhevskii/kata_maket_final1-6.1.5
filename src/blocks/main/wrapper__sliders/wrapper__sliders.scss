@@ -1,6 +1,7 @@
 .wrapper__sliders {
+    // position: relative;
     box-sizing: border-box;
-    height: 250px;
+    height: 220px;
     overflow: hidden;
     background-color: $light_grey;
     border-top: 1px solid $light_green;
@@ -23,6 +24,10 @@
     .wrapper__sliders__box {
         position: relative;
 
+        .box__container {
+            height: 120px;
+        }
+
         .container__slide {
             margin-top: 16px;
             width: auto;
@@ -34,42 +39,50 @@
             }
 
             .bosh {
-                background: url('./blocks/main/wrapper__sliders/img/bosh.png') no-repeat;
+                background: url('./blocks/main/wrapper__sliders/img/bosh.png')
+                    no-repeat;
                 background-size: contain;
             }
 
             .lenovo {
-                background: url('./blocks/main/wrapper__sliders/img/lenovo.png') no-repeat;
+                background: url('./blocks/main/wrapper__sliders/img/lenovo.png')
+                    no-repeat;
                 background-size: contain;
             }
-            
+
             .sony {
-                background: url('./blocks/main/wrapper__sliders/img/sony.png') no-repeat;
+                background: url('./blocks/main/wrapper__sliders/img/sony.png')
+                    no-repeat;
                 background-size: contain;
             }
-            
+
             .samsung {
-                background: url('./blocks/main/wrapper__sliders/img/samsung.png') no-repeat;
+                background: url('./blocks/main/wrapper__sliders/img/samsung.png')
+                    no-repeat;
                 background-position: -5px 0;
             }
-            
+
             .acer {
-                background: url('./blocks/main/wrapper__sliders/img/acer.png') no-repeat;
+                background: url('./blocks/main/wrapper__sliders/img/acer.png')
+                    no-repeat;
                 background-size: contain;
             }
-            
+
             .apple {
-                background: url('./blocks/main/wrapper__sliders/img/apple.png') no-repeat;
+                background: url('./blocks/main/wrapper__sliders/img/apple.png')
+                    no-repeat;
                 background-size: contain;
             }
-            
+
             .hp {
-                background: url('./blocks/main/wrapper__sliders/img/hp.png') no-repeat;
+                background: url('./blocks/main/wrapper__sliders/img/hp.png')
+                    no-repeat;
                 background-size: contain;
             }
-            
+
             .viesonic {
-                background: url('./blocks/main/wrapper__sliders/img/viewsonic.png') no-repeat;
+                background: url('./blocks/main/wrapper__sliders/img/viewsonic.png')
+                    no-repeat;
                 background-size: contain;
             }
         }
@@ -77,5 +90,41 @@
         .container__slide:first-child {
             margin-left: 16px;
         }
+
+        .swiper-container__swiper-pagination {
+            position: absolute;
+            top: 103px;
+        }
+
+        .swiper-pagination-bullet {
+            // top: -140px;
+            width: 15px;
+            height: 15px;
+            margin-right: 20px !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $grey;
+        }
+    }
+
+    // .swiper-pagination-bullet-horizontal {
+    //     margin-right: 16px;
+    // }
+
+    .wrapper__sliders__btn {
+        display: none;
+    }
+
+    .wrapper-show-more {
+        height: 500px;
+    }
+
+    .wrapper-show-more-small {
+        height: 410px;
+    }
+
+    .hidden-box {
+        display: none;
     }
 }
