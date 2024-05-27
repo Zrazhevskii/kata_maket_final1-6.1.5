@@ -47,16 +47,23 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.html$/i,
+                test: /\.html$/,
                 loader: 'html-loader',
             },
             {
-                test: /\.(c|sa|sc)ss$/i,
+                test: /\.scss$/,
                 use: [
-                    devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    MiniCssExtractPlugin.loader,
                     'css-loader',
                     'postcss-loader',
                     'sass-loader',
+                ],
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
                 ],
             },
             {

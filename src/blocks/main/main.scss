@@ -62,12 +62,16 @@
         .main__content-wrapper-text {
             padding-left: 16px;
             padding-right: 16px;
+
+            // .main-content-text-box {
+            //     min-height: 200px;
+            // }
         }
 
         .main__content__wrapper__btn {
             position: relative;
             flex-direction: row;
-            padding-top: 16px;
+            // padding-top: 16px;
             padding-bottom: 16px;
 
             .main__content-ownards-btn {
@@ -81,7 +85,15 @@
                 cursor: pointer;
             }
 
-            .main__content-ownards-btn::before {
+            // .content-btn {
+            //     min-height: 300px;
+            // }
+
+            .content-btn--hide {
+                height: 40px;
+            }
+
+            .content-btn::before {
                 position: absolute;
                 display: block;
                 content: '';
@@ -89,7 +101,47 @@
                 width: 24px;
                 height: 24px;
                 left: -8px;
-                top: 12px;
+                top: -6px;
+            }
+
+            .content-btn::after {
+                position: absolute;
+                display: block;
+                content: 'Читать далее';
+                width: 120px;
+                height: 24px;
+                left: 18px;
+                top: -2px;
+                font-size: 16px;
+                font-weight: 500;
+                color: black;
+                z-index: 5;
+            }
+
+            .content-btn--hide::before {
+                position: absolute;
+                display: block;
+                content: '';
+                background: url('img/expand.png') no-repeat;
+                transform: rotate(180deg);
+                width: 24px;
+                height: 24px;
+                left: -8px;
+                top: 14px;
+            }
+
+            .content-btn--hide::after {
+                position: absolute;
+                display: block;
+                content: 'Скрыть';
+                width: 120px;
+                height: 24px;
+                left: -3px;
+                top: 16px;
+                font-size: 16px;
+                font-weight: 500;
+                color: black;
+                z-index: 5;
             }
         }
     }
@@ -109,7 +161,7 @@
 
 @media (min-width: 768px) and (max-width: 1119.99px) {
     .main__main__description {
-        min-height: 310px;
+        min-height: auto;
         padding-left: 24px;
         padding-right: 24px;
 
@@ -180,7 +232,7 @@
 @media (min-width: 1120px) {
     .main__main__description {
         max-width: 1120px;
-        min-height: 490px;
+        min-height: 445px;
         // padding-left: 35px;
         // padding-right: 35px;
 
