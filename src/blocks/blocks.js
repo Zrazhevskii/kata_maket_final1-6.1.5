@@ -1,1 +1,1 @@
-import './main/main_content'
+import './main/main_content/main_content'
