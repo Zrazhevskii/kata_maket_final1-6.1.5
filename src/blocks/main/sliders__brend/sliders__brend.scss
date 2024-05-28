@@ -33,85 +33,85 @@
         .box__brend__container {
             height: 120px;
 
-            @media #{$tablet} {
-                display: grid;
-                max-width: 903px;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: repeat(4, 75px);
-                row-gap: 16px;
-                margin: auto;
-                padding-top: 24px;
-                padding-left: 24px;
-                // padding-right: 24px;
-                height: 350px;
-            }
-        }
+            // @media #{$tablet} {
+            //     display: grid;
+            //     max-width: 903px;
+            //     grid-template-columns: 1fr 1fr 224px;
+            //     grid-template-rows: repeat(4, 75px);
+            //     row-gap: 16px;
+            //     margin: auto;
+            //     // padding-top: 24px;
+            //     // padding-left: 24px;
+            //     // padding-right: 24px;
+            //     height: 350px;
+            // }
 
-        .container__slide__brend {
-            margin-top: 16px;
-            width: auto;
+            .container__slide__brend {
+                margin-top: 16px;
+                width: auto;
 
-            .container__slide__img {
-                display: block;
-                width: 240px;
-                height: 72px;
+                .container__slide__img {
+                    display: block;
+                    width: 240px;
+                    height: 72px;
 
-                @media #{$tabletDesktop} {
-                    width: 224px;
+                    @media #{$tabletDesktop} {
+                        width: 224px;
+                    }
+                }
+
+                .bosh {
+                    background: url('./blocks/main/sliders__brend/img/bosh.png')
+                        no-repeat;
+                    background-size: contain;
+                }
+
+                .lenovo {
+                    background: url('./blocks/main/sliders__brend/img/lenovo.png')
+                        no-repeat;
+                    background-size: contain;
+                }
+
+                .sony {
+                    background: url('./blocks/main/sliders__brend/img/sony.png')
+                        no-repeat;
+                    background-size: contain;
+                }
+
+                .samsung {
+                    background: url('./blocks/main/sliders__brend/img/samsung.png')
+                        no-repeat;
+                    background-position: -5px 0;
+                }
+
+                .acer {
+                    background: url('./blocks/main/sliders__brend/img/acer.png')
+                        no-repeat;
+                    background-size: contain;
+                }
+
+                .apple {
+                    background: url('./blocks/main/sliders__brend/img/apple.png')
+                        no-repeat;
+                    background-size: contain;
+                }
+
+                .hp {
+                    background: url('./blocks/main/sliders__brend/img/hp.png')
+                        no-repeat;
+                    background-size: contain;
+                }
+
+                .viesonic {
+                    background: url('./blocks/main/sliders__brend/img/viewsonic.png')
+                        no-repeat;
+                    background-size: contain;
+                }
+
+                .container__slide__brend:first-child {
+                    margin-left: 16px;
                 }
             }
-
-            .bosh {
-                background: url('./blocks/main/sliders__brend/img/bosh.png')
-                    no-repeat;
-                background-size: contain;
-            }
-
-            .lenovo {
-                background: url('./blocks/main/sliders__brend/img/lenovo.png')
-                    no-repeat;
-                background-size: contain;
-            }
-
-            .sony {
-                background: url('./blocks/main/sliders__brend/img/sony.png')
-                    no-repeat;
-                background-size: contain;
-            }
-
-            .samsung {
-                background: url('./blocks/main/sliders__brend/img/samsung.png')
-                    no-repeat;
-                background-position: -5px 0;
-            }
-
-            .acer {
-                background: url('./blocks/main/sliders__brend/img/acer.png')
-                    no-repeat;
-                background-size: contain;
-            }
-
-            .apple {
-                background: url('./blocks/main/sliders__brend/img/apple.png')
-                    no-repeat;
-                background-size: contain;
-            }
-
-            .hp {
-                background: url('./blocks/main/sliders__brend/img/hp.png')
-                    no-repeat;
-                background-size: contain;
-            }
-
-            .viesonic {
-                background: url('./blocks/main/sliders__brend/img/viewsonic.png')
-                    no-repeat;
-                background-size: contain;
-            }
-        }
-
-        .container__slide__brend:first-child {
-            margin-left: 16px;
         }
 
         .box__brend__pagination {
@@ -148,69 +148,67 @@
         cursor: pointer;
     }
 
-    .wrapper-show-more {
-        height: 500px;
-    }
+    // .main__sliders__brend .show-more {
+    //     height: 500px;
+    // }
 
-    .wrapper-show-more-small {
+    .main__sliders__brend .show-more-small {
         height: 410px;
     }
 
     .box__brend__container .hidden {
         display: block;
-
-        @media #{$tabletDesktop} {
-            display: none;
-        }
     }
 }
 
-@media (min-width: 768px) and (max-width: 1120px) {
-    .main__sliders__brend {
-        // position: relative;
-        min-height: 300px;
-    }
-
+@media (min-width: 768px) and (max-width: 1119.9px) {
     .sliders__brend {
-        min-height: 300px;
-
+        height: 500px;
+        
         .title {
             height: 56px;
         }
-    }
 
-    .box__brend {
-        position: relative;
-        display: block;
-        // padding: 24px 24px 0 24px;
-
-        // .box__brend__container {
-        //     // position: relative;
-        //     display: grid;
-        //     max-width: 903px;
-        //     grid-template-columns: 1fr 1fr 1fr;
-        //     grid-template-rows: repeat(4, 75px);
-        //     row-gap: 16px;
-        //     margin: auto;
-        //     padding-top: 24px;
-        //     padding-left: 24px;
-        //     // padding-right: 24px;
-        //     height: 350px !important;
-        // }
-
-        .container__slide__brend {
+        .box__brend {
+            // position: relative;
             display: block;
-            margin: 0 !important;
+            padding: 24px 24px 0 24px;
+            min-height: 320px;
+
+
+            .box__brend__container {
+                // position: relative;
+                display: grid;
+                max-width: 903px;
+                grid-template-columns: 1fr 1fr 224px;
+                grid-template-rows: repeat(4, 75px);
+                row-gap: 16px;
+                margin: auto;
+                min-height: 380px;
+
+                .container__slide__brend {
+                    display: block;
+                    margin: 0 !important;
+                }
+
+                .samsung {
+                    background-position: -5px 0;
+                }
+                .container__slide__brend:first-child {
+                    margin-left: 0;
+                }
+                .swiper-pagination-bullets {
+                    display: none;
+                }
+
+                .hidden {
+                    display: none;
+                }
+            }
         }
 
-        .samsung {
-            background-position: -5px 0;
-        }
-        .container__slide__brend:first-child {
-            margin-left: 0;
-        }
-        .swiper-pagination-bullets {
-            display: none;
+        .show-more {
+            height: 500px;
         }
     }
 
@@ -223,7 +221,7 @@
         height: 24px;
         cursor: pointer;
         margin-right: 10px;
-        top: -177px;
+        top: -200px;
     }
 
     .btn-show::after {
@@ -236,7 +234,7 @@
         font-weight: 500;
         color: black;
         position: relative;
-        top: -177px;
+        top: -200px;
         z-index: 5;
     }
 
@@ -248,7 +246,7 @@
         transform: rotate(180deg);
         width: 24px;
         height: 24px;
-        top: 10px;
+        top: -15px;
         margin-right: 10px;
     }
 
@@ -258,7 +256,7 @@
         font-weight: 500;
         color: black;
         position: relative;
-        top: 10px;
+        top: -15px;
         z-index: 5;
     }
 
@@ -271,7 +269,6 @@
 }
 
 @media (min-width: 1120px) {
-
     .main__main__description {
         padding-left: 32px;
         padding-right: 32px;
