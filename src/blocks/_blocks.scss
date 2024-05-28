@@ -1,6 +1,7 @@
 @import './header/header.scss';
 @import './main/main.scss';
 @import './main/main_content/main__contant';
+@import './main/appliances__items/appliances__items';
 
 * {
     margin: 0;
@@ -11,5 +12,4 @@
 body {
     font-family: $font;
     background-color: rgb(208, 74, 74);
-
 }

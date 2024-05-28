@@ -46,7 +46,7 @@ const changeHeightOpen = () => {
     
     if (width >= 768 && width < 1120) {
         // console.log(mainSliders);
-        mainSliders.classList.remove('show--sliders')
+        // mainSliders.style = '';
         mainSliders.classList.add('show-more');
 
         for (let i = 0; i < containerSlider.length; i++) {

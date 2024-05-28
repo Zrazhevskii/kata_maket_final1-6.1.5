@@ -1,0 +1,93 @@
+.appliances__items {
+    box-sizing: border-box;
+    height: 420px;
+    overflow: hidden;
+    background-color: $light_grey;
+    border-top: 1px solid $light_green;
+
+    .title {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        background: linear-gradient(to right, $light_grey 0%, $wight 50%);
+
+        .title__text {
+            font-weight: 400;
+            font-size: 16px;
+            color: $grey;
+            padding-left: 16px;
+        }
+    }
+
+    .appliances__items__appliances__box {
+        position: relative;
+
+        .appliances__box__container {
+            height: 260px;
+            padding-left: 16px;
+
+            .container__slide__appliances {
+                display: flex;
+                flex-direction: column;
+                margin-top: 16px;
+                width: auto;
+                width: 240px;
+                height: 160px;
+                background-color: $wight;
+                padding: 16px;
+                border: 1px solid #eaeaea;
+                border-radius: 10px;
+
+                .container__slide__btn {
+                    border: none;
+                    background-color: $wight;
+                    width: 40px;
+                    height: 40px;
+                    background: url('./blocks/main/appliances__items/img/go.png');
+                    margin-left: auto;
+                    margin-top: auto;
+                }
+                .container__slide__btn:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .container__appliances__pagination {
+            position: absolute;
+            top: 195px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+            margin-right: 20px !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $grey;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1119.9px) {
+    .appliances__items {
+        .title {
+            padding-left: 24px;
+            height: 56px;
+        }
+    }
+}
+
+@media (min-width: 1120px) {
+    .appliances__items {
+        .title {
+            padding-left: 32px;
+            height: 56px;
+        }
+
+        .swiper-pagination-bullet {
+           display: none;
+        }
+    }
+}

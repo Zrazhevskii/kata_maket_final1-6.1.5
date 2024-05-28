@@ -44,17 +44,17 @@ window.addEventListener('DOMContentLoaded', () => {
         checker();
     };
 
-    const sliderFunc = (instance) => {
-        if (instance) {
-            instance.on('slideChange', function (e) {
-                console.log('*** mySwiper.activeIndex', instance.activeIndex);
-            });
-        }
-    };
+    // const sliderFunc = (instance) => {
+    //     if (instance) {
+    //         instance.on('slideChange', function (e) {
+    //             console.log('*** mySwiper.activeIndex', instance.activeIndex);
+    //         });
+    //     }
+    // };
 
     resizableSwiper(
         '(max-width: 767.9px)',
-        '.box__brend',
+        '.swiper',
         {
             modules: [Pagination],
             pagination: {
@@ -66,6 +66,6 @@ window.addEventListener('DOMContentLoaded', () => {
             freeMode: true,
             loop: true,
         },
-        sliderFunc
+        // sliderFunc
     );
 });
