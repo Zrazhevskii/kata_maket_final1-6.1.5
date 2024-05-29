@@ -2,6 +2,9 @@
 @import './main/main.scss';
 @import './main/main_content/main__contant';
 @import './main/appliances__items/appliances__items';
+@import './main/sliders__brend/sliders__brend';
+@import './main/price__items/price__items';
+@import './main/footer__container/footer__container';
 
 * {
     margin: 0;
@@ -11,5 +14,6 @@
 
 body {
     font-family: $font;
+    line-height: 20px;
     background-color: rgb(208, 74, 74);
 }

@@ -2,7 +2,6 @@ import './index.html';
 import './blocks/blocks';
 import './index.scss';
 // import './index.css';
-import './blocks/blocks';
 
 import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
@@ -54,7 +53,41 @@ window.addEventListener('DOMContentLoaded', () => {
 
     resizableSwiper(
         '(max-width: 767.9px)',
-        '.swiper',
+        '.box__brend',
+        {
+            modules: [Pagination],
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            freeMode: true,
+            loop: true,
+        },
+        // sliderFunc
+    );
+
+    resizableSwiper(
+        '(max-width: 767.9px)',
+        '.appliances__box',
+        {
+            modules: [Pagination],
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            freeMode: true,
+            loop: true,
+        },
+        // sliderFunc
+    );
+
+    resizableSwiper(
+        '(max-width: 767.9px)',
+        '.price__box',
         {
             modules: [Pagination],
             pagination: {

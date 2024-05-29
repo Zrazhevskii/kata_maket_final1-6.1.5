@@ -1,0 +1,40 @@
+.main__footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 172px;
+    background-color: $light_grey;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    .footer__container__text {
+        min-height: 88px;
+        font-weight: 400;
+        font-size: 14px;
+        color: $black;
+    }
+
+    .footer__container__btn {
+        font-weight: 500;
+        font-size: 16px;
+        border: none;
+        background-color: $light_grey;
+        margin-right: auto;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: relative;
+            transform: rotate(45deg);
+            width: 5px;
+            height: 5px;
+            border-top: 2px solid $redBtn;
+            border-right: 2px solid $redBtn;
+            left: 308px;
+            bottom: 12px;
+        }
+    }
+}
