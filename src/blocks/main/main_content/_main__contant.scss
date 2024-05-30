@@ -4,6 +4,10 @@
     max-height: 90%;
     padding-top: 24px;
 
+    // .show-more {
+    //     height: 400px;
+    // }
+
     .main__content-wrapper-text {
         padding-left: 16px;
         padding-right: 16px;
@@ -25,9 +29,9 @@
             cursor: pointer;
         }
 
-        .content-btn--hide {
-            height: 40px;
-        }
+        // .content-btn--hide {
+        //     height: 40px;
+        // }
 
         .content-btn::before {
             position: absolute;

@@ -2,6 +2,7 @@ const contentBtn = document.querySelector('.main__content-ownards-btn');
 const moreText = document.querySelector('.main__content-more-text');
 const contentTextHidden = document.querySelector('.main__content-text--hidden');
 const moreHidden = document.querySelector('.more--hidden');
+const mainContentTextBox = document.querySelector('.main-content-text-box');
 
 contentBtn.addEventListener('click', function (evt) {
     evt.preventDefault();
@@ -12,6 +13,7 @@ contentBtn.addEventListener('click', function (evt) {
         contentTextHidden.classList.remove('main__content-text--hidden');
         moreText.classList.remove('main__content-more-text');
         moreHidden.classList.remove('more--hidden');
+        // mainContentTextBox.classList.add('show-more');
 
         contentBtn.classList.add('content-btn--hide');
     } else {
