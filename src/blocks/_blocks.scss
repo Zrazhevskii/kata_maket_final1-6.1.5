@@ -17,5 +17,10 @@
 body {
     font-family: $font;
     line-height: 20px;
-    background-color: rgb(208, 74, 74);
+    // background-color: rgb(208, 74, 74);
+}
+
+.popup__show {
+    display: none;
+    // opacity: 0;
 }

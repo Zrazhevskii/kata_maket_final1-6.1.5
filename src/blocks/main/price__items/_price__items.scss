@@ -197,7 +197,9 @@
                     .cotainer__order__btn {
                         width: 300px;
                         .container__slide__price__btn {
-                            margin-left: auto;
+                            // margin-left: auto;
+                            top: 17px;
+                            left: 25px;
                             width: 120px;
                             height: 32px;
                         }
@@ -222,6 +224,12 @@
                     display: flex;
                 }
             }
+        }
+
+        .swiper-pagination-bullet,
+        .swiper-pagination,
+        .container__appliances__pagination {
+           display: none;
         }
     }
 }
