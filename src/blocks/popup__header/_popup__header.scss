@@ -71,7 +71,7 @@ body {
                 padding: 0;
                 margin: 0;
                 padding-top: 28px;
-                padding-bottom: 268px;
+                padding-bottom: 28px;
 
                 .list__item {
                     position: relative;
@@ -279,6 +279,32 @@ body {
                     padding-left: 32px;
                     margin-right: auto;
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1440.99px) {
+    .pop-up {
+        width: 320px;
+        height: 1024px;
+
+        .header__popup {
+            width: 320px; 
+
+            .header__nav {
+                .logo {
+                    padding-left: 16px;
+                    // margin-right: auto;
+                }
+            }
+        }
+
+        .pop-up__main {
+            height: 920px;
+
+            .pop-up__list {
+                margin-bottom: 360px;
             }
         }
     }
