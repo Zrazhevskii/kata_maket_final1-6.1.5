@@ -2,6 +2,7 @@ import './main/main_content/main_content';
 import './main/sliders__brend/sliders__brend';
 import './main/appliances__items/appliances__items';
 import './main/price__items/price__items';
+import './header/header'
 
 const mainItem = document.querySelector('.main__servises-items');
 const mainItemLink = document.querySelectorAll('.main__item-link')

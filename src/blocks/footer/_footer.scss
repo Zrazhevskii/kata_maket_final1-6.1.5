@@ -28,3 +28,37 @@
         text-align: center;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1119.99px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: linear-gradient(to right, $wight 20%, $light_grey 20%);
+        height: 81px;
+        padding-left: 24px;
+        padding-right: 24px;
+        // justify-self: start;
+
+        .footer__year__team {
+            display: flex;
+            width: 240px;
+            // justify-self: start;
+
+            .footer__year, .footer__team {
+                // text-align: left;
+                width: 100%;
+            }
+            
+        }
+
+        .footer__link__confidentiality {
+            width: 240px;
+        }
+
+        .footer_info {
+            width: 250px;
+            text-align: end;
+        }
+    }
+}
