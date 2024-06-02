@@ -1,5 +1,3 @@
-// @import '../../img/burger.png';
-
 .header {
     display: flex;
     flex-direction: column;
@@ -27,19 +25,19 @@
             height: 40px;
         }
 
-        .burger {
+        .header__burger {
             background: url('img/burger.png') no-repeat;
         }
 
-        .repair {
+        .header__repair {
             background: url('img/repair.png') no-repeat;
         }
 
-        .checkstatus {
+        .header__checkstatus {
             background: url('img/checkstatus.png');
         }
 
-        .logo {
+        .header__logo {
             width: 96px;
             height: 52px;
         }
@@ -111,11 +109,11 @@
             box-sizing: content-box;
         }
 
-        .burger {
+        .header__burger {
             padding-right: 20px;
         }
 
-        .repair {
+        .header__repair {
             margin-left: 18px;
         }
 
@@ -128,7 +126,7 @@
             display: none;
         }
 
-        .repair::before {
+        .header__repair::before {
             content: '';
             display: block;
             width: 2px;
@@ -138,7 +136,7 @@
             margin-left: -3.3vw;
         }
 
-        .logo::before {
+        .header__logo::before {
             content: '';
             display: block;
             position: absolute;
@@ -148,22 +146,22 @@
             margin-left: -17vw;
         }
 
-        .logo {
+        .header__logo {
             display: flex;
             justify-content: center;
             align-items: center;
             padding-left: 20px;
         }
 
-        .call {
+        .header__call {
             background: no-repeat url('img/call.png');
         }
 
-        .chat {
+        .header__chat {
             background: no-repeat url('img/chat.png');
         }
 
-        .profile {
+        .header__profile {
             background: no-repeat url('img/profile.png');
             padding-right: 18px;
         }
@@ -247,11 +245,11 @@
             cursor: pointer;
         }
 
-        .repair {
+        .header__repair {
             background: url('img/repair.png') no-repeat right;
         }
 
-        .checkstatus {
+        .header__checkstatus {
             background: url('img/checkstatus.png') no-repeat right;
         }
     }

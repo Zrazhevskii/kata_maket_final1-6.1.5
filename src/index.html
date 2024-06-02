@@ -6,27 +6,142 @@
     <title>Финальный макет модуля Webcore</title>
 </head>
 <body>
+    <div class="pop-up">
+        <section class="pop-up__header header">
+            <ul class="header__nav nav">
+                <li class="nav__list">
+                    <a href="#" class="nav__link burger"></a>
+                </li>
+                <li class="nav__list logo">
+                    <img
+                        src="./blocks/header/img/group.png"
+                        alt="Логотип компании"
+                        class="nav__logo"
+                    />
+                </li>
+                <li class="nav__list search">
+                    <a href="#" class="nav__link search"></a>
+                </li>
+            </ul>
+        </section>
+        <section class="pop-up__main">
+            <div class="pop-up__list list">
+                <ul class="list__links">
+                    <li class="list__item">
+                        <a href="#" class="list__link">Услуги и сервисы</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="list__link"
+                            >Корпоративным клиентам</a
+                        >
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="list__link">Продавцам техники</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="list__link">Партнерам</a>
+                    </li>
+                    <li class="list__item two">
+                        <a href="#" class="list__link"
+                            >Наши сервисные центры</a
+                        >
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="list__link">Контакты</a>
+                    </li>
+                    <li class="list__item link-order">
+                        <a href="#" class="list__link active"
+                            >Ремонт техники</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="pop-up__footer">
+                <div class="pop-up__footer__list footer__list">
+                    <ul class="footer__list__links">
+                        <li class="footer__list_item">
+                            <a href="#" class="footer__list_link call"></a>
+                        </li>
+                        <li class="footer__list_item">
+                            <a href="#" class="footer__list_link chat"></a>
+                        </li>
+                        <li class="footer__list_item">
+                            <a
+                                href="#"
+                                class="footer__list_link profile"
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="pop-up__footer_email">mail@cps.com</a>
+                <h2 class="pop-up__footer_phone">8 800 890 8900</h2>
+                <div class="pop-up__footer_lang-box lang-box">
+                    <ul class="lang-box__list">
+                        <li class="lang-box__item">
+                            <a
+                                href="/en/"
+                                hreflang="en"
+                                class="lang-box_link"
+                                ><abbr
+                                    lang="en"
+                                    title="English"
+                                    class="lang-box_link-abbr"
+                                    >EN</abbr
+                                ></a
+                            >
+                        </li>
+                        <li class="lang-box__item">
+                            <a
+                                href="/ch/"
+                                hreflang="ch"
+                                class="lang-box_link"
+                                ><abbr
+                                    lang="ch"
+                                    title="Chinese"
+                                    class="lang-box_link-abbr"
+                                    >СH</abbr
+                                ></a
+                            >
+                        </li>
+                        <li class="lang-box__item link-order">
+                            <a
+                                href="/ru/"
+                                hreflang="ru"
+                                class="lang-box_link"
+                                ><abbr
+                                    lang="ru"
+                                    title="Russian"
+                                    class="lang-box_link-abbr lang-box_link-abbr--active"
+                                    >RU</abbr
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
     <header class="header">
         <nav class="header__nav">
             <div class="header__conteiner box-one">
-                <div class="header__img burger"></div>
-                <div class="header__img logo">
+                <div class="header__img header__burger"></div>
+                <div class="header__img header__logo">
                     <img src="img/group.png" alt="Логотоп компании" class="header-logo">
                 </div>
             </div>
             <div class="header__conteiner box-two">
-                <div class="header__img call header--hidden"></div>
-                <div class="header__img chat header--hidden"></div>
-                <div class="header__img profile header--hidden"></div>
-                <div class="header__img repair"></div>
-                <div class="header__img checkstatus" href="#"></div>
+                <div class="header__img header__call header--hidden"></div>
+                <div class="header__img header__chat header--hidden"></div>
+                <div class="header__img header__profile header--hidden"></div>
+                <div class="header__img header__repair"></div>
+                <div class="header__img header__checkstatus" href="#"></div>
             </div>
         </nav>
         <div class="header__conteiner-title">
             <h1 class="header__title">Услуги и сервисы</h1>
             <div class="header__conteiner-button">
-                <button class="header__button repair"><b>Оставить заявку</b></button>
-                <button class="header__button checkstatus"><b>Статус ремонта</b></button>
+                <button class="header__button header__repair"><b>Оставить заявку</b></button>
+                <button class="header__button header__checkstatus"><b>Статус ремонта</b></button>
             </div>
         </div>
     </header>
