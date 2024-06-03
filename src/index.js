@@ -101,4 +101,21 @@ window.addEventListener('DOMContentLoaded', () => {
         },
         // sliderFunc
     );
+
+    // resizableSwiper(
+    //     '(max-width: 1119.9px)',
+    //     '.main__services',
+    //     {
+    //         modules: [Pagination],
+    //         // pagination: {
+    //         //     el: '.swiper-pagination',
+    //         //     clickable: true,
+    //         // },
+    //         slidesPerView: 'auto',
+    //         spaceBetween: 20,
+    //         freeMode: true,
+    //         loop: true,
+    //     },
+    //     // sliderFunc
+    // );
 });

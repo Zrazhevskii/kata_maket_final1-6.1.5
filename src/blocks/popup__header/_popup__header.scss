@@ -2,7 +2,7 @@ body {
     position: relative;
 }
 
-.pop-up {
+.pop__up__menu {
     position: absolute;
     width: 320px;
     height: 676px;
@@ -232,7 +232,7 @@ body {
     }
 }
 
-.pop-up--hidden {
+.pop__up__menu--hidden {
     display: none;
 }
 
@@ -268,7 +268,7 @@ body {
 }
 
 @media (min-width: 360px) and (max-width: 767.99px) {
-    .pop-up {
+    .pop__up__menu {
         width: 360px;
 
         .header__popup {
@@ -285,7 +285,7 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1440.99px) {
-    .pop-up {
+    .pop__up__menu {
         width: 320px;
         height: 1024px;
 

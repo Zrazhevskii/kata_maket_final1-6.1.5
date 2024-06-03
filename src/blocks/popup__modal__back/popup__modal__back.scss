@@ -1,0 +1,13 @@
+.popup__modal__back {
+    width: 320px;
+    height: 616px;
+
+    .popup__modal__back__clouse__btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.popup__modal__back--hidden {
+    display: none;
+}
