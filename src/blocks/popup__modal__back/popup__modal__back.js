@@ -1,7 +1,7 @@
-const popupBtnClouse = document.querySelector(
+const backBtnClouse = document.querySelector(
     '.popup__modal__back__clouse__btn'
 );
-const popupHeader = document.querySelector('.pop__up__menu');
+const popupHeader = document.querySelector('.popup__modal__burger');
 const popupModalCall = document.querySelector('.popup__modal__back');
 const btnCall = document.querySelector('.header__call');
 const header = document.querySelector('.header');
@@ -18,7 +18,7 @@ btnCall.addEventListener('click', () => {
     }
 });
 
-popupBtnClouse.addEventListener('click', () => {
+backBtnClouse.addEventListener('click', () => {
     header.classList.remove('popup__show');
     main.classList.remove('popup__show');
     footer.classList.remove('popup__show');
@@ -26,6 +26,6 @@ popupBtnClouse.addEventListener('click', () => {
 });
 
 popupModalBtn.addEventListener('click', () => {
-    popupHeader.classList.add('pop__up__menu--hidden');
+    popupHeader.classList.add('popup__modal__burger--hidden');
     popupModalCall.classList.remove('popup__modal__back--hidden');
 });
