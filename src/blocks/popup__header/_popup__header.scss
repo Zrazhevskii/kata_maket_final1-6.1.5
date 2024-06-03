@@ -6,7 +6,7 @@ body {
     position: absolute;
     width: 320px;
     height: 676px;
-    box-shadow: 20px 0px 35px -5px rgba(0, 0, 0, 0.2);
+    // box-shadow: 20px 0px 35px -5px rgba(0, 0, 0, 0.2);
     padding-top: 4px;
 
     .header__popup {
@@ -270,6 +270,8 @@ body {
 @media (min-width: 360px) and (max-width: 767.99px) {
     .pop__up__menu {
         width: 360px;
+        box-shadow: 20px 0px 35px -5px rgba(0, 0, 0, 0.2);
+
 
         .header__popup {
             width: 360px; 
@@ -288,6 +290,7 @@ body {
     .pop__up__menu {
         width: 320px;
         height: 1024px;
+        box-shadow: 20px 0px 35px -5px rgba(0, 0, 0, 0.2);
 
         .header__popup {
             width: 320px; 

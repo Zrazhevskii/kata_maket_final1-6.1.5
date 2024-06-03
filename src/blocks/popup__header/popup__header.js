@@ -5,7 +5,7 @@ const footer = document.querySelector('.footer');
 const popup = document.querySelector('.pop__up__menu');
 const clouse = document.querySelector('.nav__clouse');
 
-console.log(clouse);
+// console.log(clouse);
 
 headeBurger.addEventListener('click', () => {
     // console.log('Привет');

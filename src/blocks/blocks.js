@@ -4,7 +4,8 @@ import './main/appliances__items/appliances__items';
 import './main/price__items/price__items';
 import './header/header';
 import './popup__header/popup__header';
-import './popup__modal__back/popup__modal__back'
+import './popup__modal__back/popup__modal__back';
+import './popup__modal__feedback/popup__modal__feedback'
 
 const mainItem = document.querySelector('.main__servises-items');
 const mainItemLink = document.querySelectorAll('.main__item-link')

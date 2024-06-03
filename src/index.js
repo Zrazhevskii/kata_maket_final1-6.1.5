@@ -32,7 +32,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 return enableSwiper(swiperClass, swiperSettings);
             } else {
                 if (swiper !== undefined) {
-                    // console.log('я тут');
                     swiper.destroy(true, true);
                 }
                 return;
@@ -65,7 +64,6 @@ window.addEventListener('DOMContentLoaded', () => {
             freeMode: true,
             loop: true,
         },
-        // sliderFunc
     );
 
     resizableSwiper(
@@ -82,7 +80,6 @@ window.addEventListener('DOMContentLoaded', () => {
             freeMode: true,
             loop: true,
         },
-        // sliderFunc
     );
 
     resizableSwiper(
@@ -99,23 +96,5 @@ window.addEventListener('DOMContentLoaded', () => {
             freeMode: true,
             loop: true,
         },
-        // sliderFunc
     );
-
-    // resizableSwiper(
-    //     '(max-width: 1119.9px)',
-    //     '.main__services',
-    //     {
-    //         modules: [Pagination],
-    //         // pagination: {
-    //         //     el: '.swiper-pagination',
-    //         //     clickable: true,
-    //         // },
-    //         slidesPerView: 'auto',
-    //         spaceBetween: 20,
-    //         freeMode: true,
-    //         loop: true,
-    //     },
-    //     // sliderFunc
-    // );
 });

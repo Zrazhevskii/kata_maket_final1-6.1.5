@@ -8,6 +8,7 @@
 @import './footer/footer';
 @import './popup__header/popup__header';
 @import './popup__modal__back/popup__modal__back.scss';
+@import './popup__modal__feedback/popup__modal__feedback';
 
 * {
     margin: 0;
@@ -23,5 +24,5 @@ body {
 
 .popup__show {
     display: none;
-    // opacity: 0;
+    // opacity: 0.1;
 }
