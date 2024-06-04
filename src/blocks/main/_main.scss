@@ -62,7 +62,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1119.99px) {
+@media (min-width: 768px) and (max-width: 1199.99px) {
     .main__main__description {
         min-height: auto;
         padding-left: 24px;
@@ -79,12 +79,13 @@
     }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1200px) {
     .main__main__description {
         max-width: 1120px;
         min-height: 445px;
-        // padding-left: 35px;
-        // padding-right: 35px;
+        margin: auto;
+        padding-left: 35px;
+        padding-right: 35px;
 
         .main__services {
             padding-left: 0;

@@ -154,7 +154,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1119.9px) {
+@media (min-width: 768px) and (max-width: 1199.9px) {
     .sliders__brend {
         height: 320px;
 
@@ -178,15 +178,21 @@
                 row-gap: 16px;
                 margin: auto;
                 min-height: 380px;
+                // padding-left: 24px;
 
                 .container__slide__brend {
                     display: block;
                     margin: 0 !important;
+
+                    .container__slide__img {
+                        width: 224px;
+                    }
+
+                    .samsung {
+                        background-position: -5px 0;
+                    }
                 }
 
-                .samsung {
-                    background-position: -5px 0;
-                }
                 .container__slide__brend:first-child {
                     margin-left: 0;
                 }
@@ -200,13 +206,12 @@
             }
 
             .box__brend__pagination {
-               display: none;
-            }
-    
-            .swiper-pagination-bullet {
-               display: none;
+                display: none;
             }
 
+            .swiper-pagination-bullet {
+                display: none;
+            }
         }
 
         .show-more {
@@ -272,19 +277,150 @@
     }
 }
 
-@media (min-width: 1120px) {
-    .main__main__description {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+@media (min-width: 1200px) {
+    // .main__main__description {
+    //     padding-left: 32px;
+    //     padding-right: 32px;
+    // }
+
     .sliders__brend {
         min-width: 1120px;
         min-height: 320px;
+        // padding-left: 32px;
+        // padding-right: 32px;
 
         .title {
             padding-left: 32px;
             height: 56px;
+
+            .title__text {
+                padding-left: 0;
+            }
         }
+
+        .box__brend {
+            display: block;
+            // padding: 24px 32px 0 32px;
+
+            .box__brend__container {
+                display: grid;
+                box-sizing: border-box;
+                max-width: 1120px;
+                min-height: 280px;
+                grid-template-columns: 1fr 1fr 1fr 240px;
+                grid-template-rows: repeat(3, 75px);
+                row-gap: 16px;
+                margin: 0;
+                padding-top: 24px;
+                padding-left: 32px;
+                padding-right: 32px;
+
+                .container__slide__brend {
+                    display: block;
+                    margin: 0 !important;
+                    // padding-bottom: 16px;
+
+                    .container__slide__img {
+                        width: 240px;
+                        height: 75px;
+                    }
+
+                    .samsung {
+                        background-position: -5px 0;
+                    }
+                }
+
+                .container__slide__brend:first-child {
+                    margin-left: 0;
+                }
+
+                .hidden {
+                    display: none;
+                }
+            }
+        }
+
+        .sliders__brend__btn {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border: none;
+            // background-color: $light_grey;
+            padding-left: 32px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        // .sliders__brend__btn {
+        //     display: flex;
+        //     flex-direction: row;
+        //     align-items: center;
+        //     border: none;
+        //     background-color: $light_grey;
+        //     padding-left: 32px;
+
+        //     &:hover {
+        //         cursor: pointer;
+        //     }
+        // }
+
+        .btn-show::before {
+            // left: -20px;
+            position: relative;
+            display: block;
+            content: '';
+            background: url('./blocks/main/sliders__brend/img/expand.png')
+                no-repeat;
+            width: 24px;
+            height: 24px;
+            left: -5px;
+            top: -70px;
+            z-index: 5;
+        }
+
+        .btn-show::after {
+            content: 'Показать всё';
+            font-size: 16px;
+            font-weight: 500;
+            color: black;
+            position: relative;
+            left: 8px;
+            top: -70px;
+            z-index: 5;
+        }
+
+        .btn-hide::before {
+            position: relative;
+            display: block;
+            content: '';
+            background: url('./blocks/main/sliders__brend/img/expand.png')
+                no-repeat;
+            transform: rotate(180deg);
+            width: 24px;
+            height: 24px;
+            // left: 8px;
+            top: 20px;
+        }
+
+        .btn-hide::after {
+            content: 'Скрыть';
+            font-size: 16px;
+            font-weight: 500;
+            color: black;
+            position: relative;
+            top: 20px;
+            left: 12px;
+        }
+
+        // .sliders__brend__btn:hover {
+
+        // }
+
+        // .sliders__brend__btn:hover {
+        //     cursor: pointer;
+        // }
     }
 
     .swiper,
@@ -295,109 +431,71 @@
         column-gap: 0;
     }
 
-    .box__brend {
-        display: block;
-        padding: 24px 32px 0 32px;
-    }
-
-    .box__brend .box__brend__container {
-        display: grid;
-        box-sizing: border-box;
-        max-width: 1120px;
-        min-height: 280px;
-        grid-template-columns: 1fr 1fr 1fr 240px;
-        grid-template-rows: repeat(3, 75px);
-        row-gap: 16px;
-        margin: 0 !important;
-        padding-top: 24px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    .container__slide__brend {
-        display: block;
-        margin: 0 !important;
-        padding-bottom: 16px;
-    }
-
-    .samsung {
-        background-position: -5px 0;
-    }
-
-    .container__slide__img {
-        width: 240px;
-        height: 75px;
-    }
-
-    .container__slide__brend:first-child {
-        margin-left: 0;
-    }
-
     .swiper-pagination-bullets {
         display: none;
     }
 
-    .hidden {
-        display: none;
-    }
+    // .hidden {
+    //     display: none;
+    // }
 
-    .sliders__brend .sliders__brend__btn {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        border: none;
-        background-color: $light_grey;
-        padding-left: 32px;
-    }
+    // .sliders__brend .sliders__brend__btn {
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-items: center;
+    //     border: none;
+    //     background-color: $light_grey;
+    //     padding-left: 32px;
+    // }
 
-    .sliders__brend__btn:hover {
-        cursor: pointer;
-    }
+    // .sliders__brend__btn:hover {
+    //     cursor: pointer;
+    // }
 
-    .btn-show::before {
-        position: relative;
-        display: block;
-        content: '';
-        background: url('./blocks/main/sliders__brend/img/expand.png') no-repeat;
-        width: 24px;
-        height: 24px;
-        left: -5px;
-        top: -80px;
-        z-index: 5;
-    }
+    // .btn-show::before {
+    //     position: relative;
+    //     display: block;
+    //     content: '';
+    //     background: url('./blocks/main/sliders__brend/img/expand.png') no-repeat;
+    //     width: 24px;
+    //     height: 24px;
+    //     left: -5px;
+    //     top: -80px;
+    //     z-index: 5;
+    // }
 
-    .btn-show::after {
-        content: 'Показать всё';
-        font-size: 16px;
-        font-weight: 500;
-        color: black;
-        position: relative;
-        top: -80px;
-        z-index: 5;
-    }
+    // .btn-show::after {
+    //     content: 'Показать всё';
+    //     font-size: 16px;
+    //     font-weight: 500;
+    //     color: black;
+    //     position: relative;
+    //     top: -80px;
+    //     z-index: 5;
+    // }
 
-    .btn-hide::before {
-        position: relative;
-        display: block;
-        content: '';
-        background: url('./blocks/main/sliders__brend/img/expand.png') no-repeat;
-        transform: rotate(180deg);
-        width: 24px;
-        height: 24px;
-        left: -5px;
-        top: 20px;
-    }
+    // .btn-hide::before {
+    //     position: relative;
+    //     display: block;
+    //     content: '';
+    //     background: url('./blocks/main/sliders__brend/img/expand.png') no-repeat;
+    //     transform: rotate(180deg);
+    //     width: 24px;
+    //     height: 24px;
+    //     left: -5px;
+    //     top: 20px;
+    // }
 
-    .btn-hide::after {
-        content: 'Скрыть';
-        font-size: 16px;
-        font-weight: 500;
-        color: black;
-        position: relative;
-        top: 20px;
-    }
+    // .btn-hide::after {
+    //     content: 'Скрыть';
+    //     font-size: 16px;
+    //     font-weight: 500;
+    //     color: black;
+    //     position: relative;
+    //     top: 20px;
+    // }
 
-    .hidden {
-        display: none;
-    }
+    // .hidden {
+    //     display: none;
+    // }
 }

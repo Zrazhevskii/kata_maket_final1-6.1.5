@@ -19,10 +19,10 @@
 body {
     font-family: $font;
     line-height: 20px;
-    // background-color: rgb(208, 74, 74);
 }
 
 .popup__show {
     display: none;
     // opacity: 0.1;
+    // z-index: -10;
 }

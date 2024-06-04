@@ -8,7 +8,6 @@ let width = window.innerWidth;
 
 window.addEventListener('resize', () => {
     width = window.innerWidth;
-    // console.log(width);
     if (width >= 768) {
         checkChildren();
     }
@@ -23,7 +22,7 @@ slidersBtn.addEventListener('click', function () {
 });
 
 function checkChildren() {
-    if (width >= 768 && width < 1120) {
+    if (width >= 768 && width < 1200) {
         for (let i = 0; i < containerSlider.length; i++) {
             if (i >= 6) {
                 containerSlider[i].classList.add('hidden');
@@ -31,12 +30,15 @@ function checkChildren() {
         }
     }
 
-    if (width >= 1120) {
+    if (width >= 1200) {
+        // console.log(width);
         for (let i = 0; i < containerSlider.length; i++) {
             if (i <= 7) {
+                // console.log(width);
                 containerSlider[i].classList.remove('hidden');
-            } else {
+            } else if (i > 7) {
                 containerSlider[i].classList.add('hidden');
+                // console.log(containerSlider[i]);
             }
         }
     }
@@ -44,7 +46,7 @@ function checkChildren() {
 
 const changeHeightOpen = () => {
     
-    if (width >= 768 && width < 1120) {
+    if (width >= 768 && width < 1200) {
         // slidersBrend.classList.add('show-more');
         slidersBrend.style.height = '490px';
 
@@ -54,7 +56,8 @@ const changeHeightOpen = () => {
             }
         }
     } else {
-        slidersBrend.classList.add('show-more-small');
+        slidersBrend.style.height = '410px';
+        // slidersBrend.classList.add('show-more-small');
         for (let i = 0; i < containerSlider.length; i++) {
             if (containerSlider[i].className.includes('hidden')) {
                 containerSlider[i].classList.remove('hidden');
@@ -69,21 +72,20 @@ const changeHeightOpen = () => {
 const changeHeightClose = () => {
     if (width >= 768 && width < 1120) {
         // slidersBrend.classList.remove('show-more');
-        slidersBrend.style.height = '';
-
         for (let i = 0; i < containerSlider.length; i++) {
             if (i >= 6) {
                 containerSlider[i].classList.add('hidden');
             }
         }
     } else if (width >= 1120) {
-        slidersBrend.classList.remove('show-more-small');
+        // slidersBrend.classList.remove('show-more-small');
         for (let i = 0; i < containerSlider.length; i++) {
             if (i >= 8) {
                 containerSlider[i].classList.add('hidden');
             }
         }
     }
+    slidersBrend.style = '';
     slidersBtn.classList.add('btn-show');
     slidersBtn.classList.remove('btn-hide');
 };

@@ -22,5 +22,5 @@ feedbackBtnClouse.addEventListener('click', () => {
     header.classList.remove('popup__show');
     main.classList.remove('popup__show');
     footer.classList.remove('popup__show');
-    feedbackPopup.classList.add('popup__modal__back--hidden');
+    feedbackPopup.classList.add('popup__modal__feedback--hidden');
 })
