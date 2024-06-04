@@ -34,7 +34,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background: linear-gradient(to right, $wight 20%, $light_grey 20%);
+        background: linear-gradient(to right, $wight 120px, $light_grey 120px);
         height: 81px;
         padding-left: 24px;
         padding-right: 24px;
@@ -70,7 +70,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background: linear-gradient(to right, $wight 200px, $light_grey 200px);
         height: 81px;
         padding-left: 32px;
         padding-right: 32px;

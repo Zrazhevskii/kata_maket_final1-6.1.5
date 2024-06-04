@@ -157,6 +157,7 @@
 @media (min-width: 768px) and (max-width: 1199.9px) {
     .sliders__brend {
         height: 320px;
+        background: linear-gradient(to right, $wight 120px, $light_grey 120px);
 
         .title {
             padding-left: 24px;
@@ -178,7 +179,7 @@
                 row-gap: 16px;
                 margin: auto;
                 min-height: 380px;
-                // padding-left: 24px;
+                padding-left: 0;
 
                 .container__slide__brend {
                     display: block;
@@ -245,6 +246,10 @@
             z-index: 5;
         }
 
+        .btn-hide {
+            background: linear-gradient(to right, $wight 120px, $light_grey 120px);
+        }
+
         .btn-hide::before {
             position: relative;
             display: block;
@@ -278,11 +283,6 @@
 }
 
 @media (min-width: 1200px) {
-    // .main__main__description {
-    //     padding-left: 32px;
-    //     padding-right: 32px;
-    // }
-
     .sliders__brend {
         min-width: 1120px;
         min-height: 320px;
@@ -332,6 +332,18 @@
 
                 .container__slide__brend:first-child {
                     margin-left: 0;
+                }
+
+                .swiper-pagination-bullets {
+                    display: none;
+                }
+
+                .box__brend__pagination {
+                    display: none;
+                }
+
+                .swiper-pagination-bullet {
+                    display: none;
                 }
 
                 .hidden {
@@ -389,6 +401,10 @@
             left: 8px;
             top: -70px;
             z-index: 5;
+        }
+
+        .btn-hide {
+            background-color: $light_grey;
         }
 
         .btn-hide::before {

@@ -69,7 +69,7 @@
 
                 // .show-more {
                 //     height: 900px;
-                // } 
+                // }
             }
         }
 
@@ -91,11 +91,77 @@
 
     .show-more {
         height: 900px;
-    } 
+    }
+
+    .appliances__items__btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 200px;
+        border: none;
+        background-color: $light_grey;
+        padding-left: 24px;
+    }
+
+    .btn-show::before {
+        position: relative;
+        display: none;
+        content: '';
+        background: url('./blocks/main/sliders__brend/img/expand.png') no-repeat;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        margin-right: 10px;
+        top: -200px;
+        // left: 50%;
+    }
+
+    .btn-show::after {
+        display: none;
+        align-items: center;
+        width: 110px;
+        height: 30px;
+        content: 'Показать всё';
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+        position: relative;
+        top: -200px;
+        z-index: 5;
+    }
+
+    .btn-hide::before {
+        position: relative;
+        display: none;
+        content: '';
+        background: url('./blocks/main/sliders__brend/img/expand.png') no-repeat;
+        transform: rotate(180deg);
+        width: 24px;
+        height: 24px;
+        // top: -15px;
+        margin-right: 10px;
+    }
+
+    .btn-hide::after {
+        display: none;
+        content: 'Скрыть';
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+        position: relative;
+        // top: -15px;
+        z-index: 5;
+    }
+
+    .btn-hide:hover,
+    .btn-show:hover {
+        cursor: pointer;
+    }
 }
 
-@media (min-width: 768px) and (max-width: 1119.9px) {
+@media (min-width: 768px) and (max-width: 1199.9px) {
     .appliances__items {
+        background: linear-gradient(to right, $wight 120px, $light_grey 120px);
         // justify-content: flex-start;
         height: 320px;
 
@@ -121,7 +187,7 @@
                 position: relative;
                 display: grid;
                 max-width: 903px;
-                grid-template-columns: 1fr 1fr 240px;
+                grid-template-columns: 1fr 1fr 224px;
                 grid-template-rows: repeat(3, 160px);
                 row-gap: 24px;
                 margin: auto;
@@ -136,109 +202,125 @@
 
                 .container__slide__appliances {
                     margin: 0;
+                    width: 224px;
                 }
 
                 .hidden {
                     display: none;
                 }
             }
-
-            // .swiper-wrapper {
-            //     display: flex;
-            //     column-gap: 0;
-            // }
         }
 
         .swiper-pagination-bullet,
         .swiper-pagination,
         .container__appliances__pagination {
-           display: none;
+            display: none;
         }
 
         .swiper {
             display: flex;
-            // column-gap: 0;
-        }
-
-        .appliances__items__btn {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            width: 200px;
-            border: none;
-            background-color: $light_grey;
-            padding-left: 24px;
         }
 
         .btn-show::before {
-            position: relative;
             display: block;
-            content: '';
-            background: url('./blocks/main/sliders__brend/img/expand.png')
-                no-repeat;
-            width: 24px;
-            height: 24px;
-            cursor: pointer;
-            margin-right: 10px;
             top: -200px;
-            // left: 50%;
         }
 
         .btn-show::after {
             display: flex;
-            align-items: center;
-            width: 110px;
-            height: 30px;
-            content: 'Показать всё';
-            font-size: 16px;
-            font-weight: 500;
-            color: black;
-            position: relative;
             top: -200px;
-            z-index: 5;
+        }
+
+        .btn-hide {
+            background: linear-gradient(to right, $wight 120px, $light_grey 120px);
         }
 
         .btn-hide::before {
-            position: relative;
             display: block;
-            content: '';
-            background: url('./blocks/main/sliders__brend/img/expand.png')
-                no-repeat;
-            transform: rotate(180deg);
-            width: 24px;
-            height: 24px;
-            // top: -15px;
-            margin-right: 10px;
+            // background-color: $wight;
         }
 
         .btn-hide::after {
-            content: 'Скрыть';
-            font-size: 16px;
-            font-weight: 500;
-            color: black;
-            position: relative;
-            // top: -15px;
-            z-index: 5;
+            display: flex;
         }
 
-        .btn-hide:hover, .btn-show:hover {
+        .btn-hide:hover,
+        .btn-show:hover {
             cursor: pointer;
         }
-
     }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1200px) {
     .appliances__items {
         .title {
-            padding-left: 32px;
+            // padding-left: 32px;
             height: 56px;
+
+            .title__text {
+                padding-left: 32px;
+            }
+        }
+
+        .appliances__box {
+            display: block;
+            padding: 24px 32px 0 32px;
+            min-height: 320px;
+
+            // .show-more {
+            //     height: 900px;
+            // }
+
+            .appliances__box__container {
+                position: relative;
+                display: grid;
+                max-width: 1120px;
+                grid-template-columns: 1fr 1fr 1fr 240px;
+                grid-template-rows: repeat(2, 160px);
+                row-gap: 24px;
+                // margin: auto;
+                min-height: 380px;
+                padding-left: 0;
+
+                .container__slide__appliances {
+                    margin: 0;
+                    width: 240px;
+                }
+
+                .hidden {
+                    display: none;
+                }
+            }
+        }
+
+        .appliances__items__btn {
+            padding-left: 32px;
         }
 
         .swiper-pagination-bullet,
         .swiper-pagination,
         .container__appliances__pagination {
-           display: none;
+            display: none;
+        }
+
+        .btn-show::before {
+            display: block;
+            left: -5px;
+        }
+
+        .btn-show::after {
+            display: flex;
+            // left: 70px;
+            top: -200px;
+        }
+        
+
+        .btn-hide::before {
+            display: block;
+        }
+
+        .btn-hide::after {
+            display: flex;
         }
     }
 }

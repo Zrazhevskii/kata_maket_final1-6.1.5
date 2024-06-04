@@ -64,6 +64,7 @@
 
 @media (min-width: 768px) and (max-width: 1199.99px) {
     .main__main__description {
+        background: linear-gradient(to right, $wight 120px, $light_grey 120px);
         min-height: auto;
         padding-left: 24px;
         padding-right: 24px;
@@ -71,8 +72,9 @@
         .main__services {
             display: flex;
             flex-direction: column;
-            background-color: $light_grey;
+            background: linear-gradient(to right, $wight 96px, $light_grey 96px);
 
+            padding-top: 24px;
             padding-left: 0;
             padding-right: 0;
         }

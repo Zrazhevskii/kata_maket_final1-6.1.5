@@ -1,7 +1,5 @@
 const appliancesItems = document.querySelector('.appliances__items');
-// console.log(appliancesItems);
 const appliancesBtn = document.querySelector('.appliances__items__btn');
-// console.log(appliancesBtn);
 const appliancesBoxContainer = document.querySelector(
     '.appliances__box__container'
 );
@@ -11,15 +9,15 @@ const appliancesArray = Array.from(
     document.querySelectorAll('.container__slide__appliances')
 );
 // console.log(containerSlider);
-// let width = window.innerWidth;
+let width = window.innerWidth;
 
-// window.addEventListener('resize', () => {
-//     width = window.innerWidth;
-//     // console.log(width);
-//     if (width >= 768) {
-//         checkChildren();
-//     }
-// });
+window.addEventListener('resize', () => {
+    width = window.innerWidth;
+    // console.log(width);
+    if (width >= 768) {
+        checkChildren();
+    }
+});
 
 appliancesBtn.addEventListener('click', function () {
     if (appliancesBtn.classList.contains('btn-show')) {
@@ -29,44 +27,41 @@ appliancesBtn.addEventListener('click', function () {
     }
 });
 
-// function checkChildren() {
-//     if (width >= 768 && width < 1120) {
-//         for (let i = 0; i < containerSlider.length; i++) {
-//             if (i >= 6) {
-//                 containerSlider[i].classList.add('hidden');
-//             }
-//         }
-//     }
-
-//     if (width >= 1120) {
-//         for (let i = 0; i < containerSlider.length; i++) {
-//             if (i <= 7) {
-//                 containerSlider[i].classList.remove('hidden');
-//             } else {
-//                 containerSlider[i].classList.add('hidden');
-//             }
-//         }
-//     }
-// }
-
-const changeHeightOpen = () => {
-    // if (width >= 768 && width < 1120) {
-    // console.log(mainSliders);
-    // mainSliders.style = '';
-    // appliancesBtn.classList.add('show-more');
-
-    for (let i = 0; i < appliancesArray.length; i++) {
-        if (appliancesArray[i].className.includes('hidden')) {
-        }
-
-        appliancesArray[i].classList.remove('hidden');
-        // appliancesBoxContainer.classList.add('show-more');
-        // appliancesBox.classList.add('show-more');
-        // appliancesItems.classList.add('show-more');
+function checkChildren() {
+    if (width >= 768 && width < 1200) {
+        // console.log('Ширина от 768 до ');
+        appliancesArray[4].classList.add('hidden');
     }
 
-    appliancesItems.style.height = '670px';
-    appliancesBoxContainer.style.height = '550px';
+    if (width >= 1200) {
+        // console.log(appliancesArray[4]);
+        appliancesArray[4].classList.remove('hidden');
+        // for (let i = 0; i < containerSlider.length; i++) {
+        //     if (i <= 7) {
+        //         containerSlider[i].classList.remove('hidden');
+        //     }
+        // else {
+        //     containerSlider[i].classList.add('hidden');
+        // }
+        //     }
+    }
+}
+
+const changeHeightOpen = () => {
+    for (let i = 0; i < appliancesArray.length; i++) {
+        appliancesArray[i].classList.remove('hidden');
+    }
+
+    if (width >= 768 && width < 1120) {
+        appliancesItems.style.height = '680px';
+        appliancesBoxContainer.style.height = '550px';
+    } else {
+        appliancesItems.style.height = '510px';
+        // appliancesBoxContainer.style.height = '400px';
+    }
+
+    // appliancesItems.style.height = '570px';
+    // appliancesBoxContainer.style.height = '450px';
 
     // } else {
     // slidersBrend.classList.add('show-more-small');
@@ -82,33 +77,30 @@ const changeHeightOpen = () => {
 };
 
 const changeHeightClose = () => {
-    // if (width >= 768 && width < 1120) {
-    //     slidersBrend.classList.remove('show-more');
+    if (width >= 768 && width < 1200) {
+        // slidersBrend.classList.remove('show-more');
 
-    for (let i = 0; i < appliancesArray.length; i++) {
-        if (i >= 3) {
-            appliancesArray[i].classList.add('hidden');
+        for (let i = 0; i < appliancesArray.length; i++) {
+            if (i >= 3) {
+                appliancesArray[i].classList.add('hidden');
+            }
         }
-        // appliancesArray[i].classList.remove('hidden');
+        appliancesItems.style = '';
+        appliancesBoxContainer.style = '';
     }
+    else if (width >= 1200) {
+        // slidersBrend.classList.remove('show-more-small');
+        for (let i = 0; i < appliancesArray.length; i++) {
+            if (i >= 4) {
+                appliancesArray[i].classList.add('hidden');
+            }
+        }
 
-    // appliancesBoxContainer.classList.remove('show-more');
-    // appliancesBox.classList.add('show-more');
-    // appliancesItems.classList.remove('show-more');
-    appliancesItems.style = '';
-    appliancesBoxContainer.style = '';
-
-    // }
-    // else if (width >= 1120) {
-    //     slidersBrend.classList.remove('show-more-small');
-    //     for (let i = 0; i < containerSlider.length; i++) {
-    //         if (i >= 8) {
-    //             containerSlider[i].classList.add('hidden');
-    //         }
-    //     }
-    // }
+        appliancesItems.style = '';
+        appliancesBoxContainer.style = '';
+    }
     appliancesBtn.classList.add('btn-show');
     appliancesBtn.classList.remove('btn-hide');
 };
 
-// checkChildren();
+checkChildren();
