@@ -37,7 +37,7 @@
             position: absolute;
             display: block;
             content: '';
-            background: url('img/expand.png') no-repeat;
+            background: url('../src/img/expand.png') no-repeat;
             width: 24px;
             height: 24px;
             left: -8px;
@@ -62,7 +62,7 @@
             position: absolute;
             display: block;
             content: '';
-            background: url('img/expand.png') no-repeat;
+            background: url('../src/img/expand.png') no-repeat;
             transform: rotate(180deg);
             width: 24px;
             height: 24px;
@@ -184,7 +184,6 @@
                 box-sizing: content-box;
                 width: 24px;
                 height: 24px;
-                // background: url('../style/img/expand.png') no-repeat;
                 padding-right: 8px;
             }
 

@@ -59,7 +59,7 @@
                     background-color: $wight;
                     width: 40px;
                     height: 40px;
-                    background: ('../src/img/go.png');
+                    background: url('../src/img/go.png') no-repeat;
                     margin-left: auto;
                     margin-top: auto;
                 }
@@ -107,7 +107,7 @@
         position: relative;
         display: none;
         content: '';
-        background: url('./blocks/main/sliders__brend/img/expand.png') no-repeat;
+        background: url('../src/img/expand.png') no-repeat;
         width: 24px;
         height: 24px;
         cursor: pointer;
@@ -134,7 +134,7 @@
         position: relative;
         display: none;
         content: '';
-        background: url('./blocks/main/sliders__brend/img/expand.png') no-repeat;
+        background: url('../src/img/expand.png') no-repeat;
         transform: rotate(180deg);
         width: 24px;
         height: 24px;
@@ -241,7 +241,6 @@
 
         .btn-hide::before {
             display: block;
-            // background-color: $wight;
         }
 
         .btn-hide::after {
@@ -258,7 +257,6 @@
 @media (min-width: 1200px) {
     .appliances__items {
         .title {
-            // padding-left: 32px;
             height: 56px;
 
             .title__text {
@@ -270,10 +268,6 @@
             display: block;
             padding: 24px 32px 0 32px;
             min-height: 320px;
-
-            // .show-more {
-            //     height: 900px;
-            // }
 
             .appliances__box__container {
                 position: relative;
@@ -314,7 +308,6 @@
 
         .btn-show::after {
             display: flex;
-            // left: 70px;
             top: -200px;
         }
 
