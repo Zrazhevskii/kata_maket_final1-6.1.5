@@ -8,19 +8,25 @@ import './popup__modal__back/popup__modal__back';
 import './popup__modal__feedback/popup__modal__feedback'
 import './main/main__description/main__description'
 
-// const mainItem = document.querySelector('.main__servises-items');
-// const mainItemLink = document.querySelectorAll('.main__item-link')
-// // console.log(mainItemLink);
+const containtBody = document.querySelector('.body__content');
+const body = document.querySelector('body');
+// 
+const popupBurger = document.querySelector('.popup__modal__burger');
+const desctop = document.querySelector('.desctop');
+console.log(desctop);
+let width = window.innerWidth;
 
-// mainItem.addEventListener('click', (evt) => {
-//     evt.preventDefault();
 
-//     mainItemLink.forEach(item => {
-//         // console.log(item);
-//         if (item.classList.contains('main__item-link-active')) {
-//             item.classList.remove('main__item-link-active')
-//         }
-//     });
+window.addEventListener('resize', () => {
+    width = window.innerWidth;
+    if (width >= 1200) {
+        desctop.classList.add('body__all__content');
+        popupBurger.classList.remove('popup__modal__burger--hidden');
 
-//       evt.target.classList.add('main__item-link-active');
-// })
+    }
+
+    if (width < 1200) {
+        popupBurger.classList.add('popup__modal__burger--hidden');
+        desctop.classList.remove('body__all__content');
+    }
+});

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     // width: 320px;
-    margin: auto;
+    // margin: auto;
 
     .header__nav {
         display: flex;
@@ -26,15 +26,15 @@
         }
 
         .header__burger {
-            background: url('img/burger.png') no-repeat;
+            background: url('../src/img/burger.png') no-repeat;
         }
 
         .header__repair {
-            background: url('img/repair.png') no-repeat;
+            background: url('../src/img/repair.png') no-repeat;
         }
 
         .header__checkstatus {
-            background: url('img/checkstatus.png');
+            background: url('../src/img/checkstatus.png');
         }
 
         .header__logo {
@@ -154,15 +154,15 @@
         }
 
         .header__call {
-            background: no-repeat url('img/call.png');
+            background: no-repeat url('../src/img/call.png');
         }
 
         .header__chat {
-            background: no-repeat url('img/chat.png');
+            background: no-repeat url('../src/img/chat.png');
         }
 
         .header__profile {
-            background: no-repeat url('img/profile.png');
+            background: no-repeat url('../src/img/profile.png');
             padding-right: 18px;
         }
     }
@@ -183,10 +183,10 @@
 }
 
 @media (min-width: 1200px) {
-    body {
-        max-width: 1120px;
-        margin: auto;
-    }
+    // body {
+    //     max-width: 1120px;
+    //     margin: auto;
+    // }
 
     .header {
         position: relative;
@@ -247,11 +247,11 @@
         }
 
         .header__repair {
-            background: url('img/repair.png') no-repeat right;
+            background: url('../src/img/repair.png') no-repeat right;
         }
 
         .header__checkstatus {
-            background: url('img/checkstatus.png') no-repeat right;
+            background: url('../src/img/checkstatus.png') no-repeat right;
         }
     }
 }

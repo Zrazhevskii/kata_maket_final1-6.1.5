@@ -82,7 +82,7 @@
         position: relative;
         display: block;
         content: '';
-        background: url('img/expand.png') no-repeat;
+        background: ('../src/img/expand.png') no-repeat;
         width: 24px;
         height: 24px;
         cursor: pointer;
@@ -108,7 +108,7 @@
         position: relative;
         display: block;
         content: '';
-        background: url('img/expand.png') no-repeat;
+        background: url('../src/img/expand.png') no-repeat;
         transform: rotate(180deg);
         width: 24px;
         height: 24px;

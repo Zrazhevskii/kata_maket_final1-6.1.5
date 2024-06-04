@@ -1,5 +1,4 @@
 @import './header/header.scss';
-@import './main/main.scss';
 @import './main/main_content/main__contant';
 @import './main/appliances__items/appliances__items';
 @import './main/sliders__brend/sliders__brend';
@@ -24,6 +23,18 @@ body {
 
 .popup__show {
     display: none;
-    // opacity: 0.1;
-    // z-index: -10;
+}
+
+.body__all__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin: auto;
+    overflow-x: auto;
+}
+
+.body__content {
+    display: flex;
+    flex-direction: column;
 }

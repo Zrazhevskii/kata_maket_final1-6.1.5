@@ -429,14 +429,6 @@
             top: 20px;
             left: 12px;
         }
-
-        // .sliders__brend__btn:hover {
-
-        // }
-
-        // .sliders__brend__btn:hover {
-        //     cursor: pointer;
-        // }
     }
 
     .swiper,
@@ -447,7 +439,8 @@
         column-gap: 0;
     }
 
-    .swiper-pagination-bullets {
+    .swiper-pagination-bullets,
+    .swiper-pagination {
         display: none;
     }
 

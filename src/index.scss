@@ -2,11 +2,8 @@
 @import './style/var.scss';
 @import './blocks/blocks.scss';
 @import './style/fonts.scss';
-// @import './img/burger.png';
 
-// .box {
-    
-//         background: url('./blocks/popup__modal__back/img/clouse.png') no-repeat;
-   
-//     }
 
+.box {
+    background: url('../src/img/go.png');
+}

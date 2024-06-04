@@ -59,7 +59,7 @@
                     background-color: $wight;
                     width: 40px;
                     height: 40px;
-                    background: url('./blocks/main/appliances__items/img/go.png');
+                    background: ('../src/img/go.png');
                     margin-left: auto;
                     margin-top: auto;
                 }
@@ -232,7 +232,11 @@
         }
 
         .btn-hide {
-            background: linear-gradient(to right, $wight 120px, $light_grey 120px);
+            background: linear-gradient(
+                to right,
+                $wight 120px,
+                $light_grey 120px
+            );
         }
 
         .btn-hide::before {
@@ -313,7 +317,6 @@
             // left: 70px;
             top: -200px;
         }
-        
 
         .btn-hide::before {
             display: block;

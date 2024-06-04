@@ -7,7 +7,7 @@ const btnCall = document.querySelector('.header__call');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
-const popupModalBtn = document.querySelector('.footer__list_item .call');
+const popupModalBtn = document.querySelector('.footer__list__item .call');
 
 btnCall.addEventListener('click', () => {
     header.classList.add('popup__show');

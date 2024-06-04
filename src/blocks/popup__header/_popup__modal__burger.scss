@@ -53,14 +53,14 @@
         }
     }
 
-    .pop-up__main {
+    .popup__main {
         display: flex;
         flex-direction: column;
         width: 250px;
         height: 370px;
         padding-bottom: 250px;
 
-        .pop-up__list {
+        .popup__list {
             height: 370px;
 
             .list__links {
@@ -98,7 +98,7 @@
                     color: #7e7e82;
                 }
 
-                .link-order {
+                .link__order {
                     order: -1;
                 }
 
@@ -146,7 +146,7 @@
         }
     }
 
-    .pop-up__footer {
+    .popup__footer {
         display: flex;
         flex-direction: column;
         min-width: 220px;
@@ -155,7 +155,7 @@
         padding: 0;
         padding-left: 24px;
 
-        .pop-up__footer__list {
+        .popup__footer__list {
             padding-bottom: 16px;
 
             .footer__list__links {
@@ -168,13 +168,13 @@
                 font-size: 0;
                 list-style-type: none;
 
-                .footer__list_item {
+                .footer__list__item {
                     display: block;
                     width: 40px;
                     height: 40px;
                     padding-right: 18px;
 
-                    .footer__list_link {
+                    .footer__list__link {
                         display: block;
                         width: 40px;
                         height: 40px;
@@ -198,32 +198,34 @@
             }
         }
 
-        .pop-up__footer_email {
+        .popup__footer__email {
+            // display: block;
             font-weight: 500;
             text-decoration: none;
             color: black;
             padding-bottom: 12px;
         }
 
-        .pop-up__footer_email:hover {
+        .popup__footer__email:hover {
             color: #7e7e82;
             transition-duration: 0.2s;
         }
 
-        .pop-up__footer_phone {
+        .popup__footer__phone {
             font-weight: 700;
             margin: 0;
             padding-bottom: 40px;
         }
 
-        .pop-up__footer_lang-box {
-            .lang-box__list {
+        .popup__footer__lang__box {
+
+            .lang__box__list {
                 display: flex;
                 flex-direction: row;
                 margin: 0;
                 padding: 0;
 
-                .lang-box__item {
+                .lang__box__item {
                     list-style: none;
                     padding-right: 7px;
                 }
@@ -245,25 +247,25 @@
     transition-duration: 1s;
 }
 
-.lang-box_link,
-.lang-box_link-abbr {
+.lang__box__link,
+.lang__box__link__abbr {
     font-weight: 500;
     color: #000;
     text-decoration: none;
 }
 
-.lang-box__list .lang-box__item .lang-box_link-abbr--active {
+.lang__box__list .lang__box__item .lang__box__link__abbr--active {
     color: #7e7e82;
 }
 
-.lang-box__item:hover .lang-box_link-abbr {
+.lang__box__item:hover .lang__box__link__abbr {
     color: #7e7e82;
 }
 
-.lang-box__item:hover
-    ~ .lang-box__item
-    .lang-box_link
-    .lang-box_link-abbr--active {
+.lang__box__item:hover
+    ~ .lang__box__item
+    .lang__box__link
+    .lang__box__link__abbr--active {
     color: #000;
 }
 
@@ -286,7 +288,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1440.99px) {
+@media (min-width: 768px) and (max-width: 1199.99px) {
     .popup__modal__burger {
         width: 320px;
         height: 1024px;
@@ -303,11 +305,39 @@
             }
         }
 
-        .pop-up__main {
+        .popup__main {
             height: 920px;
 
-            .pop-up__list {
+            .popup__list {
                 margin-bottom: 360px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1199.99px) {
+    .popup__modal__burger {
+        width: 290px;
+        height: auto;
+
+        .header__popup {
+            width: 290px; 
+
+            .header__nav {
+                list-style-type: none;
+
+                .nav__list {
+                    list-style-type: none;
+
+                    .nav__clouse {
+                        display: none;
+                    }
+
+                    .nav__logo {
+                        position: relative;
+                        left: -60px;
+                    }
+                }
             }
         }
     }

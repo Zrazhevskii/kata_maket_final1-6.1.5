@@ -6,16 +6,16 @@
     <title>Финальный макет модуля Webcore</title>
 </head>
 <body>
-    <!-- <div class=""> -->
-        <div class="pop__up popup__modal__burger popup__modal__burger--hidden">
-            <section class="pop__up__header__popup header__popup">
+    <div class="desctop">
+        <div class="popup popup__modal__burger popup__modal__burger--hidden">
+            <section class="popup__header__popup header__popup">
                 <ul class="header__nav nav">
                     <li class="nav__list">
                         <a href="#" class="nav__link nav__clouse"></a>
                     </li>
                     <li class="nav__list logo">
                         <img
-                            src="./blocks/popup__header/img/group.png"
+                            src="../src/img/group.png"
                             alt="Логотип компании"
                             class="nav__logo"
                         />
@@ -25,8 +25,8 @@
                     </li>
                 </ul>
             </section>
-            <section class="pop-up__main">
-                <div class="pop-up__list list">
+            <section class="popup__main">
+                <div class="popup__list list">
                     <ul class="list__links">
                         <li class="list__item">
                             <a href="#" class="list__link">Услуги и сервисы</a>
@@ -50,69 +50,69 @@
                         <li class="list__item">
                             <a href="#" class="list__link">Контакты</a>
                         </li>
-                        <li class="list__item link-order">
+                        <li class="list__item link__order">
                             <a href="#" class="list__link active"
                                 >Ремонт техники</a
                             >
                         </li>
                     </ul>
                 </div>
-                <div class="pop-up__footer">
-                    <div class="pop-up__footer__list footer__list">
+                <div class="popup__footer">
+                    <div class="popup__footer__list footer__list">
                         <ul class="footer__list__links">
-                            <li class="footer__list_item">
-                                <a href="#" class="footer__list_link call"></a>
+                            <li class="footer__list__item">
+                                <a href="#" class="footer__list__link call"></a>
                             </li>
-                            <li class="footer__list_item">
-                                <a href="#" class="footer__list_link chat"></a>
+                            <li class="footer__list__item">
+                                <a href="#" class="footer__list__link chat"></a>
                             </li>
-                            <li class="footer__list_item">
+                            <li class="footer__list__item">
                                 <a
                                     href="#"
-                                    class="footer__list_link profile"
+                                    class="footer__list__link profile"
                                 ></a>
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="pop-up__footer_email">mail@cps.com</a>
-                    <h2 class="pop-up__footer_phone">8 800 890 8900</h2>
-                    <div class="pop-up__footer_lang-box lang-box">
-                        <ul class="lang-box__list">
-                            <li class="lang-box__item">
+                    <a href="#" class="popup__footer__email">mail@cps.com</a>
+                    <h2 class="popup__footer__phone">8 800 890 8900</h2>
+                    <div class="popup__footer__lang__box lang__box">
+                        <ul class="lang__box__list">
+                            <li class="lang__box__item">
                                 <a
                                     href="/en/"
                                     hreflang="en"
-                                    class="lang-box_link"
+                                    class="lang__box__link"
                                     ><abbr
                                         lang="en"
                                         title="English"
-                                        class="lang-box_link-abbr"
+                                        class="lang__box__link__abbr"
                                         >EN</abbr
                                     ></a
                                 >
                             </li>
-                            <li class="lang-box__item">
+                            <li class="lang__box__item">
                                 <a
                                     href="/ch/"
                                     hreflang="ch"
-                                    class="lang-box_link"
+                                    class="lang__box__link"
                                     ><abbr
                                         lang="ch"
                                         title="Chinese"
-                                        class="lang-box_link-abbr"
+                                        class="lang__box__link__abbr"
                                         >СH</abbr
                                     ></a
                                 >
                             </li>
-                            <li class="lang-box__item link-order">
+                            <li class="lang__box__item link__order">
                                 <a
                                     href="/ru/"
                                     hreflang="ru"
-                                    class="lang-box_link"
+                                    class="lang__box__link"
                                     ><abbr
                                         lang="ru"
                                         title="Russian"
-                                        class="lang-box_link-abbr lang-box_link-abbr--active"
+                                        class="lang__box__link__abbr lang__box__link__abbr--active"
                                         >RU</abbr
                                     ></a
                                 >
@@ -122,13 +122,13 @@
                 </div>
             </section>
         </div>
-        <div>
+        <div class="body__content">
             <header class="header">
                 <nav class="header__nav">
                     <div class="header__conteiner box-one">
                         <div class="header__img header__burger"></div>
                         <div class="header__img header__logo">
-                            <img src="img/group.png" alt="Логотоп компании" class="header-logo">
+                            <img src="../src/img/group.png" alt="Логотоп компании" class="header-logo">
                         </div>
                     </div>
                     <div class="header__conteiner box-two">
@@ -195,7 +195,7 @@
                             </div>
                         </div>
                         <div class="main__content-wrapper-image">
-                            <img src="img/mg.jpg" alt="Фотография офиса" class="main__content-image">
+                            <img src="../src/img/mg.jpg" alt="Фотография офиса" class="main__content-image">
                         </div>
                     </section>
                 </section>
@@ -433,6 +433,6 @@
             </p>
             <button class="popup__modal__feedback__send__btn" type="submit">ОТПРАВИТЬ</button>
         </form>
-    <!-- </div> -->
+    </div>
 </body>
 </html>
