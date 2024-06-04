@@ -6,20 +6,21 @@ import './header/header';
 import './popup__header/popup__modal__burger';
 import './popup__modal__back/popup__modal__back';
 import './popup__modal__feedback/popup__modal__feedback'
+import './main/main__description/main__description'
 
-const mainItem = document.querySelector('.main__servises-items');
-const mainItemLink = document.querySelectorAll('.main__item-link')
-// console.log(mainItemLink);
+// const mainItem = document.querySelector('.main__servises-items');
+// const mainItemLink = document.querySelectorAll('.main__item-link')
+// // console.log(mainItemLink);
 
-mainItem.addEventListener('click', (evt) => {
-    evt.preventDefault();
+// mainItem.addEventListener('click', (evt) => {
+//     evt.preventDefault();
 
-    mainItemLink.forEach(item => {
-        // console.log(item);
-        if (item.classList.contains('main__item-link-active')) {
-            item.classList.remove('main__item-link-active')
-        }
-    });
+//     mainItemLink.forEach(item => {
+//         // console.log(item);
+//         if (item.classList.contains('main__item-link-active')) {
+//             item.classList.remove('main__item-link-active')
+//         }
+//     });
 
-      evt.target.classList.add('main__item-link-active');
-})
+//       evt.target.classList.add('main__item-link-active');
+// })
