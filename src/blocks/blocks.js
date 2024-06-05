@@ -11,11 +11,15 @@ const containtBody = document.querySelector('.body__content');
 const body = document.querySelector('body');
 const popupBurger = document.querySelector('.popup__modal__burger');
 const desctop = document.querySelector('.desctop');
-console.log(desctop);
+// console.log(desctop);
 let width = window.innerWidth;
 
 window.addEventListener('resize', () => {
     width = window.innerWidth;
+    checkChildren();
+});
+
+function checkChildren() {
     if (width >= 1200) {
         desctop.classList.add('body__all__content');
         popupBurger.classList.remove('popup__modal__burger--hidden');
@@ -25,4 +29,6 @@ window.addEventListener('resize', () => {
         popupBurger.classList.add('popup__modal__burger--hidden');
         desctop.classList.remove('body__all__content');
     }
-});
+}
+
+checkChildren();

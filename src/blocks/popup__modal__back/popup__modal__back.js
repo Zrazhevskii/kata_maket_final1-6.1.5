@@ -8,6 +8,13 @@ const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
 const popupModalBtn = document.querySelector('.footer__list__item .call');
+// const bodyContent = document.querySelector('.body__content');
+
+let width = window.innerWidth;
+
+window.addEventListener('resize', () => {
+    width = window.innerWidth;
+});
 
 btnCall.addEventListener('click', () => {
     header.classList.add('popup__show');
@@ -18,14 +25,34 @@ btnCall.addEventListener('click', () => {
     }
 });
 
-backBtnClouse.addEventListener('click', () => {
-    header.classList.remove('popup__show');
-    main.classList.remove('popup__show');
-    footer.classList.remove('popup__show');
-    popupModalCall.classList.add('popup__modal__back--hidden');
-});
+backBtnClouse.addEventListener('click', clousePopup);
 
-popupModalBtn.addEventListener('click', () => {
-    popupHeader.classList.add('popup__modal__burger--hidden');
-    popupModalCall.classList.remove('popup__modal__back--hidden');
-});
+popupModalBtn.addEventListener('click', openPopup);
+
+function openPopup() {
+    if (width >= 1200) {
+        header.classList.add('popup__show');
+        main.classList.add('popup__show');
+        footer.classList.add('popup__show');
+        popupHeader.classList.add('popup__modal__burger--hidden');
+        popupModalCall.classList.remove('popup__modal__back--hidden');
+    } else {
+        popupHeader.classList.add('popup__modal__burger--hidden');
+        popupModalCall.classList.remove('popup__modal__back--hidden');
+    }
+}
+
+function clousePopup() {
+    if (width >= 1200) {
+        header.classList.remove('popup__show');
+        main.classList.remove('popup__show');
+        footer.classList.remove('popup__show');
+        popupHeader.classList.remove('popup__modal__burger--hidden');
+        popupModalCall.classList.add('popup__modal__back--hidden');
+    } else {
+        header.classList.remove('popup__show');
+        main.classList.remove('popup__show');
+        footer.classList.remove('popup__show');
+        popupModalCall.classList.add('popup__modal__back--hidden');
+    }
+}
