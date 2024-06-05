@@ -26,17 +26,6 @@
             height: 260px;
             padding-left: 16px;
 
-            // @media ($tablet) {
-            //     display: grid;
-            //     max-width: 903px;
-            //     grid-template-columns: 1fr 1fr 224px;
-            //     grid-template-rows: repeat(3, 160px);
-            //     gap: 24px;
-            //     margin: auto;
-            //     min-height: 380px;
-            //     padding-left: 0;
-            // }
-
             .container__slide__appliances {
                 display: flex;
                 flex-direction: column;
@@ -66,10 +55,6 @@
                 .container__slide__btn:hover {
                     cursor: pointer;
                 }
-
-                // .show-more {
-                //     height: 900px;
-                // }
             }
         }
 
@@ -138,7 +123,6 @@
         transform: rotate(180deg);
         width: 24px;
         height: 24px;
-        // top: -15px;
         margin-right: 10px;
     }
 
@@ -149,7 +133,6 @@
         font-weight: 500;
         color: black;
         position: relative;
-        // top: -15px;
         z-index: 5;
     }
 
@@ -162,12 +145,7 @@
 @media (min-width: 768px) and (max-width: 1199.9px) {
     .appliances__items {
         background: linear-gradient(to right, $wight 120px, $light_grey 120px);
-        // justify-content: flex-start;
         height: 320px;
-
-        // .show-more {
-        //     height: 900px;
-        // }
 
         .title {
             padding-left: 24px;
@@ -179,10 +157,6 @@
             padding: 24px 24px 0 24px;
             min-height: 320px;
 
-            // .show-more {
-            //     height: 900px;
-            // }
-
             .appliances__box__container {
                 position: relative;
                 display: grid;
@@ -193,12 +167,6 @@
                 margin: auto;
                 min-height: 380px;
                 padding-left: 0;
-                // height: 20px;
-                // padding-top: 0;
-
-                // .show-more {
-                //     height: 900px;
-                // }
 
                 .container__slide__appliances {
                     margin: 0;
@@ -276,7 +244,6 @@
                 grid-template-columns: 1fr 1fr 1fr 240px;
                 grid-template-rows: repeat(2, 160px);
                 row-gap: 24px;
-                // margin: auto;
                 min-height: 380px;
                 padding-left: 0;
 

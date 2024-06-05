@@ -26,19 +26,6 @@
             height: 120px;
             padding-left: 16px;
 
-            // @media #{$tablet} {
-            //     display: grid;
-            //     max-width: 903px;
-            //     grid-template-columns: 1fr 1fr 224px;
-            //     grid-template-rows: repeat(4, 75px);
-            //     row-gap: 16px;
-            //     margin: auto;
-            //     // padding-top: 24px;
-            //     // padding-left: 24px;
-            //     // padding-right: 24px;
-            //     height: 350px;
-            // }
-
             .container__slide__brend {
                 margin-top: 16px;
                 width: auto;
@@ -141,10 +128,6 @@
         cursor: pointer;
     }
 
-    // .main__sliders__brend .show-more {
-    //     height: 500px;
-    // }
-
     .main__sliders__brend .show-more-small {
         height: 410px;
     }
@@ -165,13 +148,11 @@
         }
 
         .box__brend {
-            // position: relative;
             display: block;
             padding: 24px 24px 0 24px;
             min-height: 320px;
 
             .box__brend__container {
-                // position: relative;
                 display: grid;
                 max-width: 903px;
                 grid-template-columns: 1fr 1fr 224px;
@@ -286,8 +267,6 @@
     .sliders__brend {
         min-width: 1120px;
         min-height: 320px;
-        // padding-left: 32px;
-        // padding-right: 32px;
 
         .title {
             padding-left: 32px;
@@ -300,7 +279,6 @@
 
         .box__brend {
             display: block;
-            // padding: 24px 32px 0 32px;
 
             .box__brend__container {
                 display: grid;
@@ -318,7 +296,6 @@
                 .container__slide__brend {
                     display: block;
                     margin: 0 !important;
-                    // padding-bottom: 16px;
 
                     .container__slide__img {
                         width: 240px;
@@ -357,7 +334,6 @@
             flex-direction: row;
             align-items: center;
             border: none;
-            // background-color: $light_grey;
             padding-left: 32px;
 
             &:hover {
@@ -365,21 +341,7 @@
             }
         }
 
-        // .sliders__brend__btn {
-        //     display: flex;
-        //     flex-direction: row;
-        //     align-items: center;
-        //     border: none;
-        //     background-color: $light_grey;
-        //     padding-left: 32px;
-
-        //     &:hover {
-        //         cursor: pointer;
-        //     }
-        // }
-
         .btn-show::before {
-            // left: -20px;
             position: relative;
             display: block;
             content: '';

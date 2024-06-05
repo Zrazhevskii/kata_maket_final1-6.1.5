@@ -1,9 +1,4 @@
-// body {
-//     position: relative;
-// }
-
 .popup__modal__burger {
-    // position: absolute;
     width: 320px;
     height: 676px;
     box-shadow: 20px 0px 35px -5px rgba(0, 0, 0, 0.2);
@@ -34,7 +29,7 @@
                 }
 
                 .nav__clouse {
-                    background: url('./blocks/popup__header/img/clouse.png')
+                    background: url('../src/img/clouse.png')
                         no-repeat;
                 }
             }
@@ -43,11 +38,10 @@
                 height: 55px;
                 padding-left: 16px;
                 margin-right: auto;
-                // top: -30px;
             }
 
             .search {
-                background: url('./blocks/popup__header/img/search.png')
+                background: url('../src/img/search.png')
                     no-repeat;
             }
         }
@@ -66,7 +60,6 @@
             .list__links {
                 display: flex;
                 flex-direction: column;
-                // justify-content: space-around;
                 width: 250px;
                 padding: 0;
                 margin: 0;
@@ -181,17 +174,17 @@
                     }
 
                     .call {
-                        background: url('./blocks/popup__header/img/call.png')
+                        background: url('../src/img/call.png')
                             no-repeat;
                     }
 
                     .chat {
-                        background: url('./blocks/popup__header/img/chat.png')
+                        background: url('../src/img/chat.png')
                             no-repeat;
                     }
 
                     .profile {
-                        background: url('./blocks/popup__header/img/profile.png')
+                        background: url('../src/img/profile.png')
                             no-repeat;
                     }
                 }
@@ -199,7 +192,6 @@
         }
 
         .popup__footer__email {
-            // display: block;
             font-weight: 500;
             text-decoration: none;
             color: black;
@@ -300,7 +292,6 @@
             .header__nav {
                 .logo {
                     padding-left: 16px;
-                    // margin-right: auto;
                 }
             }
         }

@@ -38,7 +38,6 @@
 
             .container__slide__price {
                 display: flex;
-                // box-sizing: content-box;
                 flex-direction: column;
                 margin-top: 16px;
                 width: auto;
@@ -53,7 +52,6 @@
                     color: $grey;
                     font-weight: 500;
                     font-size: 16px;
-                    // padding-bottom: 4px;
                 }
 
                 .container__title__text {
@@ -61,7 +59,6 @@
                     margin-bottom: 15px;
                     font-weight: 400;
                     font-size: 14px;
-                    // left: 0;
                 }
 
                 .cotainer__order__btn {
@@ -180,7 +177,6 @@
                     border: none;
                     border-radius: 0;
                     padding: 0;
-                    // padding-left: 24px;
 
                     .price__box__slider--hidden {
                         display: none;
@@ -199,8 +195,6 @@
                         .container__slide__price__btn {
                             margin-left: auto;
                             top: 17px;
-                            // // left: 10vw;
-                            // right: -124px;
                             width: 120px;
                             height: 32px;
                         }
