@@ -38,11 +38,11 @@ module.exports = {
             patterns: [
               {
                 from: path.resolve(__dirname, './src/img'),
-                to: path.resolve(__dirname, './images')
+                to: path.resolve(__dirname, './dist/images')
               }
             ]
-          })
-        // new CleanWebpackPlugin(),
+          }),
+        new CleanWebpackPlugin(),
     ],
     module: {
         rules: [
@@ -85,15 +85,10 @@ module.exports = {
                     },
                 ],
             },
-            {
-                test: /\.(svg|png|jpg|jpeg|webp)$/,
-                type: 'asset/resource'
-                // use: [
-                //     {
-                //         loader: 'file-loader?name=./static/[name].[ext]',
-                //     },
-                // ],
-            },
+            // {
+            //     test: /\.(svg|png|jpg|jpeg|webp)$/,
+            //     type: 'asset/resource'
+            // },
         ],
     },
 };
