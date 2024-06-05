@@ -43,7 +43,7 @@ function checkChildren() {
 
 const changeHeightOpen = () => {
     if (width >= 768 && width < 1200) {
-        slidersBrend.style.height = '490px';
+        slidersBrend.classList.add('popup__open__sliders--middle');
 
         for (let i = 0; i < containerSlider.length; i++) {
             if (containerSlider[i].className.includes('hidden')) {
@@ -51,7 +51,7 @@ const changeHeightOpen = () => {
             }
         }
     } else {
-        slidersBrend.style.height = '410px';
+        slidersBrend.classList.add('popup__open__sliders--little');
         for (let i = 0; i < containerSlider.length; i++) {
             if (containerSlider[i].className.includes('hidden')) {
                 containerSlider[i].classList.remove('hidden');
@@ -64,22 +64,22 @@ const changeHeightOpen = () => {
 };
 
 const changeHeightClose = () => {
-    if (width >= 768 && width < 1120) {
-        // slidersBrend.classList.remove('show-more');
+    if (width >= 768 && width < 1200) {
+        slidersBrend.classList.remove('popup__open__sliders--middle');
         for (let i = 0; i < containerSlider.length; i++) {
             if (i >= 6) {
                 containerSlider[i].classList.add('hidden');
             }
         }
-    } else if (width >= 1120) {
-        // slidersBrend.classList.remove('show-more-small');
+    } else if (width >= 1200) {
+        slidersBrend.classList.remove('popup__open__sliders--little');
         for (let i = 0; i < containerSlider.length; i++) {
             if (i >= 8) {
                 containerSlider[i].classList.add('hidden');
             }
         }
     }
-    slidersBrend.style = '';
+
     slidersBtn.classList.add('btn-show');
     slidersBtn.classList.remove('btn-hide');
 };

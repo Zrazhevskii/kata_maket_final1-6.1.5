@@ -7,8 +7,6 @@ import './popup__modal__back/popup__modal__back';
 import './popup__modal__feedback/popup__modal__feedback';
 import './main/main__description/main__description';
 
-const containtBody = document.querySelector('.body__content');
-const body = document.querySelector('body');
 const popupBurger = document.querySelector('.popup__modal__burger');
 const desctop = document.querySelector('.desctop');
 let width = window.innerWidth;
@@ -16,7 +14,6 @@ let width = window.innerWidth;
 window.addEventListener('resize', () => {
     width = window.innerWidth;
     checkChildren();
-    
 });
 
 function checkChildren() {

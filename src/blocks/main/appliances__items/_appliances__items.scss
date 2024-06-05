@@ -35,7 +35,7 @@
                 height: 160px;
                 background-color: $wight;
                 padding: 16px;
-                border: 1px solid #eaeaea;
+                border: 1px solid $light_light_grey;
                 border-radius: 10px;
 
                 .container__appliances__item__title {
@@ -108,7 +108,7 @@
         content: 'Показать всё';
         font-size: 16px;
         font-weight: 500;
-        color: black;
+        color: $black;
         position: relative;
         top: -200px;
         z-index: 5;
@@ -130,7 +130,7 @@
         content: 'Скрыть';
         font-size: 16px;
         font-weight: 500;
-        color: black;
+        color: $black;
         position: relative;
         z-index: 5;
     }

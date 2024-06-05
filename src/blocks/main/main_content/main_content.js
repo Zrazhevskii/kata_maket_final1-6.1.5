@@ -13,7 +13,6 @@ contentBtn.addEventListener('click', function (evt) {
         contentTextHidden.classList.remove('main__content-text--hidden');
         moreText.classList.remove('main__content-more-text');
         moreHidden.classList.remove('more--hidden');
-        // mainContentTextBox.classList.add('show-more');
 
         contentBtn.classList.add('content-btn--hide');
     } else {

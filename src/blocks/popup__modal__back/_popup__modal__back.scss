@@ -6,7 +6,7 @@
     height: 676px;
     padding: 16px;
     margin-left: auto;
-    box-shadow: -20px 0px 35px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: -20px 0px 35px -5px $rgba;
 
     .popup__modal__back__clouse__btn {
         width: 40px;
@@ -64,7 +64,7 @@
 
             .popup__modal__back__link {
                 text-decoration: none;
-                color: red;
+                color: $red;
             }
         }
 

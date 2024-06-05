@@ -21,6 +21,26 @@ body {
     line-height: 20px;
 }
 
+.popup__open__sliders--middle {
+    height: 490px;
+}
+
+.popup__open__sliders--little {
+    height: 410px;
+}
+
+.popup__open__appliances--little {
+    height: 510px;
+}
+
+.popup__open__appliances--middle {
+    height: 550px !important;
+}
+
+.popup__open__appliances--big {
+    height: 680px;
+}
+
 .popup__show {
     opacity: 0.1;
     z-index: -999;
@@ -43,11 +63,11 @@ body {
 }
 
 .position__popup__burger {
-  position: absolute;
+    position: absolute;
 }
 
 .position__popup__servises {
-  position: absolute;
-  top: 0;
-  right: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
