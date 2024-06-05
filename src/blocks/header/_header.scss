@@ -1,8 +1,6 @@
 .header {
     display: flex;
     flex-direction: column;
-    // width: 320px;
-    // margin: auto;
 
     .header__nav {
         display: flex;
@@ -74,7 +72,6 @@
             font-family: 'TT Lakes';
             font-weight: 700;
             font-size: 28px;
-            // letter-spacing: 0;
             margin: 0;
         }
 
@@ -183,11 +180,6 @@
 }
 
 @media (min-width: 1200px) {
-    // body {
-    //     max-width: 1120px;
-    //     margin: auto;
-    // }
-
     .header {
         position: relative;
         background-color: $light_grey;

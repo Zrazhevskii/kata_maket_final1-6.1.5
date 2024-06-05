@@ -1,7 +1,6 @@
 .footer {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
     height: 169px;
     background-color: $light_grey;
@@ -38,18 +37,15 @@
         height: 81px;
         padding-left: 24px;
         padding-right: 24px;
-        // justify-self: start;
 
         .footer__year__team {
             display: flex;
             width: 240px;
-            // justify-self: start;
 
-            .footer__year, .footer__team {
-                // text-align: left;
+            .footer__year,
+            .footer__team {
                 width: 100%;
             }
-            
         }
 
         .footer__link__confidentiality {
@@ -73,18 +69,15 @@
         height: 81px;
         padding-left: 32px;
         padding-right: 32px;
-        // justify-self: start;
 
         .footer__year__team {
             display: flex;
             width: 240px;
-            // justify-self: start;
 
-            .footer__year, .footer__team {
-                // text-align: left;
+            .footer__year,
+            .footer__team {
                 width: 100%;
             }
-            
         }
 
         .footer__link__confidentiality {

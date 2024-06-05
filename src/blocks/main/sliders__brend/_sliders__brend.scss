@@ -41,50 +41,42 @@
                 }
 
                 .bosh {
-                    background: url('../src/img/bosh.png')
-                        no-repeat;
+                    background: url('../src/img/bosh.png') no-repeat;
                     background-size: contain;
                 }
 
                 .lenovo {
-                    background: url('../src/img/lenovo.png')
-                        no-repeat;
+                    background: url('../src/img/lenovo.png') no-repeat;
                     background-size: contain;
                 }
 
                 .sony {
-                    background: url('../src/img/sony.png')
-                        no-repeat;
+                    background: url('../src/img/sony.png') no-repeat;
                     background-size: contain;
                 }
 
                 .samsung {
-                    background: url('../src/img/samsung.png')
-                        no-repeat;
+                    background: url('../src/img/samsung.png') no-repeat;
                     background-position: -5px 0;
                 }
 
                 .acer {
-                    background: url('../src/img/acer.png')
-                        no-repeat;
+                    background: url('../src/img/acer.png') no-repeat;
                     background-size: contain;
                 }
 
                 .apple {
-                    background: url('../src/img/apple.png')
-                        no-repeat;
+                    background: url('../src/img/apple.png') no-repeat;
                     background-size: contain;
                 }
 
                 .hp {
-                    background: url('../src/img/hp.png')
-                        no-repeat;
+                    background: url('../src/img/hp.png') no-repeat;
                     background-size: contain;
                 }
 
                 .viesonic {
-                    background: url('../src/img/viewsonic.png')
-                        no-repeat;
+                    background: url('../src/img/viewsonic.png') no-repeat;
                     background-size: contain;
                 }
 
@@ -204,8 +196,7 @@
             position: relative;
             display: block;
             content: '';
-            background: url('../src/img/expand.png')
-                no-repeat;
+            background: url('../src/img/expand.png') no-repeat;
             width: 24px;
             height: 24px;
             cursor: pointer;
@@ -228,15 +219,18 @@
         }
 
         .btn-hide {
-            background: linear-gradient(to right, $wight 120px, $light_grey 120px);
+            background: linear-gradient(
+                to right,
+                $wight 120px,
+                $light_grey 120px
+            );
         }
 
         .btn-hide::before {
             position: relative;
             display: block;
             content: '';
-            background: url('../src/img/expand.png')
-                no-repeat;
+            background: url('../src/img/expand.png') no-repeat;
             transform: rotate(180deg);
             width: 24px;
             height: 24px;
@@ -345,8 +339,7 @@
             position: relative;
             display: block;
             content: '';
-            background: url('../src/img/expand.png')
-                no-repeat;
+            background: url('../src/img/expand.png') no-repeat;
             width: 24px;
             height: 24px;
             left: -5px;
@@ -373,12 +366,10 @@
             position: relative;
             display: block;
             content: '';
-            background: url('../src/img/expand.png')
-                no-repeat;
+            background: url('../src/img/expand.png') no-repeat;
             transform: rotate(180deg);
             width: 24px;
             height: 24px;
-            // left: 8px;
             top: 20px;
         }
 

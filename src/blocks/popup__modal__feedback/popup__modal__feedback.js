@@ -1,6 +1,5 @@
 const feedbackBtn = document.querySelector('.header__chat');
-// console.log(feedbackBtn);
-const feedbackPopup = document.querySelector('.popup__modal__feedback')
+const feedbackPopup = document.querySelector('.popup__modal__feedback');
 const feedbackBtnClouse = document.querySelector(
     '.popup__modal__feedback__clouse__btn'
 );
@@ -23,4 +22,4 @@ feedbackBtnClouse.addEventListener('click', () => {
     main.classList.remove('popup__show');
     footer.classList.remove('popup__show');
     feedbackPopup.classList.add('popup__modal__feedback--hidden');
-})
+});

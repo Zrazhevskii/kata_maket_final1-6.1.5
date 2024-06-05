@@ -31,23 +31,18 @@ function checkChildren() {
     }
 
     if (width >= 1200) {
-        // console.log(width);
         for (let i = 0; i < containerSlider.length; i++) {
             if (i <= 7) {
-                // console.log(width);
                 containerSlider[i].classList.remove('hidden');
             } else if (i > 7) {
                 containerSlider[i].classList.add('hidden');
-                // console.log(containerSlider[i]);
             }
         }
     }
 }
 
 const changeHeightOpen = () => {
-    
     if (width >= 768 && width < 1200) {
-        // slidersBrend.classList.add('show-more');
         slidersBrend.style.height = '490px';
 
         for (let i = 0; i < containerSlider.length; i++) {
@@ -57,7 +52,6 @@ const changeHeightOpen = () => {
         }
     } else {
         slidersBrend.style.height = '410px';
-        // slidersBrend.classList.add('show-more-small');
         for (let i = 0; i < containerSlider.length; i++) {
             if (containerSlider[i].className.includes('hidden')) {
                 containerSlider[i].classList.remove('hidden');

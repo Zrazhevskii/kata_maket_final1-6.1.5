@@ -65,7 +65,11 @@
         .main__services {
             display: flex;
             flex-direction: column;
-            background: linear-gradient(to right, $wight 96px, $light_grey 96px);
+            background: linear-gradient(
+                to right,
+                $wight 96px,
+                $light_grey 96px
+            );
 
             padding-top: 24px;
             padding-left: 0;

@@ -46,30 +46,32 @@
         min-height: 140px;
 
         .footer__container__text {
-            background: linear-gradient(to right, $wight 96px, $light_grey 96px);
+            background: linear-gradient(
+                to right,
+                $wight 96px,
+                $light_grey 96px
+            );
             width: 421px;
         }
 
         .footer__container__btn {
-            background: linear-gradient(to right, $wight 96px, $light_grey 96px);
+            background: linear-gradient(
+                to right,
+                $wight 96px,
+                $light_grey 96px
+            );
         }
     }
 }
 
 @media (min-width: 1200px) {
     .main__footer {
-        // background: linear-gradient(to right, $wight 120px, $light_grey 120px);
         padding-left: 32px;
         padding-right: 32px;
         min-height: 140px;
 
         .footer__container__text {
-            // background: linear-gradient(to right, $wight 96px, $light_grey 96px);
             width: 421px;
         }
-
-        // .footer__container__btn {
-        //     background: linear-gradient(to right, $wight 96px, $light_grey 96px);
-        // }
     }
 }

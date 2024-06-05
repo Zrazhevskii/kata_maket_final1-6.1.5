@@ -29,8 +29,7 @@
                 }
 
                 .nav__clouse {
-                    background: url('../src/img/clouse.png')
-                        no-repeat;
+                    background: url('../src/img/clouse.png') no-repeat;
                 }
             }
 
@@ -41,8 +40,7 @@
             }
 
             .search {
-                background: url('../src/img/search.png')
-                    no-repeat;
+                background: url('../src/img/search.png') no-repeat;
             }
         }
     }
@@ -174,18 +172,15 @@
                     }
 
                     .call {
-                        background: url('../src/img/call.png')
-                            no-repeat;
+                        background: url('../src/img/call.png') no-repeat;
                     }
 
                     .chat {
-                        background: url('../src/img/chat.png')
-                            no-repeat;
+                        background: url('../src/img/chat.png') no-repeat;
                     }
 
                     .profile {
-                        background: url('../src/img/profile.png')
-                            no-repeat;
+                        background: url('../src/img/profile.png') no-repeat;
                     }
                 }
             }
@@ -210,7 +205,6 @@
         }
 
         .popup__footer__lang__box {
-
             .lang__box__list {
                 display: flex;
                 flex-direction: row;
@@ -266,9 +260,8 @@
         width: 360px;
         box-shadow: 20px 0px 35px -5px rgba(0, 0, 0, 0.2);
 
-
         .header__popup {
-            width: 360px; 
+            width: 360px;
 
             .header__nav {
                 .logo {
@@ -287,7 +280,7 @@
         box-shadow: 20px 0px 35px -5px rgba(0, 0, 0, 0.2);
 
         .header__popup {
-            width: 320px; 
+            width: 320px;
 
             .header__nav {
                 .logo {
@@ -312,7 +305,7 @@
         height: auto;
 
         .header__popup {
-            width: 290px; 
+            width: 290px;
 
             .header__nav {
                 list-style-type: none;

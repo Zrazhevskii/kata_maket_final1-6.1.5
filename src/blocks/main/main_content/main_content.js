@@ -23,6 +23,5 @@ contentBtn.addEventListener('click', function (evt) {
         moreText.classList.add('main__content-more-text');
         moreHidden.classList.add('more--hidden');
         contentBtn.classList.add('content-btn');
-
     }
 });
