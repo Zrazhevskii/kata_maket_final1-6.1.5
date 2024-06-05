@@ -11,12 +11,12 @@ const containtBody = document.querySelector('.body__content');
 const body = document.querySelector('body');
 const popupBurger = document.querySelector('.popup__modal__burger');
 const desctop = document.querySelector('.desctop');
-// console.log(desctop);
 let width = window.innerWidth;
 
 window.addEventListener('resize', () => {
     width = window.innerWidth;
     checkChildren();
+    
 });
 
 function checkChildren() {

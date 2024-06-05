@@ -1,6 +1,7 @@
 .popup__modal__burger {
     width: 320px;
     height: 676px;
+    background-color: $wight;
     box-shadow: 20px 0px 35px -5px rgba(0, 0, 0, 0.2);
     padding-top: 4px;
 
@@ -201,10 +202,12 @@
         .popup__footer__phone {
             font-weight: 700;
             margin: 0;
-            padding-bottom: 40px;
+            padding-bottom: 16px;
         }
 
         .popup__footer__lang__box {
+            padding-bottom: 32px;
+
             .lang__box__list {
                 display: flex;
                 flex-direction: row;
@@ -326,7 +329,7 @@
         }
 
         .popup__footer {
-          margin-top: 241px;
+            margin-top: 241px;
         }
     }
 }

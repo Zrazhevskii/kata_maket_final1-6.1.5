@@ -22,7 +22,10 @@ body {
 }
 
 .popup__show {
-    display: none;
+    opacity: 0.1;
+    z-index: -999;
+    overflow: hidden;
+    max-height: calc(100vh - 280px);
 }
 
 .body__all__content {
@@ -37,4 +40,14 @@ body {
 .body__content {
     display: flex;
     flex-direction: column;
+}
+
+.position__popup__burger {
+  position: absolute;
+}
+
+.position__popup__servises {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
