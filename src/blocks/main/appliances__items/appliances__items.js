@@ -29,11 +29,12 @@ appliancesBtn.addEventListener('click', function () {
 });
 
 function checkChildren() {
-  if (width >= 768 && width < 1200) {
+
+  if (width >= 768 && width < 1440) {
     appliancesArray[4].classList.add('hidden');
   }
 
-  if (width >= 1200) {
+  if (width >= 1440) {
     appliancesArray[4].classList.remove('hidden');
   }
 }
@@ -43,7 +44,7 @@ const changeHeightOpen = () => {
     appliancesArray[i].classList.remove('hidden');
   }
 
-  if (width >= 768 && width < 1200) {
+  if (width >= 768 && width < 1440) {
     appliancesItems.classList.add('popup__open__appliances--big');
     appliancesBoxContainer.classList.add('popup__open__appliances--middle');
   } else {
@@ -55,7 +56,7 @@ const changeHeightOpen = () => {
 };
 
 const changeHeightClose = () => {
-  if (width >= 768 && width < 1200) {
+  if (width >= 768 && width < 1440) {
     for (let i = 0; i < appliancesArray.length; i++) {
       if (i >= 3) {
         appliancesArray[i].classList.add('hidden');
@@ -63,7 +64,7 @@ const changeHeightClose = () => {
     }
     appliancesItems.classList.remove('popup__open__appliances--big');
     appliancesBoxContainer.classList.remove('popup__open__appliances--middle');
-  } else if (width >= 1200) {
+  } else if (width >= 1440) {
     for (let i = 0; i < appliancesArray.length; i++) {
       if (i >= 4) {
         appliancesArray[i].classList.add('hidden');

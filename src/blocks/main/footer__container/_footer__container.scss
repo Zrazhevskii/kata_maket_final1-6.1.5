@@ -38,7 +38,7 @@
         }
     }
 }
-@media (min-width: 768px) and (max-width: 1199.9px) {
+@media (min-width: 768px) and (max-width: 1439.9px) {
     .main__footer {
         background: linear-gradient(to right, $wight 120px, $light_grey 120px);
         padding-left: 24px;
@@ -64,7 +64,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .main__footer {
         padding-left: 32px;
         padding-right: 32px;

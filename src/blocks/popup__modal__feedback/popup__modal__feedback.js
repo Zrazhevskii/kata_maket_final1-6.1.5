@@ -33,7 +33,7 @@ feedbackBtnClouse.addEventListener('click', clousePopup);
 popupFeedbackBtn.addEventListener('click', openPopup);
 
 function openPopup() {
-  if (width >= 1200) {
+  if (width >= 1440) {
     header.classList.add('popup__show');
     main.classList.add('popup__show');
     footer.classList.add('popup__show');
@@ -49,7 +49,7 @@ function openPopup() {
 }
 
 function clousePopup() {
-  if (width >= 1200) {
+  if (width >= 1440) {
     header.classList.remove('popup__show');
     main.classList.remove('popup__show');
     footer.classList.remove('popup__show');

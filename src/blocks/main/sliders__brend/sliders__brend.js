@@ -31,7 +31,7 @@ function checkChildren() {
     }
   }
 
-  if (width >= 768 && width < 1200) {
+  if (width >= 768 && width < 1440) {
     for (let i = 0; i < containerSlider.length; i++) {
       if (i >= 6) {
         containerSlider[i].classList.add('hidden');
@@ -39,7 +39,7 @@ function checkChildren() {
     }
   }
 
-  if (width >= 1200) {
+  if (width >= 1440) {
     for (let i = 0; i < containerSlider.length; i++) {
       if (i <= 7) {
         containerSlider[i].classList.remove('hidden');
@@ -51,7 +51,7 @@ function checkChildren() {
 }
 
 const changeHeightOpen = () => {
-  if (width >= 768 && width < 1200) {
+  if (width >= 768 && width < 1440) {
     slidersBrend.classList.add('popup__open__sliders--middle');
 
     for (let i = 0; i < containerSlider.length; i++) {
@@ -73,14 +73,14 @@ const changeHeightOpen = () => {
 };
 
 const changeHeightClose = () => {
-  if (width >= 768 && width < 1200) {
+  if (width >= 768 && width < 1440) {
     slidersBrend.classList.remove('popup__open__sliders--middle');
     for (let i = 0; i < containerSlider.length; i++) {
       if (i >= 6) {
         containerSlider[i].classList.add('hidden');
       }
     }
-  } else if (width >= 1200) {
+  } else if (width >= 1440) {
     slidersBrend.classList.remove('popup__open__sliders--little');
     for (let i = 0; i < containerSlider.length; i++) {
       if (i >= 8) {
