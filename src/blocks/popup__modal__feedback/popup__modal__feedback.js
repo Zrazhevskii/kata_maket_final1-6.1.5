@@ -11,6 +11,8 @@ const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
 const popupFeedbackBtn = document.querySelector('.footer__list__item .chat');
+// const bodyContent = document.querySelector('.body__content');
+// console.log(bodyContent);
 
 let width = window.innerWidth;
 
@@ -18,7 +20,9 @@ window.addEventListener('resize', () => {
   width = window.innerWidth;
 });
 
-feedbackBtn.addEventListener('click', () => {
+feedbackBtn.addEventListener('click', (evt) => {
+  // evt.stopPropagation();
+
   header.classList.add('popup__show');
   main.classList.add('popup__show');
   footer.classList.add('popup__show');
@@ -64,3 +68,7 @@ function clousePopup() {
     feedbackPopup.classList.add('position__popup__servises');
   }
 }
+
+// bodyContent.addEventListener('click', () => {
+//   console.log('привет');
+// });

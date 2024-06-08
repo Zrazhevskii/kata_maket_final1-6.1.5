@@ -2,7 +2,7 @@ import './main/main_content/main_content.js';
 import './main/sliders__brend/sliders__brend.js';
 import './main/appliances__items/appliances__items.js';
 import './main/price__items/price__items.js';
-import './popup__header/popup__modal__burger.js';
+import './popup__modal__burger/popup__modal__burger.js';
 import './popup__modal__back/popup__modal__back.js';
 import './popup__modal__feedback/popup__modal__feedback.js';
 import './main/main__description/main__description.js';

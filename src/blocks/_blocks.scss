@@ -5,69 +5,85 @@
 @import './main/price__items/price__items';
 @import './main/footer__container/footer__container';
 @import './footer/footer';
-@import './popup__header/popup__modal__burger';
+@import './popup__modal__burger/popup__modal__burger';
 @import './popup__modal__back/popup__modal__back.scss';
 @import './popup__modal__feedback/popup__modal__feedback';
 @import './main/main__description/main__description';
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: $font;
-    line-height: 20px;
+  font-family: $font;
+  line-height: 20px;
 }
 
 .popup__open__sliders--middle {
-    height: 490px;
+  height: 490px;
 }
 
 .popup__open__sliders--little {
-    height: 410px;
+  height: 410px;
 }
 
 .popup__open__appliances--little {
-    height: 510px;
+  height: 510px;
 }
 
 .popup__open__appliances--middle {
-    height: 550px !important;
+  height: 550px !important;
 }
 
 .popup__open__appliances--big {
-    height: 680px;
+  height: 680px;
 }
 
 .popup__show {
-    opacity: 0.1;
-    z-index: -999;
-    overflow: hidden;
-    max-height: calc(100vh - 280px);
+  // opacity: 0.3;
+  // position: absolute;
+  // height: auto;
+  z-index: -99;
+  overflow: hidden;
+  max-height: calc(100vh - 100px);
+}
+
+.popup__show_middle {
+  z-index: -99;
+  overflow: hidden;
+  max-height: calc(100vh + 250px);
+}
+
+.popup__hidden {
+  display: none;
+  position: absolute;
+  // bottom: 0;
+  z-index: -999;
 }
 
 .body__all__content {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 100%;
-    margin: auto;
-    overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  margin: auto;
+  overflow-x: auto;
 }
 
 .body__content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.position__popup__burger {
-    position: absolute;
-}
+// .position__popup__burger {
+//     position: absolute;
+
+// }
 
 .position__popup__servises {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
