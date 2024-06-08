@@ -1,21 +1,11 @@
 .popup__modal__burger {
-  // box-sizing: border-box;
-  position: absolute;
-  z-index: 9999;
   width: 100vw;
   height: 680px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 3px solid red;
+  background-color: rgba(255, 255, 255, 0.5);
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  // opacity: 0.3;
-  // width: 320px;
-  // height: 676px;
-  // background-color: $wight;
-  // box-shadow: 20px 0px 35px -5px $rgba;
-  // padding-top: 4px;
 
   .wrapper {
     width: 320px;
@@ -301,10 +291,10 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1439.99px) {
+@media (min-width: 768px) and (max-width: 1119.99px) {
   .popup__modal__burger {
-    // width: 320px;
     height: 1024px;
+
     .wrapper {
       width: 320px;
       height: 1024px;
@@ -330,10 +320,16 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1120px) {
   .popup__modal__burger {
-    width: 290px;
+    width: 280px;
     height: auto;
+
+    .wrapper {
+      width: 280px;
+      height: 1024px;
+      box-shadow: none;
+    }
 
     .header__popup {
       width: 290px;

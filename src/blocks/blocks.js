@@ -17,12 +17,12 @@ window.addEventListener('resize', () => {
 });
 
 function checkChildren() {
-  if (width >= 1440) {
+  if (width >= 1120) {
     desctop.classList.add('body__all__content');
     popupBurger.classList.remove('popup__modal__burger--hidden');
   }
 
-  if (width < 1440) {
+  if (width < 1120) {
     popupBurger.classList.add('popup__modal__burger--hidden');
     desctop.classList.remove('body__all__content');
   }

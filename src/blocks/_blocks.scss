@@ -41,13 +41,19 @@ body {
   height: 680px;
 }
 
+.popup__show__call__feedback {
+  z-index: -99;
+  overflow: hidden;
+  max-height: calc(100vh + 120px);
+}
+
 .popup__show {
   // opacity: 0.3;
   // position: absolute;
   // height: auto;
   z-index: -99;
   overflow: hidden;
-  max-height: calc(100vh - 100px);
+  max-height: calc(100vh - 120px);
 }
 
 .popup__show_middle {
@@ -67,7 +73,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 100%;
+  max-width: 1400px;
   margin: auto;
   overflow-x: auto;
 }
@@ -77,10 +83,11 @@ body {
   flex-direction: column;
 }
 
-// .position__popup__burger {
-//     position: absolute;
+.position__popup__burger {
+  position: absolute;
+  z-index: 9999;
 
-// }
+}
 
 .position__popup__servises {
   position: absolute;

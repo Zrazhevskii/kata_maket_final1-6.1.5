@@ -7,8 +7,6 @@ const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
 const popup = document.querySelector('.popup__modal__burger');
 const clouse = document.querySelector('.nav__clouse');
-// const bodyContent = document.querySelector('.body__content');
-// console.log(bodyContent);
 
 let width = window.innerWidth;
 
@@ -17,7 +15,8 @@ window.addEventListener('resize', () => {
 });
 
 headeBurger.addEventListener('click', () => {
-  console.log(width);
+  popup.classList.add('position__popup__burger')
+  // console.log(width);
   if (width >= 768) {
     header.classList.add('popup__show_middle');
     main.classList.add('popup__show_middle');
@@ -42,6 +41,7 @@ popup.addEventListener('click', (evt) => {
 });
 
 function clousePopup() {
+  popup.classList.remove('position__popup__burger')
   if (width >= 768) {
     header.classList.remove('popup__show_middle');
     main.classList.remove('popup__show_middle');

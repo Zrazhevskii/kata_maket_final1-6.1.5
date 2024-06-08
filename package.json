@@ -40,6 +40,7 @@
     "gh-pages": "^6.1.1",
     "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
+    "lint": "^0.8.19",
     "mini-css-extract-plugin": "^2.9.0",
     "node-sass": "^9.0.0",
     "postcss": "^8.4.38",
@@ -54,7 +55,6 @@
     "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
-    "lint": "^0.8.19",
     "normalize.css": "^8.0.1",
     "swiper": "^11.1.3"
   }
