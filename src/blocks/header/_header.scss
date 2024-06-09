@@ -1,261 +1,282 @@
 .header {
+  display: flex;
+  flex-direction: column;
+}
+
+  .header__nav {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 88px;
+    background-color: $wight;
+    // padding-left: 16px;
 
-    .header__nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-height: 88px;
-        background-color: $wight;
-        // padding-left: 16px;
-    }
+    &__box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 50%;
 
-    .header__conteiner {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 50%;
-
-        .header__img {
-            width: 40px;
-            height: 40px;
-        }
-
-        .header__burger {
-            background: url('../src/img/burger.png') no-repeat;
-        }
-
-        .header__repair {
-            background: url('../src/img/repair.png') no-repeat;
-        }
-
-        .header__checkstatus {
-            background: url('../src/img/checkstatus.png');
-        }
-
-        .header__logo {
-            width: 96px;
-            height: 52px;
-        }
-
-        .header__burger,
-        .header__img,
-        .header__call,
-        .header__chat,
-        .header__profile,
-        .header__repair,
-        .header__checkstatus {
-          border: none;
-
-          &:hover {
-            cursor: pointer;
-          }
-
-        }
-    }
-
-    .box-two::before {
+      &_two::before {
         content: '';
         display: block;
         width: 2px;
         height: 32px;
         background-color: #eaeaea;
         margin-top: 4px;
+      }
+    }
+  }
+
+  .header__img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header__burger {
+    background: url('../src/img/burger.png') no-repeat;
+  }
+
+  .header__repair {
+    background: url('../src/img/repair.png') no-repeat;
+  }
+
+  .header__checkstatus {
+    background: url('../src/img/checkstatus.png');
+  }
+
+  .header__logo {
+    width: 96px;
+    height: 52px;
+  }
+
+  .header__burger,
+  .header__img,
+  .header__call,
+  .header__chat,
+  .header__profile,
+  .header__repair,
+  .header__checkstatus {
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .header__conteiner-button,
+  .header--hidden {
+    display: none;
+  }
+
+  .header__conteiner-title {
+    position: relative;
+    box-sizing: content-box;
+    height: 40px;
+    background-color: $light_grey;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 18px;
+
+    .header__title {
+      font-family: 'TT Lakes';
+      font-weight: 700;
+      font-size: 28px;
+      margin: 0;
     }
 
-    .header__conteiner-button,
-    .header--hidden {
-        display: none;
+    .header__title::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 18px;
+      left: -4px;
+      width: 5px;
+      height: 40px;
+      border-right: 5px solid $light_green;
+      border-radius: 15px;
     }
+  }
 
-    .header__conteiner-title {
-        position: relative;
-        box-sizing: content-box;
-        height: 40px;
-        background-color: $light_grey;
-        padding-top: 24px;
-        padding-bottom: 24px;
-        padding-left: 18px;
-
-        .header__title {
-            font-family: 'TT Lakes';
-            font-weight: 700;
-            font-size: 28px;
-            margin: 0;
-        }
-
-        .header__title::before {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 18px;
-            left: -4px;
-            width: 5px;
-            height: 40px;
-            border-right: 5px solid $light_green;
-            border-radius: 15px;
-        }
-    }
-}
 
 @media (min-width: 768px) and (max-width: 1119.99px) {
-    .header__nav {
-        padding-left: 24px;
-        padding-right: 24px;
 
-        .box-one {
-            width: 25%;
-        }
+  .header__nav {
+    padding-left: 24px;
+    padding-right: 24px;
 
-        .box-two {
-            width: 40%;
-        }
+    &__box {
+      width: 100px;
 
-        .header__img {
-            box-sizing: content-box;
-        }
+      &_one {
+        width: 25%;
+      }
 
-        .header__burger {
-            padding-right: 20px;
-        }
+      &_two {
+        width: 40%;
 
-        .header__repair {
-            margin-left: 18px;
+        &::before {
+          display: none;
         }
+      }
 
-        .header--hidden,
-        .main__content-text--hidden {
-            display: block;
-        }
+      &__box_two::before {
+        display: none;
+      }
+    }
+  }
 
-        .box-two::before {
-            display: none;
-        }
 
-        .header__repair::before {
-            content: '';
-            display: block;
-            width: 2px;
-            height: 32px;
-            background-color: $light_wight;
-            margin-top: 5px;
-            margin-left: -3.3vw;
-        }
 
-        .header__logo::before {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 2px;
-            height: 32px;
-            background-color: $light_wight;
-            margin-left: -17vw;
-        }
 
-        .header__logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-left: 20px;
-        }
 
-        .header__call {
-            background: no-repeat url('../src/img/call.png');
-        }
+  .header__nav__box_two::before {
+    display: none;
+  }
 
-        .header__chat {
-            background: no-repeat url('../src/img/chat.png');
-        }
+  .header__img {
+    box-sizing: content-box;
+  }
 
-        .header__profile {
-            background: no-repeat url('../src/img/profile.png');
-            padding-right: 18px;
-        }
+  .header__burger {
+    padding-right: 20px;
+  }
+
+  .header__repair {
+    margin-left: 18px;
+  }
+
+  .header--hidden,
+  .main__content-text--hidden {
+    display: block;
+  }
+
+  // .box-two::before {
+  //   display: none;
+  // }
+
+  .header__repair::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 32px;
+    background-color: $light_wight;
+    margin-top: 5px;
+    margin-left: -3.3vw;
+  }
+
+  .header__logo::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    background-color: $light_wight;
+    margin-left: -17vw;
+  }
+
+  .header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .header__call {
+    background: no-repeat url('../src/img/call.png');
+  }
+
+  .header__chat {
+    background: no-repeat url('../src/img/chat.png');
+  }
+
+  .header__profile {
+    background: no-repeat url('../src/img/profile.png');
+    padding-right: 18px;
+  }
+
+  .header .header__conteiner-title {
+    border-top: 1px solid $light_green;
+    background-color: $wight;
+    padding-bottom: 0;
+    padding-left: 24px;
+
+    .header__conteiner-button {
+      display: none;
     }
 
-    .header .header__conteiner-title {
-        border-top: 1px solid $light_green;
-        background-color: $wight;
-        padding-bottom: 0;
-        padding-left: 24px;
-
-        .header__conteiner-button {
-            display: none;
-        }
-
-        .header__title::before {
-            top: 16px;
-        }
+    .header__title::before {
+      top: 16px;
     }
+  }
 }
 
 @media (min-width: 1120px) {
-    .header {
-        position: relative;
-        background-color: $light_grey;
-        max-width: 1120px;
-        padding-left: 35px;
-        padding-right: 35px;
+  .header {
+    position: relative;
+    background-color: $light_grey;
+    max-width: 1120px;
+    padding-left: 35px;
+    padding-right: 35px;
 
-        .header__conteiner-title {
-            position: static;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            min-height: 88px;
-            background-color: $light_grey;
-            padding-top: 0;
-            padding-left: 0;
-            padding-bottom: 0;
+    .header__conteiner-title {
+      position: static;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      min-height: 88px;
+      background-color: $light_grey;
+      padding-top: 0;
+      padding-left: 0;
+      padding-bottom: 0;
 
-            .header__title {
-                width: 400px;
-                min-height: 40px;
-            }
+      .header__title {
+        width: 400px;
+        min-height: 40px;
+      }
 
-            .header__title::before {
-                content: '';
-                display: block;
-                position: absolute;
-                left: -4px;
-                width: 5px;
-                height: 40px;
-                border-right: 5px solid $light_green;
-                border-radius: 15px;
-            }
-        }
-
-        .header__nav {
-            display: none;
-        }
-
-        .header__conteiner-button {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .header__button {
-            font-family: $font;
-            font-size: 16px;
-            border: none;
-            width: 220px;
-            height: 40px;
-        }
-
-        .header__button:hover {
-            cursor: pointer;
-        }
-
-        .header__repair {
-            background: url('../src/img/repair.png') no-repeat right;
-        }
-
-        .header__checkstatus {
-            background: url('../src/img/checkstatus.png') no-repeat right;
-        }
+      .header__title::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -4px;
+        width: 5px;
+        height: 40px;
+        border-right: 5px solid $light_green;
+        border-radius: 15px;
+      }
     }
+
+    .header__nav {
+      display: none;
+    }
+
+    .header__conteiner-button {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .header__button {
+      font-family: $font;
+      font-size: 16px;
+      border: none;
+      width: 220px;
+      height: 40px;
+    }
+
+    .header__button:hover {
+      cursor: pointer;
+    }
+
+    .header__repair {
+      background: url('../src/img/repair.png') no-repeat right;
+    }
+
+    .header__checkstatus {
+      background: url('../src/img/checkstatus.png') no-repeat right;
+    }
+  }
 }
