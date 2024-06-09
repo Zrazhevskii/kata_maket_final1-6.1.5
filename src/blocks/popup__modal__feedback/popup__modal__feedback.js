@@ -10,7 +10,7 @@ const popupHeader = document.querySelector('.popup__burger');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
-const popupFeedbackBtn = document.querySelector('.footer__list__item .chat');
+const popupFeedbackBtn = document.querySelector('.popup__footer__item .chat');
 
 let width = window.innerWidth;
 

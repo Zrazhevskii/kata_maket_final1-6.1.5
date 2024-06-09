@@ -10,7 +10,7 @@ const btnCall = document.querySelector('.header__call');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
-const popupModalBtn = document.querySelector('.footer__list__item .call');
+const popupModalBtn = document.querySelector('.popup__footer__item .call');
 
 let width = window.innerWidth;
 
