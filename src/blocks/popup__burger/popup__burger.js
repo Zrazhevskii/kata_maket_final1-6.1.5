@@ -5,7 +5,7 @@ const headeBurger = document.querySelector('.header__burger');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
-const popup = document.querySelector('.popup__modal__burger');
+const popup = document.querySelector('.popup__burger');
 const clouse = document.querySelector('.nav__clouse');
 
 let width = window.innerWidth;
@@ -27,8 +27,8 @@ headeBurger.addEventListener('click', () => {
 
   footer.classList.add('popup__hidden');
 
-  if (popup.classList.contains('popup__modal__burger--hidden')) {
-    popup.classList.remove('popup__modal__burger--hidden');
+  if (popup.classList.contains('popup__burger_hidden')) {
+    popup.classList.remove('popup__burger_hidden');
   }
 });
 
@@ -51,5 +51,5 @@ function clousePopup() {
   }
 
   footer.classList.remove('popup__hidden');
-  popup.classList.add('popup__modal__burger--hidden');
+  popup.classList.add('popup__burger_hidden');
 }

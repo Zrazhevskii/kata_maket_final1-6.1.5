@@ -6,7 +6,7 @@ const feedbackPopup = document.querySelector('.popup__modal__feedback');
 const feedbackBtnClouse = document.querySelector(
   '.popup__modal__feedback__clouse__btn'
 );
-const popupHeader = document.querySelector('.popup__modal__burger');
+const popupHeader = document.querySelector('.popup__burger');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
@@ -54,7 +54,7 @@ function openPopup() {
   footer.classList.add('popup__hidden');
   popupHeader.classList.remove('position__popup__burger');
   feedbackPopup.classList.remove('popup__modal__feedback--hidden');
-  popupHeader.classList.add('popup__modal__burger--hidden');
+  popupHeader.classList.add('popup__burger_hidden');
   feedbackPopup.classList.add('position__popup__servises');
 }
 
@@ -62,7 +62,7 @@ function clousePopup() {
   if (width >= 1120) {
     header.classList.remove('popup__show');
     main.classList.remove('popup__show');
-    popupHeader.classList.remove('popup__modal__burger--hidden');
+    popupHeader.classList.remove('popup__burger_hidden');
   }
 
   feedbackPopup.classList.add('popup__modal__feedback--hidden');

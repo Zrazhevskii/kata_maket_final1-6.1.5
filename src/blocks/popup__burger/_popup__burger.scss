@@ -1,4 +1,4 @@
-.popup__modal__burger {
+.popup__burger {
   width: 100vw;
   height: 680px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -7,7 +7,7 @@
   left: 0;
   right: 0;
 
-  .wrapper {
+  &__wrapper {
     width: 320px;
     height: 676px;
     background-color: $wight;
@@ -42,11 +42,6 @@
 
         .nav__clouse {
           background: url('../src/img/clouse.png') no-repeat;
-          // border: none;
-
-          // &:hover {
-          //   cursor: pointer;
-          // }
         }
       }
 
@@ -58,11 +53,6 @@
 
       .search {
         background: url('../src/img/search.png') no-repeat;
-        // border: none;
-
-        // &:hover {
-        //   cursor: pointer;
-        // }
       }
 
       .search,
@@ -263,7 +253,7 @@
   }
 }
 
-.popup__modal__burger--hidden {
+.popup__burger_hidden {
   display: none;
 }
 
@@ -305,11 +295,11 @@
 }
 
 @media (min-width: 360px) and (max-width: 767.99px) {
-  .popup__modal__burger {
+  .popup__burger {
     height: 680px;
     background-color: rgba(255, 255, 255, 0.5);
 
-    .wrapper {
+    &__wrapper {
       width: 360px;
     }
 
@@ -327,10 +317,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 1119.99px) {
-  .popup__modal__burger {
+  .popup__burger {
     height: 1024px;
 
-    .wrapper {
+    &__wrapper {
       width: 320px;
       height: 1024px;
     }
@@ -356,7 +346,7 @@
 }
 
 @media (min-width: 1120px) {
-  .popup__modal__burger {
+  .popup__burger {
     width: 280px;
     height: auto;
 
