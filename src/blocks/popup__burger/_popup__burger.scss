@@ -14,250 +14,262 @@
     box-shadow: 20px 0px 35px -5px $rgba;
     padding-top: 4px;
   }
+}
 
-  .header__popup {
-    box-sizing: border-box;
-    width: 320px;
-    padding: 18px 24px;
-
-    .header__nav {
-      max-width: 320px;
-      height: 60px;
-      padding: 0;
-
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0;
-
-      .nav__list {
-        width: 40px;
-        height: 40px;
-
-        .nav__link {
-          display: block;
-          width: 40px;
-          height: 40px;
-        }
-
-        .nav__clouse {
-          background: url('../src/img/clouse.png') no-repeat;
-        }
-      }
-
-      .logo {
-        height: 55px;
-        padding-left: 16px;
-        margin-right: auto;
-      }
-
-      .search {
-        background: url('../src/img/search.png') no-repeat;
-      }
-
-      .search,
-      .nav__clouse {
-        border: none;
-
-        &:hover {
-          cursor: pointer;
-        }
-      }
-    }
-  }
-
-  .popup__main {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    height: 370px;
-    padding-bottom: 250px;
-
-    .popup__list {
-      height: 370px;
-
-      .list__links {
-        display: flex;
-        flex-direction: column;
-        width: 250px;
-        padding: 0;
-        margin: 0;
-        padding-top: 28px;
-        padding-bottom: 28px;
-
-        .list__item {
-          position: relative;
-          width: 100%;
-          height: 46px;
-          padding-bottom: 22px;
-
-          .list__link {
-            width: 100%;
-            height: auto;
-            display: block;
-            font-weight: 500;
-            text-decoration: none;
-            color: $black;
-            padding-left: 24px;
-          }
-        }
-
-        .list__item:nth-child(6) {
-          padding-bottom: 0;
-        }
-
-        .list__item .active {
-          color: $grey;
-        }
-
-        .link__order {
-          order: -1;
-        }
-
-        .list__item .active::before {
-          content: '';
-          display: block;
-          position: absolute;
-
-          width: 4px;
-          height: 32px;
-
-          border-right: 5px solid $light_green;
-          border-radius: 10px;
-
-          left: -4px;
-          top: -5px;
-        }
-
-        .list__item .list__link:hover::before {
-          content: '';
-          display: block;
-          width: 4px;
-          height: 32px;
-          border-right: 5px solid $light_green;
-          border-radius: 10px;
-          left: -4px;
-          top: -5px;
-
-          position: absolute;
-        }
-
-        .list__item:hover ~ .list__item .active {
-          color: $black;
-        }
-
-        .list__item:hover ~ .list__item .active::before {
-          display: none;
-        }
-
-        .list__item .list__link:hover {
-          color: $grey;
-          transition-duration: 0.2s;
-        }
-      }
-    }
-  }
-
-  .popup__footer {
-    display: flex;
-    flex-direction: column;
-    min-width: 220px;
-    min-height: 194px;
-    right: 0;
+.header__popup {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 18px 24px;
+  
+  &__cap {
+    max-width: 320px;
+    height: 60px;
     padding: 0;
-    padding-left: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0;
+  }
+  &__list {
+    width: 40px;
+    height: 40px;
+  }
+  &__btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
 
-    .popup__footer__list {
-      padding-bottom: 16px;
+  .logo {
+    height: 55px;
+    padding-left: 16px;
+    margin-right: auto;
+  }
 
-      .footer__list__links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 176px;
-        padding: 0;
-        margin: 0;
-        font-size: 0;
-        list-style-type: none;
+  .search {
+    background: url('../src/img/search.png') no-repeat;
+  }
 
-        .footer__list__item {
+  // .search,
+
+  // &__clouse {
+  //   border: none;
+
+  //   &:hover {
+  //     cursor: pointer;
+  //   }
+  // }
+}
+
+.clouse {
+  background: url('../src/img/clouse.png') no-repeat;
+  border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+}
+
+.popup__main {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 370px;
+  padding-bottom: 250px;
+
+  .popup__list {
+    height: 370px;
+
+    .list__links {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      padding: 0;
+      margin: 0;
+      padding-top: 28px;
+      padding-bottom: 28px;
+
+      .list__item {
+        position: relative;
+        width: 100%;
+        height: 46px;
+        padding-bottom: 22px;
+
+        .list__link {
+          width: 100%;
+          height: auto;
           display: block;
-          width: 40px;
-          height: 40px;
-          padding-right: 18px;
-
-          .footer__list__link {
-            display: block;
-            width: 40px;
-            height: 40px;
-          }
-
-          .call {
-            background: url('../src/img/call.png') no-repeat;
-          }
-
-          .chat {
-            background: url('../src/img/chat.png') no-repeat;
-          }
-
-          .profile {
-            background: url('../src/img/profile.png') no-repeat;
-          }
-
-          .call,
-          .chat,
-          .profile {
-            border: none;
-
-            &:hover {
-              cursor: pointer;
-            }
-          }
+          font-weight: 500;
+          text-decoration: none;
+          color: $black;
+          padding-left: 24px;
         }
       }
-    }
 
-    .popup__footer__email {
-      font-weight: 500;
-      text-decoration: none;
-      color: $black;
-      padding-bottom: 12px;
-    }
+      .list__item:nth-child(6) {
+        padding-bottom: 0;
+      }
 
-    .popup__footer__email:hover {
-      color: $grey;
-      transition-duration: 0.2s;
-    }
+      .list__item .active {
+        color: $grey;
+      }
 
-    .popup__footer__phone {
-      font-weight: 700;
-      margin: 0;
-      padding-bottom: 16px;
-    }
+      .link__order {
+        order: -1;
+      }
 
-    .popup__footer__lang__box {
-      padding-bottom: 32px;
+      .list__item .active::before {
+        content: '';
+        display: block;
+        position: absolute;
 
-      .lang__box__list {
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-        padding: 0;
+        width: 4px;
+        height: 32px;
 
-        .lang__box__item {
-          list-style: none;
-          padding-right: 7px;
-        }
+        border-right: 5px solid $light_green;
+        border-radius: 10px;
+
+        left: -4px;
+        top: -5px;
+      }
+
+      .list__item .list__link:hover::before {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 32px;
+        border-right: 5px solid $light_green;
+        border-radius: 10px;
+        left: -4px;
+        top: -5px;
+
+        position: absolute;
+      }
+
+      .list__item:hover ~ .list__item .active {
+        color: $black;
+      }
+
+      .list__item:hover ~ .list__item .active::before {
+        display: none;
+      }
+
+      .list__item .list__link:hover {
+        color: $grey;
+        transition-duration: 0.2s;
       }
     }
   }
 }
+
+.popup__footer {
+  display: flex;
+  flex-direction: column;
+  min-width: 220px;
+  min-height: 194px;
+  right: 0;
+  padding: 0;
+  padding-left: 24px;
+
+  .popup__footer__list {
+    padding-bottom: 16px;
+
+    .footer__list__links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 176px;
+      padding: 0;
+      margin: 0;
+      font-size: 0;
+      list-style-type: none;
+
+      .footer__list__item {
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding-right: 18px;
+
+        .footer__list__link {
+          display: block;
+          width: 40px;
+          height: 40px;
+        }
+
+        .call {
+          background: url('../src/img/call.png') no-repeat;
+        }
+
+        .chat {
+          background: url('../src/img/chat.png') no-repeat;
+        }
+
+        .profile {
+          background: url('../src/img/profile.png') no-repeat;
+        }
+
+        .call,
+        .chat,
+        .profile {
+          border: none;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .popup__footer__email {
+    font-weight: 500;
+    text-decoration: none;
+    color: $black;
+    padding-bottom: 12px;
+  }
+
+  .popup__footer__email:hover {
+    color: $grey;
+    transition-duration: 0.2s;
+  }
+
+  .popup__footer__phone {
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 16px;
+  }
+
+  .popup__footer__lang__box {
+    padding-bottom: 32px;
+
+    .lang__box__list {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+
+      .lang__box__item {
+        list-style: none;
+        padding-right: 7px;
+      }
+    }
+  }
+}
+
+// .clouse {
+//   background: url('../src/img/clouse.png') no-repeat;
+//   border: none;
+
+//   &:hover {
+//     cursor: pointer;
+//   }
+// }
 
 .popup__burger_hidden {
   display: none;
 }
 
-.nav__clouse:hover,
+.clouse:hover,
 .search:hover,
 .chat:hover,
 .call:hover,
@@ -302,17 +314,15 @@
     &__wrapper {
       width: 360px;
     }
+  }
 
-    .header__popup {
-      width: 360px;
+  .header__popup {
+    width: 360px;
+  }
 
-      .header__nav {
-        .logo {
-          padding-left: 32px;
-          margin-right: auto;
-        }
-      }
-    }
+  .logo {
+    padding-left: 32px;
+    margin-right: auto;
   }
 }
 
@@ -328,7 +338,7 @@
     .header__popup {
       width: 320px;
 
-      .header__nav {
+      .header__popup__cap {
         .logo {
           padding-left: 16px;
         }
@@ -350,7 +360,7 @@
     width: 280px;
     height: auto;
 
-    .wrapper {
+    &__wrapper {
       width: 280px;
       height: 1024px;
       box-shadow: none;
@@ -359,13 +369,13 @@
     .header__popup {
       width: 290px;
 
-      .header__nav {
+      &__cap {
         list-style-type: none;
 
-        .nav__list {
+        &__list {
           list-style-type: none;
 
-          .nav__clouse {
+          &btn__clouse {
             display: none;
           }
 

@@ -6,7 +6,7 @@ const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
 const popup = document.querySelector('.popup__burger');
-const clouse = document.querySelector('.nav__clouse');
+const clouse = document.querySelector('.clouse');
 
 let width = window.innerWidth;
 
