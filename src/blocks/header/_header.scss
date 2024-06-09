@@ -40,8 +40,19 @@
             height: 52px;
         }
 
-        .header__img:hover {
+        .header__burger,
+        .header__img,
+        .header__call,
+        .header__chat,
+        .header__profile,
+        .header__repair,
+        .header__checkstatus {
+          border: none;
+
+          &:hover {
             cursor: pointer;
+          }
+
         }
     }
 

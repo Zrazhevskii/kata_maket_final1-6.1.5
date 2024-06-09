@@ -42,6 +42,11 @@
 
         .nav__clouse {
           background: url('../src/img/clouse.png') no-repeat;
+          // border: none;
+
+          // &:hover {
+          //   cursor: pointer;
+          // }
         }
       }
 
@@ -53,6 +58,20 @@
 
       .search {
         background: url('../src/img/search.png') no-repeat;
+        // border: none;
+
+        // &:hover {
+        //   cursor: pointer;
+        // }
+      }
+
+      .search,
+      .nav__clouse {
+        border: none;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -194,6 +213,16 @@
           .profile {
             background: url('../src/img/profile.png') no-repeat;
           }
+
+          .call,
+          .chat,
+          .profile {
+            border: none;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
         }
       }
     }
@@ -252,6 +281,12 @@
   font-weight: 500;
   color: $black;
   text-decoration: none;
+  background-color: $wight;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .lang__box__list .lang__box__item .lang__box__link__abbr--active {
