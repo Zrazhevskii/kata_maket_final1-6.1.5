@@ -20,7 +20,7 @@
   box-sizing: border-box;
   width: 320px;
   padding: 18px 24px;
-  
+
   &__cap {
     max-width: 320px;
     height: 60px;
@@ -49,25 +49,19 @@
   .search {
     background: url('../src/img/search.png') no-repeat;
   }
-
-  // .search,
-
-  // &__clouse {
-  //   border: none;
-
-  //   &:hover {
-  //     cursor: pointer;
-  //   }
-  // }
 }
 
 .clouse {
   background: url('../src/img/clouse.png') no-repeat;
+}
+
+.clouse,
+.search {
   border: none;
 
-    &:hover {
-      cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .popup__main {
@@ -77,89 +71,95 @@
   height: 370px;
   padding-bottom: 250px;
 
-  .popup__list {
+  &__list {
     height: 370px;
+  }
 
-    .list__links {
-      display: flex;
-      flex-direction: column;
-      width: 250px;
-      padding: 0;
-      margin: 0;
-      padding-top: 28px;
-      padding-bottom: 28px;
+  &__links {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 0;
+    margin: 0;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
 
-      .list__item {
-        position: relative;
-        width: 100%;
-        height: 46px;
-        padding-bottom: 22px;
+  &__item {
+    position: relative;
+    width: 100%;
+    height: 46px;
+    padding-bottom: 22px;
 
-        .list__link {
-          width: 100%;
-          height: auto;
-          display: block;
-          font-weight: 500;
-          text-decoration: none;
-          color: $black;
-          padding-left: 24px;
-        }
-      }
-
-      .list__item:nth-child(6) {
-        padding-bottom: 0;
-      }
-
-      .list__item .active {
-        color: $grey;
-      }
-
-      .link__order {
-        order: -1;
-      }
-
-      .list__item .active::before {
-        content: '';
-        display: block;
-        position: absolute;
-
-        width: 4px;
-        height: 32px;
-
-        border-right: 5px solid $light_green;
-        border-radius: 10px;
-
-        left: -4px;
-        top: -5px;
-      }
-
-      .list__item .list__link:hover::before {
-        content: '';
-        display: block;
-        width: 4px;
-        height: 32px;
-        border-right: 5px solid $light_green;
-        border-radius: 10px;
-        left: -4px;
-        top: -5px;
-
-        position: absolute;
-      }
-
-      .list__item:hover ~ .list__item .active {
-        color: $black;
-      }
-
-      .list__item:hover ~ .list__item .active::before {
-        display: none;
-      }
-
-      .list__item .list__link:hover {
-        color: $grey;
-        transition-duration: 0.2s;
-      }
+    &:nth-child(6) {
+      padding-bottom: 0;
     }
   }
+
+  &__link {
+      width: 100%;
+      height: auto;
+      display: block;
+      font-weight: 500;
+      text-decoration: none;
+      color: $black;
+      padding-left: 24px;
+    }
+
+  // .popup__main__item:nth-child(6) {
+  //   padding-bottom: 0;
+  // }
+
+  .popup__main__link_active {
+    color: $grey;
+  }
+
+  .link__order {
+    order: -1;
+  }
+
+  .popup__main__item .popup__main__link_active::before {
+    content: '';
+    display: block;
+    position: absolute;
+
+    width: 4px;
+    height: 32px;
+
+    border-right: 5px solid $light_green;
+    border-radius: 10px;
+
+    left: -4px;
+    top: -5px;
+  }
+
+  .popup__main__item .popup__main__link:hover::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 32px;
+    border-right: 5px solid $light_green;
+    border-radius: 10px;
+    left: -4px;
+    top: -5px;
+
+    position: absolute;
+  }
+
+  .popup__main__item:hover ~ .popup__main__item .popup__main__link_active {
+    color: $black;
+  }
+
+  .popup__main__item:hover ~ .popup__main__item .popup__main__link_active::before {
+    display: none;
+  }
+
+  .popup__main__item .popup__main__link:hover {
+    color: $grey;
+    transition-duration: 0.2s;
+  }
+  // }
+  // }
 }
 
 .popup__footer {
@@ -348,7 +348,7 @@
     .popup__main {
       height: 920px;
 
-      .popup__list {
+      .popup__main__list {
         margin-bottom: 360px;
       }
     }
@@ -365,30 +365,32 @@
       height: 1024px;
       box-shadow: none;
     }
+  }
 
-    .header__popup {
-      width: 290px;
+  .header__popup {
+    width: 290px;
 
-      &__cap {
-        list-style-type: none;
-
-        &__list {
-          list-style-type: none;
-
-          &btn__clouse {
-            display: none;
-          }
-
-          .nav__logo {
-            position: relative;
-            left: -60px;
-          }
-        }
-      }
+    &__cap {
+      list-style-type: none;
     }
 
-    .popup__footer {
-      margin-top: 241px;
+    &__list {
+      list-style-type: none;
+    }
+  }
+
+  .popup__footer {
+    margin-top: 241px;
+  }
+
+  .clouse {
+    display: none;
+  }
+
+  .logo {
+    &__img {
+      position: relative;
+      left: -60px;
     }
   }
 }
