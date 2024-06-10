@@ -50,7 +50,7 @@
   background: url('../src/img/repair.png') no-repeat;
 }
 
-.header__checkstatus {
+.checkstatus__btn {
   background: url('../src/img/checkstatus.png');
 }
 
@@ -60,7 +60,7 @@
 .chat__btn,
 .profile__btn,
 .repair__btn,
-.header__checkstatus {
+.checkstatus__btn {
   border: none;
 
   &:hover {
@@ -269,7 +269,7 @@
     background: url('../src/img/repair.png') no-repeat right;
   }
 
-  .header__checkstatus {
+  .checkstatus__btn {
     background: url('../src/img/checkstatus.png') no-repeat right;
   }
 }
