@@ -3,9 +3,9 @@
 
 const contentBtn = document.querySelector('.main__content-ownards-btn');
 const moreText = document.querySelector('.main__content-more-text');
-const contentTextHidden = document.querySelector('.main__content-text--hidden');
+const contentTextHidden = document.querySelector('.content__text_hidden');
 const moreHidden = document.querySelector('.more--hidden');
-const mainContentTextBox = document.querySelector('.main-content-text-box');
+const mainContentTextBox = document.querySelector('.content__text__box');
 
 contentBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
@@ -13,7 +13,7 @@ contentBtn.addEventListener('click', function (evt) {
   if (contentBtn.classList.contains('content-btn')) {
     contentBtn.classList.remove('content-btn');
 
-    contentTextHidden.classList.remove('main__content-text--hidden');
+    contentTextHidden.classList.remove('content__text_hidden');
     moreText.classList.remove('main__content-more-text');
     moreHidden.classList.remove('more--hidden');
 
@@ -21,7 +21,7 @@ contentBtn.addEventListener('click', function (evt) {
   } else {
     contentBtn.classList.remove('content-btn--hide');
 
-    contentTextHidden.classList.add('main__content-text--hidden');
+    contentTextHidden.classList.add('content__text_hidden');
     moreText.classList.add('main__content-more-text');
     moreHidden.classList.add('more--hidden');
     contentBtn.classList.add('content-btn');
