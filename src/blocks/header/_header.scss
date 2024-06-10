@@ -26,11 +26,20 @@
       margin-top: 4px;
     }
   }
-}
 
-.header__img {
-  width: 40px;
-  height: 40px;
+  &__btn {
+    width: 40px;
+    height: 40px;
+
+    &_hidden {
+      display: none;
+    }
+  }
+
+  &__logo {
+    width: 96px;
+    height: 52px;
+  }
 }
 
 .header__burger {
@@ -45,13 +54,8 @@
   background: url('../src/img/checkstatus.png');
 }
 
-.header__logo {
-  width: 96px;
-  height: 52px;
-}
-
 .header__burger,
-.header__img,
+.header__nav__btn,
 .header__call,
 .header__chat,
 .header__profile,
@@ -64,8 +68,7 @@
   }
 }
 
-.header__conteiner-button,
-.header--hidden {
+.header__conteiner-button {
   display: none;
 }
 
@@ -118,10 +121,31 @@
         }
       }
     }
-  }
 
-  .header__img {
-    box-sizing: content-box;
+    &__btn {
+      box-sizing: content-box;
+
+      &_hidden {
+        display: block;
+      }
+    }
+
+    &__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 20px;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        background-color: $light_wight;
+        margin-left: -17vw;
+      }
+    }
   }
 
   .header__burger {
@@ -132,7 +156,6 @@
     margin-left: 18px;
   }
 
-  .header--hidden,
   .main__content-text--hidden {
     display: block;
   }
@@ -149,23 +172,6 @@
     background-color: $light_wight;
     margin-top: 5px;
     margin-left: -3.3vw;
-  }
-
-  .header__logo::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 2px;
-    height: 32px;
-    background-color: $light_wight;
-    margin-left: -17vw;
-  }
-
-  .header__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 20px;
   }
 
   .header__call {
