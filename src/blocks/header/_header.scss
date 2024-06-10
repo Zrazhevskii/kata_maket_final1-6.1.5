@@ -42,11 +42,11 @@
   }
 }
 
-.header__burger {
+.burger__btn {
   background: url('../src/img/burger.png') no-repeat;
 }
 
-.header__repair {
+.repair__btn {
   background: url('../src/img/repair.png') no-repeat;
 }
 
@@ -54,12 +54,12 @@
   background: url('../src/img/checkstatus.png');
 }
 
-.header__burger,
+.burger__btn,
 .header__nav__btn,
-.header__call,
-.header__chat,
-.header__profile,
-.header__repair,
+.call__btn,
+.chat__btn,
+.profile__btn,
+.repair__btn,
 .header__checkstatus {
   border: none;
 
@@ -68,11 +68,7 @@
   }
 }
 
-.header__conteiner-button {
-  display: none;
-}
-
-.header__conteiner-title {
+.title__conteiner {
   position: relative;
   box-sizing: content-box;
   height: 40px;
@@ -81,23 +77,27 @@
   padding-bottom: 24px;
   padding-left: 18px;
 
-  .header__title {
+  &__text {
     font-family: 'TT Lakes';
     font-weight: 700;
     font-size: 28px;
     margin: 0;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 18px;
+      left: -4px;
+      width: 5px;
+      height: 40px;
+      border-right: 5px solid $light_green;
+      border-radius: 15px;
+    }
   }
 
-  .header__title::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 18px;
-    left: -4px;
-    width: 5px;
-    height: 40px;
-    border-right: 5px solid $light_green;
-    border-radius: 15px;
+  &__buttons__box {
+    display: none;
   }
 }
 
@@ -148,12 +148,22 @@
     }
   }
 
-  .header__burger {
+  .burger__btn {
     padding-right: 20px;
   }
 
-  .header__repair {
+  .repair__btn {
     margin-left: 18px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 32px;
+      background-color: $light_wight;
+      margin-top: 5px;
+      margin-left: -3.3vw;
+    }
   }
 
   .main__content-text--hidden {
@@ -164,41 +174,33 @@
   //   display: none;
   // }
 
-  .header__repair::before {
-    content: '';
-    display: block;
-    width: 2px;
-    height: 32px;
-    background-color: $light_wight;
-    margin-top: 5px;
-    margin-left: -3.3vw;
-  }
-
-  .header__call {
+  .call__btn {
     background: no-repeat url('../src/img/call.png');
   }
 
-  .header__chat {
+  .chat__btn {
     background: no-repeat url('../src/img/chat.png');
   }
 
-  .header__profile {
+  .profile__btn {
     background: no-repeat url('../src/img/profile.png');
     padding-right: 18px;
   }
 
-  .header .header__conteiner-title {
+  .title__conteiner {
     border-top: 1px solid $light_green;
     background-color: $wight;
     padding-bottom: 0;
     padding-left: 24px;
 
-    .header__conteiner-button {
-      display: none;
+    &__text {
+      &::before {
+        top: 16px;
+      }
     }
 
-    .header__title::before {
-      top: 16px;
+    &__buttons__box {
+      display: none;
     }
   }
 }
@@ -210,26 +212,30 @@
     max-width: 1120px;
     padding-left: 35px;
     padding-right: 35px;
+  }
 
-    .header__conteiner-title {
-      position: static;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      min-height: 88px;
-      background-color: $light_grey;
-      padding-top: 0;
-      padding-left: 0;
-      padding-bottom: 0;
+  .navigation {
+    display: none;
+  }
 
-      .header__title {
-        width: 400px;
-        min-height: 40px;
-      }
+  .title__conteiner {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 88px;
+    background-color: $light_grey;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
 
-      .header__title::before {
+    &__text {
+      width: 400px;
+      min-height: 40px;
+
+      &::before {
         content: '';
         display: block;
         position: absolute;
@@ -241,33 +247,29 @@
       }
     }
 
-    .navigation {
-      display: none;
-    }
-
-    .header__conteiner-button {
+    &__buttons__box {
       display: flex;
       flex-direction: row;
     }
 
-    .header__button {
+    &__button {
       font-family: $font;
       font-size: 16px;
       border: none;
       width: 220px;
       height: 40px;
-    }
 
-    .header__button:hover {
-      cursor: pointer;
+      &:hover {
+        cursor: pointer;
+      }
     }
+  }
 
-    .header__repair {
-      background: url('../src/img/repair.png') no-repeat right;
-    }
+  .repair__btn {
+    background: url('../src/img/repair.png') no-repeat right;
+  }
 
-    .header__checkstatus {
-      background: url('../src/img/checkstatus.png') no-repeat right;
-    }
+  .header__checkstatus {
+    background: url('../src/img/checkstatus.png') no-repeat right;
   }
 }

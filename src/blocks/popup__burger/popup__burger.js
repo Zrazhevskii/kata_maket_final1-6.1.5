@@ -1,7 +1,7 @@
 /* eslint-env es6 */
 /* eslint-disable no-console */
 
-const headeBurger = document.querySelector('.header__burger');
+const headeBurger = document.querySelector('.burger__btn');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');

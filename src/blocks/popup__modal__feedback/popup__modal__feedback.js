@@ -1,7 +1,7 @@
 /* eslint-env es6 */
 /* eslint-disable no-console */
 
-const feedbackBtn = document.querySelector('.header__chat');
+const feedbackBtn = document.querySelector('.chat__btn');
 const feedbackPopup = document.querySelector('.popup__modal__feedback');
 const feedbackBtnClouse = document.querySelector(
   '.popup__modal__feedback__clouse__btn'

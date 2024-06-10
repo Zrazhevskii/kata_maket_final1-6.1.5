@@ -6,7 +6,7 @@ const backBtnClouse = document.querySelector(
 );
 const popupHeader = document.querySelector('.popup__burger');
 const popupModalCall = document.querySelector('.popup__modal__back');
-const btnCall = document.querySelector('.header__call');
+const btnCall = document.querySelector('.call__btn');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
