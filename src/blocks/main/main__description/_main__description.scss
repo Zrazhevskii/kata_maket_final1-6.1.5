@@ -1,104 +1,102 @@
-.main__main__description {
-    display: flex;
-    flex-direction: column;
-    background-color: $light_grey;
-    padding-top: 0;
-    padding-bottom: 24px;
-
-    .main__services {
-        display: flex;
-        flex-direction: column;
-        background-color: $light_grey;
-        padding-left: 16px;
-        padding-right: 16px;
-
-        .main__servises-items {
-            display: flex;
-            flex-direction: row;
-            overflow: auto;
-
-            .main__item {
-                box-sizing: content-box;
-                font-family: $font;
-                font-weight: 500;
-                font-size: 16px;
-                width: 245px;
-                height: 40px;
-
-                .main__item-link {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 245px;
-                    text-decoration: none;
-                    color: $grey;
-                    height: 40px;
-                    background-color: $light_grey;
-                }
-
-                .main__item-link-active {
-                    min-width: 240px;
-                    border: 2px solid $light_green;
-                    background-color: $wight;
-                    border-radius: 10px;
-                }
-            }
-        }
-    }
-
-    .main__servises-items::-webkit-scrollbar {
-        display: none;
-    }
+.main__description {
+  display: flex;
+  flex-direction: column;
+  background-color: $light_grey;
+  padding-top: 0;
+  padding-bottom: 24px;
 }
 
-@media (min-width: 768px) and (max-width: 1119.99px) {
-    .main__main__description {
-        background: linear-gradient(to right, $wight 120px, $light_grey 120px);
-        min-height: auto;
-        padding-left: 24px;
-        padding-right: 24px;
+.servises {
+  display: flex;
+  flex-direction: column;
+  background-color: $light_grey;
+  padding-left: 16px;
+  padding-right: 16px;
 
-        .main__services {
-            display: flex;
-            flex-direction: column;
-            background: linear-gradient(
-                to right,
-                $wight 96px,
-                $light_grey 96px
-            );
+  &__box__item {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
 
-            padding-top: 24px;
-            padding-left: 0;
-            padding-right: 0;
-
-            .main__item-link--background {
-                background: linear-gradient(
-                    to right,
-                    $wight 96px,
-                    $light_grey 96px
-                );
-            }
-        }
+    &::-webkit-scrollbar {
+      display: none;
     }
+  }
+
+  &__item {
+    box-sizing: content-box;
+    font-family: $font;
+    font-weight: 500;
+    font-size: 16px;
+    width: 245px;
+    height: 40px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 245px;
+    text-decoration: none;
+    color: $grey;
+    height: 40px;
+    background-color: $light_grey;
+
+    &_active {
+      min-width: 240px;
+      border: 2px solid $light_green;
+      background-color: $wight !important;
+      border-radius: 10px;
+    }
+  }
+}
+
+// .servises__box__item::-webkit-scrollbar {
+//   display: none;
+// }
+
+@media (min-width: 768px) and (max-width: 1119.99px) {
+  .main__description {
+    background: linear-gradient(to right, $wight 120px, $light_grey 120px);
+    min-height: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .servises {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, $wight 96px, $light_grey 96px);
+
+    padding-top: 24px;
+    padding-left: 0;
+    padding-right: 0;
+
+    &__link {
+      &_background {
+        background: linear-gradient(to right, $wight 96px, $light_grey 96px);
+      }
+    }
+  }
 }
 
 @media (min-width: 1120px) {
-    .main__main__description {
-        max-width: 1120px;
-        min-height: 445px;
-        margin: auto;
-        padding-left: 35px;
-        padding-right: 35px;
+  .main__description {
+    max-width: 1120px;
+    min-height: 445px;
+    margin: auto;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 
-        .main__services {
-            padding-left: 0;
-            padding-right: 0;
+  .servises {
+    padding-left: 0;
+    padding-right: 0;
 
-            .main__servises-items {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-        }
+    &__box__item {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
+  }
 }
