@@ -33,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
       } else {
         if (swiper !== undefined) {
           swiper.destroy(true, true);
+          swiper = undefined;
         }
         return;
       }
@@ -51,7 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 'auto',
     spaceBetween: 20,
     freeMode: true,
-    loop: true
+    loop: true,
   });
 
   resizableSwiper('(max-width: 767.9px)', '.appliances__box', {
