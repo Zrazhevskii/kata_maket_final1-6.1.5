@@ -43,7 +43,6 @@ function checkChildren() {
   }
 
   if (width >= 1120) {
-    // slider.classList.remove('swiper-wrapper');
     for (let i = 0; i < containerSlider.length; i++) {
       if (i <= 7) {
         containerSlider[i].classList.remove('box__brend__item_hidden');

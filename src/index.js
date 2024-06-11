@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
       } else {
         if (swiper !== undefined) {
           swiper.destroy(true, true);
-          swiper = undefined;
+          // swiper = undefined;
         }
         return;
       }
