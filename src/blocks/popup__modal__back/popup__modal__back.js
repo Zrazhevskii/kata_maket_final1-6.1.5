@@ -20,10 +20,10 @@ window.addEventListener('resize', () => {
 });
 
 btnCall.addEventListener('click', () => {
-  header.classList.add('popup__show__call__feedback');
-  main.classList.add('popup__show__call__feedback');
-  footer.classList.add('popup__hidden');
-  popupModalCall.classList.add('position__popup__servises');
+  header.classList.add('popup__show_middle');
+  main.classList.add('popup__show_middle');
+  footer.classList.add('popup_hidden');
+  popupModalCall.classList.add('popup__servises_position');
   if (popupModalCall.classList.contains('popup__call_hidden')) {
     popupModalCall.classList.remove('popup__call_hidden');
   }
@@ -41,40 +41,40 @@ popupModalCall.addEventListener('click', (evt) => {
 
 function openPopup() {
   if (width >= 1120) {
-    header.classList.add('popup__show__call__feedback');
-    main.classList.add('popup__show__call__feedback');
+    header.classList.add('popup__show_middle');
+    main.classList.add('popup__show_middle');
   }
 
   if (width >= 768 && width < 1120) {
     header.classList.remove('popup__show_middle');
     main.classList.remove('popup__show_middle');
-    header.classList.add('popup__show__call__feedback');
-    main.classList.add('popup__show__call__feedback');
+    header.classList.add('popup__show_middle');
+    main.classList.add('popup__show_middle');
   }
 
-  footer.classList.add('popup__hidden');
-  popupHeader.classList.remove('position__popup__burger');
+  footer.classList.add('popup_hidden');
+  popupHeader.classList.remove('popup__burger_position');
   popupModalCall.classList.remove('popup__call_hidden');
   popupHeader.classList.add('popup__burger_hidden');
-  popupModalCall.classList.add('position__popup__servises');
+  popupModalCall.classList.add('popup__servises_position');
 }
 
 function clousePopup() {
   if (width >= 1120) {
-    header.classList.remove('popup__show');
-    main.classList.remove('popup__show');
+    header.classList.remove('popup__show_little');
+    main.classList.remove('popup__show_little');
     popupHeader.classList.remove('popup__burger_hidden');
   }
 
   popupModalCall.classList.add('popup__call_hidden');
-  popupModalCall.classList.remove('position__popup__servises');
+  popupModalCall.classList.remove('popup__servises_position');
 
   if (width < 768) {
-    header.classList.remove('popup__show');
-    main.classList.remove('popup__show');
+    header.classList.remove('popup__show_little');
+    main.classList.remove('popup__show_little');
   }
 
-  header.classList.remove('popup__show__call__feedback');
-  main.classList.remove('popup__show__call__feedback');
-  footer.classList.remove('popup__hidden');
+  header.classList.remove('popup__show_middle');
+  main.classList.remove('popup__show_middle');
+  footer.classList.remove('popup_hidden');
 }

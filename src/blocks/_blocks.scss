@@ -21,36 +21,33 @@ body {
   line-height: 20px;
 }
 
-.popup__open__sliders--middle {
+.sliders__brends__screen_middle {
   height: 490px;
 }
 
-.popup__open__sliders--little {
+.sliders__brend_little {
   height: 410px;
 }
 
-.popup__open__appliances--little {
+.sliders__appliances_little {
   height: 510px;
 }
 
-.popup__open__appliances--middle {
+.sliders__appliances_middle {
   height: 550px !important;
 }
 
-.popup__open__appliances--big {
+.sliders__appliances_big {
   height: 680px;
 }
 
-.popup__show__call__feedback {
+.popup__show_middle {
   z-index: -99;
   overflow: hidden;
   max-height: calc(100vh + 120px);
 }
 
-.popup__show {
-  // opacity: 0.3;
-  // position: absolute;
-  // height: auto;
+.popup__show_little {
   z-index: -99;
   overflow: hidden;
   max-height: calc(100vh - 120px);
@@ -62,7 +59,7 @@ body {
   max-height: calc(100vh + 250px);
 }
 
-.popup__hidden {
+.popup_hidden {
   display: none;
   position: absolute;
   // bottom: 0;
@@ -75,7 +72,6 @@ body {
   justify-content: flex-start;
   max-width: 1400px;
   margin: auto;
-  // overflow-x: auto;
 }
 
 .body__content {
@@ -83,13 +79,13 @@ body {
   flex-direction: column;
 }
 
-.position__popup__burger {
+.popup__burger_position {
   position: absolute;
   z-index: 9999;
 
 }
 
-.position__popup__servises {
+.popup__servises_position {
   position: absolute;
   top: 0;
   right: 0;

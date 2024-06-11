@@ -16,17 +16,17 @@ window.addEventListener('resize', () => {
 });
 
 headeBurger.addEventListener('click', () => {
-  popup.classList.add('position__popup__burger')
+  popup.classList.add('popup__burger_position')
   // console.log(width);
   if (width >= 768) {
     header.classList.add('popup__show_middle');
     main.classList.add('popup__show_middle');
   } else {
-    header.classList.add('popup__show');
-    main.classList.add('popup__show');
+    header.classList.add('popup__show_little');
+    main.classList.add('popup__show_little');
   }
 
-  footer.classList.add('popup__hidden');
+  footer.classList.add('popup_hidden');
 
   if (popup.classList.contains('popup__burger_hidden')) {
     popup.classList.remove('popup__burger_hidden');
@@ -42,15 +42,15 @@ popup.addEventListener('click', (evt) => {
 });
 
 function clousePopup() {
-  popup.classList.remove('position__popup__burger')
+  popup.classList.remove('popup__burger_position')
   if (width >= 768) {
     header.classList.remove('popup__show_middle');
     main.classList.remove('popup__show_middle');
   } else {
-    header.classList.remove('popup__show');
-    main.classList.remove('popup__show');
+    header.classList.remove('popup__show_little');
+    main.classList.remove('popup__show_little');
   }
 
-  footer.classList.remove('popup__hidden');
+  footer.classList.remove('popup_hidden');
   popup.classList.add('popup__burger_hidden');
 }

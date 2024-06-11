@@ -45,10 +45,10 @@ const changeHeightOpen = () => {
   }
 
   if (width >= 768 && width < 1120) {
-    appliancesItems.classList.add('popup__open__appliances--big');
-    appliancesBoxContainer.classList.add('popup__open__appliances--middle');
+    appliancesItems.classList.add('sliders__appliances_big');
+    appliancesBoxContainer.classList.add('sliders__appliances_middle');
   } else {
-    appliancesItems.classList.add('popup__open__appliances--little');
+    appliancesItems.classList.add('sliders__appliances_little');
   }
 
   appliancesBtn.classList.remove('btn-show');
@@ -62,8 +62,8 @@ const changeHeightClose = () => {
         appliancesArray[i].classList.add('hidden');
       }
     }
-    appliancesItems.classList.remove('popup__open__appliances--big');
-    appliancesBoxContainer.classList.remove('popup__open__appliances--middle');
+    appliancesItems.classList.remove('sliders__appliances_big');
+    appliancesBoxContainer.classList.remove('sliders__appliances_middle');
   } else if (width >= 1120) {
     for (let i = 0; i < appliancesArray.length; i++) {
       if (i >= 4) {
@@ -71,7 +71,7 @@ const changeHeightClose = () => {
       }
     }
 
-    appliancesItems.classList.remove('popup__open__appliances--little');
+    appliancesItems.classList.remove('sliders__appliances_little');
   }
   appliancesBtn.classList.add('btn-show');
   appliancesBtn.classList.remove('btn-hide');
