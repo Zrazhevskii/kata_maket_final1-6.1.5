@@ -2,10 +2,10 @@
 /* eslint-disable no-console */
 
 const backBtnClouse = document.querySelector(
-  '.popup__modal__back__clouse__btn'
+  '.popup__call__btn__clouse'
 );
 const popupHeader = document.querySelector('.popup__burger');
-const popupModalCall = document.querySelector('.popup__modal__back');
+const popupModalCall = document.querySelector('.popup__call');
 const btnCall = document.querySelector('.call__btn');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
@@ -24,8 +24,8 @@ btnCall.addEventListener('click', () => {
   main.classList.add('popup__show__call__feedback');
   footer.classList.add('popup__hidden');
   popupModalCall.classList.add('position__popup__servises');
-  if (popupModalCall.classList.contains('popup__modal__back--hidden')) {
-    popupModalCall.classList.remove('popup__modal__back--hidden');
+  if (popupModalCall.classList.contains('popup__call_hidden')) {
+    popupModalCall.classList.remove('popup__call_hidden');
   }
 });
 
@@ -54,7 +54,7 @@ function openPopup() {
 
   footer.classList.add('popup__hidden');
   popupHeader.classList.remove('position__popup__burger');
-  popupModalCall.classList.remove('popup__modal__back--hidden');
+  popupModalCall.classList.remove('popup__call_hidden');
   popupHeader.classList.add('popup__burger_hidden');
   popupModalCall.classList.add('position__popup__servises');
 }
@@ -66,7 +66,7 @@ function clousePopup() {
     popupHeader.classList.remove('popup__burger_hidden');
   }
 
-  popupModalCall.classList.add('popup__modal__back--hidden');
+  popupModalCall.classList.add('popup__call_hidden');
   popupModalCall.classList.remove('position__popup__servises');
 
   if (width < 768) {
