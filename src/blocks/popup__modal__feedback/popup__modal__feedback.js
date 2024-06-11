@@ -2,9 +2,9 @@
 /* eslint-disable no-console */
 
 const feedbackBtn = document.querySelector('.chat__btn');
-const feedbackPopup = document.querySelector('.popup__modal__feedback');
+const feedbackPopup = document.querySelector('.popup__feedback');
 const feedbackBtnClouse = document.querySelector(
-  '.popup__modal__feedback__clouse__btn'
+  '.popup__feedback__btn__clouse'
 );
 const popupHeader = document.querySelector('.popup__burger');
 const header = document.querySelector('.header');
@@ -24,8 +24,8 @@ feedbackBtn.addEventListener('click', () => {
   main.classList.add('popup__show__call__feedback');
   footer.classList.add('popup__hidden');
   feedbackPopup.classList.add('position__popup__servises');
-  if (feedbackPopup.classList.contains('popup__modal__feedback--hidden')) {
-    feedbackPopup.classList.remove('popup__modal__feedback--hidden');
+  if (feedbackPopup.classList.contains('popup__feedback_hidden')) {
+    feedbackPopup.classList.remove('popup__feedback_hidden');
   }
 });
 
@@ -54,7 +54,7 @@ function openPopup() {
 
   footer.classList.add('popup__hidden');
   popupHeader.classList.remove('position__popup__burger');
-  feedbackPopup.classList.remove('popup__modal__feedback--hidden');
+  feedbackPopup.classList.remove('popup__feedback_hidden');
   popupHeader.classList.add('popup__burger_hidden');
   feedbackPopup.classList.add('position__popup__servises');
 }
@@ -66,7 +66,7 @@ function clousePopup() {
     popupHeader.classList.remove('popup__burger_hidden');
   }
 
-  feedbackPopup.classList.add('popup__modal__feedback--hidden');
+  feedbackPopup.classList.add('popup__feedback_hidden');
   feedbackPopup.classList.remove('position__popup__servises');
 
   if (width < 768) {
