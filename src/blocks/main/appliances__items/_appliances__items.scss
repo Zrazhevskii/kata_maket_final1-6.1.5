@@ -1,12 +1,66 @@
 .sliders__appliances {
   box-sizing: border-box;
-  height: 320px;
+  height: 312px;
   overflow: hidden;
   background-color: $light_grey;
   border-top: 1px solid $light_green;
 
   &__btn {
     display: none;
+
+    &_show::before {
+      position: relative;
+      display: none;
+      content: '';
+      background: url('../src/img/expand.png') no-repeat;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      margin-right: 10px;
+      top: -206px;
+      left: -5px;
+    }
+
+    &_show::after {
+      display: none;
+      align-items: center;
+      width: 110px;
+      height: 30px;
+      content: 'Показать всё';
+      font-size: 16px;
+      font-weight: 500;
+      color: $black;
+      position: relative;
+      top: -200px;
+      left: -6px;
+      z-index: 5;
+    }
+
+    &_hide::before {
+      position: relative;
+      display: none;
+      content: '';
+      background: url('../src/img/expand.png') no-repeat;
+      transform: rotate(180deg);
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    &_hide::after {
+      display: none;
+      content: 'Скрыть';
+      font-size: 16px;
+      font-weight: 500;
+      color: $black;
+      position: relative;
+      z-index: 5;
+    }
+
+    &_hide:hover,
+    &_show:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -19,11 +73,9 @@
   }
 
   &__item {
-    // box-sizing: border-box;
     display: flex !important;
     flex-direction: column;
     margin-top: 16px;
-    // width: auto;
     width: 240px !important;
     height: 160px !important;
     background-color: $wight;
@@ -59,26 +111,12 @@
     position: absolute;
     top: 191px !important;
   }
-
-  .swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
-    margin-right: 20px !important;
-  }
-
-  .swiper-pagination-bullet-active {
-    background: $grey;
-  }
-}
-
-.show-more {
-  height: 900px;
 }
 
 @media (min-width: 768px) and (max-width: 1119.9px) {
   .sliders__appliances {
     background: linear-gradient(to right, $wight 120px, $light_grey 120px);
-    height: 320px;
+    height: 308px;
 
     &__btn {
       display: flex;
@@ -89,70 +127,24 @@
       background-color: $light_grey;
       padding-left: 24px;
 
-      &_show::before {
-        position: relative;
-        display: none;
-        content: '';
-        background: url('../src/img/expand.png') no-repeat;
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-        margin-right: 10px;
-        top: -200px;
-      }
-
-      &_show::after {
-        display: none;
-        align-items: center;
-        width: 110px;
-        height: 30px;
-        content: 'Показать всё';
-        font-size: 16px;
-        font-weight: 500;
-        color: $black;
-        position: relative;
-        top: -200px;
-        z-index: 5;
-      }
-
-      &_hide::before {
-        position: relative;
-        display: none;
-        content: '';
-        background: url('../src/img/expand.png') no-repeat;
-        transform: rotate(180deg);
-        width: 24px;
-        height: 24px;
-        margin-right: 10px;
-      }
-
+      &_show::before,
+      &_show::after,
+      &_hide::before,
       &_hide::after {
-        display: none;
-        content: 'Скрыть';
-        font-size: 16px;
-        font-weight: 500;
-        color: $black;
-        position: relative;
-        z-index: 5;
+        display: block;
       }
 
-      &_hide:hover,
-      &_show:hover {
-        cursor: pointer;
+      &_hide {
+        background: linear-gradient(to right, $wight 120px, $light_grey 120px);
       }
     }
-
-    // .title {
-    //   padding-left: 24px;
-    //   height: 56px;
-    // }
 
     .box__appliances {
       display: block;
       padding: 24px 24px 0 24px;
       min-height: 320px;
 
-      .box__appliances__container {
+      &__container {
         position: relative;
         display: grid;
         max-width: 903px;
@@ -162,63 +154,18 @@
         margin: auto;
         min-height: 380px;
         padding-left: 0;
-
-        .box__appliances {
-          margin: 0;
-          width: 224px;
-        }
       }
-    }
 
-    .swiper-pagination-bullet,
-    .swiper-pagination,
-    .box__appliances__pagination {
-      display: none;
-    }
-
-    .swiper {
-      display: flex;
-    }
-
-    .sliders__appliances__btn_show::before {
-      display: block;
-      top: -200px;
-    }
-
-    .sliders__appliances__btn_show::after {
-      display: flex;
-      top: -200px;
-    }
-
-    .sliders__appliances__btn_hide {
-      background: linear-gradient(to right, $wight 120px, $light_grey 120px);
-    }
-
-    .sliders__appliances__btn_hide::before {
-      display: block;
-    }
-
-    .sliders__appliances__btn_hide::after {
-      display: flex;
-    }
-
-    .sliders__appliances__btn_hide:hover,
-    .sliders__appliances__btn_show:hover {
-      cursor: pointer;
+      &__item {
+        margin: 0;
+        width: 224px !important;
+      }
     }
   }
 }
 
 @media (min-width: 1120px) {
   .sliders__appliances {
-    // .title {
-    //   height: 56px;
-
-    //   .title__text {
-    //     padding-left: 32px;
-    //   }
-    // }
-
     .box__appliances {
       display: block;
       padding: 24px 32px 0 32px;

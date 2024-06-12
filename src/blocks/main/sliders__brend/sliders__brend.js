@@ -12,9 +12,9 @@ let width = window.innerWidth;
 
 window.addEventListener('resize', () => {
   width = window.innerWidth;
-  if (width >= 768) {
+  // if (width >= 768) {
     checkChildren();
-  }
+  // }
 });
 
 slidersBtn.addEventListener('click', function () {
@@ -27,14 +27,12 @@ slidersBtn.addEventListener('click', function () {
 
 function checkChildren() {
   if (width < 768) {
-    // slider.classList.add('swiper-wrapper');
     for (let i = 0; i < containerSlider.length; i++) {
       containerSlider[i].classList.remove('box__brend__item_hidden');
     }
   }
 
   if (width >= 768 && width < 1120) {
-    // slider.classList.remove('swiper-wrapper');
     for (let i = 0; i < containerSlider.length; i++) {
       if (i >= 6) {
         containerSlider[i].classList.add('box__brend__item_hidden');

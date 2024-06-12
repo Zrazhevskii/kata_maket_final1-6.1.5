@@ -82,7 +82,6 @@ body {
 .popup__burger_position {
   position: absolute;
   z-index: 9999;
-
 }
 
 .popup__servises_position {
@@ -91,4 +90,25 @@ body {
   right: 0;
 }
 
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  margin-right: 20px !important;
+}
 
+.swiper-pagination-bullet-active {
+  background: $grey !important;
+}
+
+@media (min-width: 768px) {
+  .swiper-pagination-bullets,
+  .swiper-pagination-bullet,
+  .swiper-pagination,
+  .box__appliances__pagination {
+    display: none;
+  }
+
+  .swiper {
+    display: flex;
+  }
+}
