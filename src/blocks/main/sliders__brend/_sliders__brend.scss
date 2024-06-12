@@ -7,34 +7,6 @@
 
   &__btn {
     display: none;
-
-    @media #{$tablet} {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      width: 200px;
-      border: none;
-      background-color: $light_grey;
-      padding-left: 24px;
-    }
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
-
-.title {
-  display: flex;
-  align-items: center;
-  height: 80px;
-  background: linear-gradient(to right, $light_grey 0%, $wight 50%);
-
-  &__text {
-    font-weight: 400;
-    font-size: 16px;
-    color: $grey;
-    padding-left: 16px;
   }
 }
 
@@ -42,7 +14,7 @@
   position: relative;
 
   &__container {
-    height: 131px !important;
+    height: 140px !important;
     padding-left: 16px;
   }
 
@@ -59,21 +31,26 @@
     display: block;
     width: 240px;
     height: 72px;
-
-    @media #{$tabletDesktop} {
-      width: 224px;
-    }
   }
 
-  .swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
-    margin-right: 20px;
+  &__pagination {
+    position: absolute;
+    top: 103px !important;
   }
+}
 
-  .swiper-pagination-bullet-active {
-    background: $grey;
-  }
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  margin-right: 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: $grey !important;
+}
+
+.sliders__brend .show-more-small {
+  height: 410px;
 }
 
 .bosh {
@@ -116,16 +93,24 @@
   background-size: contain;
 }
 
-.sliders__brend .show-more-small {
-  height: 410px;
-}
-
 @media (min-width: 768px) and (max-width: 1119.9px) {
   .sliders__brend {
     height: 320px;
     background: linear-gradient(to right, $wight 120px, $light_grey 120px);
 
     &__btn {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 200px;
+      border: none;
+      background-color: $light_grey;
+      padding-left: 24px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
       &_show::before {
         position: relative;
         display: block;
@@ -181,15 +166,6 @@
         left: -5px;
         z-index: 5;
       }
-    }
-  }
-
-  .title {
-    padding-left: 24px;
-    height: 56px;
-
-    &__text {
-      padding-left: 0;
     }
   }
 
@@ -320,15 +296,6 @@
         top: 18px;
         left: 5px;
       }
-    }
-  }
-
-  .title {
-    padding-left: 32px;
-    height: 56px;
-
-    &__text {
-      padding-left: 0;
     }
   }
 

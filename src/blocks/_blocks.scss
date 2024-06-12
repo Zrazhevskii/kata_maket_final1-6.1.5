@@ -9,7 +9,7 @@
 @import './popup__modal__back/popup__modal__back.scss';
 @import './popup__modal__feedback/popup__modal__feedback';
 @import './main/main__description/main__description';
-
+@import './main/title/title';
 * {
   margin: 0;
   padding: 0;
@@ -90,3 +90,5 @@ body {
   top: 0;
   right: 0;
 }
+
+

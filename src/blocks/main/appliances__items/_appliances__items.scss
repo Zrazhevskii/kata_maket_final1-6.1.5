@@ -1,94 +1,91 @@
-.appliances__items {
-    box-sizing: border-box;
+.sliders__appliances {
+  box-sizing: border-box;
+  height: 320px;
+  overflow: hidden;
+  background-color: $light_grey;
+  border-top: 1px solid $light_green;
+
+  &__btn {
+    display: none;
+  }
+}
+
+.box__appliances {
+  position: relative;
+
+  &__container {
+    height: 280px !important;
+    padding-left: 16px;
+  }
+
+  &__item {
+    // box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column;
+    margin-top: 16px;
+    // width: auto;
+    width: 240px !important;
+    height: 160px !important;
+    background-color: $wight;
+    padding: 16px;
+    border: 1px solid $light_light_grey;
+    border-radius: 10px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__btn {
+    border: none;
+    background-color: $wight;
+    width: 40px;
+    height: 40px;
+    background: url('../src/img/go.png') no-repeat;
+    margin-left: auto;
+    margin-top: auto;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__pagination {
+    position: absolute;
+    top: 191px !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin-right: 20px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $grey;
+  }
+}
+
+.show-more {
+  height: 900px;
+}
+
+@media (min-width: 768px) and (max-width: 1119.9px) {
+  .sliders__appliances {
+    background: linear-gradient(to right, $wight 120px, $light_grey 120px);
     height: 320px;
-    overflow: hidden;
-    background-color: $light_grey;
-    border-top: 1px solid $light_green;
 
-    .title {
-        display: flex;
-        align-items: center;
-        height: 80px;
-        background: linear-gradient(to right, $light_grey 0%, $wight 50%);
+    &__btn {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 200px;
+      border: none;
+      background-color: $light_grey;
+      padding-left: 24px;
 
-        .title__text {
-            font-weight: 400;
-            font-size: 16px;
-            color: $grey;
-            padding-left: 16px;
-        }
-    }
-
-    .appliances__items__appliances__box {
-        position: relative;
-
-        .appliances__box__container {
-            height: 260px;
-            padding-left: 16px;
-
-            .container__slide__appliances {
-                display: flex;
-                flex-direction: column;
-                margin-top: 16px;
-                width: auto;
-                width: 240px;
-                height: 160px;
-                background-color: $wight;
-                padding: 16px;
-                border: 1px solid $light_light_grey;
-                border-radius: 10px;
-
-                .container__appliances__item__title {
-                    font-weight: 500;
-                    font-size: 16px;
-                }
-
-                .container__slide__btn {
-                    border: none;
-                    background-color: $wight;
-                    width: 40px;
-                    height: 40px;
-                    background: url('../src/img/go.png') no-repeat;
-                    margin-left: auto;
-                    margin-top: auto;
-                }
-                .container__slide__btn:hover {
-                    cursor: pointer;
-                }
-            }
-        }
-
-        .container__appliances__pagination {
-            position: absolute;
-            top: 195px;
-        }
-
-        .swiper-pagination-bullet {
-            width: 15px;
-            height: 15px;
-            margin-right: 20px !important;
-        }
-
-        .swiper-pagination-bullet-active {
-            background: $grey;
-        }
-    }
-
-    .show-more {
-        height: 900px;
-    }
-
-    .appliances__items__btn {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 200px;
-        border: none;
-        background-color: $light_grey;
-        padding-left: 24px;
-    }
-
-    .btn-show::before {
+      &_show::before {
         position: relative;
         display: none;
         content: '';
@@ -98,9 +95,9 @@
         cursor: pointer;
         margin-right: 10px;
         top: -200px;
-    }
+      }
 
-    .btn-show::after {
+      &_show::after {
         display: none;
         align-items: center;
         width: 110px;
@@ -112,9 +109,9 @@
         position: relative;
         top: -200px;
         z-index: 5;
-    }
+      }
 
-    .btn-hide::before {
+      &_hide::before {
         position: relative;
         display: none;
         content: '';
@@ -123,9 +120,9 @@
         width: 24px;
         height: 24px;
         margin-right: 10px;
-    }
+      }
 
-    .btn-hide::after {
+      &_hide::after {
         display: none;
         content: 'Скрыть';
         font-size: 16px;
@@ -133,157 +130,147 @@
         color: $black;
         position: relative;
         z-index: 5;
-    }
+      }
 
-    .btn-hide:hover,
-    .btn-show:hover {
+      &_hide:hover,
+      &_show:hover {
         cursor: pointer;
+      }
     }
-}
 
-@media (min-width: 768px) and (max-width: 1119.9px) {
-    .appliances__items {
-        background: linear-gradient(to right, $wight 120px, $light_grey 120px);
-        height: 320px;
+    // .title {
+    //   padding-left: 24px;
+    //   height: 56px;
+    // }
 
-        .title {
-            padding-left: 24px;
-            height: 56px;
+    .box__appliances {
+      display: block;
+      padding: 24px 24px 0 24px;
+      min-height: 320px;
+
+      .box__appliances__container {
+        position: relative;
+        display: grid;
+        max-width: 903px;
+        grid-template-columns: 1fr 1fr 224px;
+        grid-template-rows: repeat(3, 160px);
+        row-gap: 24px;
+        margin: auto;
+        min-height: 380px;
+        padding-left: 0;
+
+        .box__appliances {
+          margin: 0;
+          width: 224px;
         }
 
-        .appliances__box {
-            display: block;
-            padding: 24px 24px 0 24px;
-            min-height: 320px;
-
-            .appliances__box__container {
-                position: relative;
-                display: grid;
-                max-width: 903px;
-                grid-template-columns: 1fr 1fr 224px;
-                grid-template-rows: repeat(3, 160px);
-                row-gap: 24px;
-                margin: auto;
-                min-height: 380px;
-                padding-left: 0;
-
-                .container__slide__appliances {
-                    margin: 0;
-                    width: 224px;
-                }
-
-                .hidden {
-                    display: none;
-                }
-            }
+        .hidden {
+          display: none;
         }
-
-        .swiper-pagination-bullet,
-        .swiper-pagination,
-        .container__appliances__pagination {
-            display: none;
-        }
-
-        .swiper {
-            display: flex;
-        }
-
-        .btn-show::before {
-            display: block;
-            top: -200px;
-        }
-
-        .btn-show::after {
-            display: flex;
-            top: -200px;
-        }
-
-        .btn-hide {
-            background: linear-gradient(
-                to right,
-                $wight 120px,
-                $light_grey 120px
-            );
-        }
-
-        .btn-hide::before {
-            display: block;
-        }
-
-        .btn-hide::after {
-            display: flex;
-        }
-
-        .btn-hide:hover,
-        .btn-show:hover {
-            cursor: pointer;
-        }
+      }
     }
+
+    .swiper-pagination-bullet,
+    .swiper-pagination,
+    .box__appliances__pagination {
+      display: none;
+    }
+
+    .swiper {
+      display: flex;
+    }
+
+    .sliders__appliances__btn_show::before {
+      display: block;
+      top: -200px;
+    }
+
+    .sliders__appliances__btn_show::after {
+      display: flex;
+      top: -200px;
+    }
+
+    .sliders__appliances__btn_hide {
+      background: linear-gradient(to right, $wight 120px, $light_grey 120px);
+    }
+
+    .sliders__appliances__btn_hide::before {
+      display: block;
+    }
+
+    .sliders__appliances__btn_hide::after {
+      display: flex;
+    }
+
+    .sliders__appliances__btn_hide:hover,
+    .sliders__appliances__btn_show:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 @media (min-width: 1120px) {
-    .appliances__items {
-      
-        .title {
-            height: 56px;
+  .sliders__appliances {
+    // .title {
+    //   height: 56px;
 
-            .title__text {
-                padding-left: 32px;
-            }
+    //   .title__text {
+    //     padding-left: 32px;
+    //   }
+    // }
+
+    .box__appliances {
+      display: block;
+      padding: 24px 32px 0 32px;
+      min-height: 320px;
+
+      .box__appliances__container {
+        position: relative;
+        display: grid;
+        max-width: 1120px;
+        grid-template-columns: 1fr 1fr 1fr 240px;
+        grid-template-rows: repeat(2, 160px);
+        row-gap: 24px;
+        min-height: 380px;
+        padding-left: 0;
+
+        .box__appliances {
+          margin: 0;
+          width: 240px;
         }
 
-        .appliances__box {
-            display: block;
-            padding: 24px 32px 0 32px;
-            min-height: 320px;
-
-            .appliances__box__container {
-                position: relative;
-                display: grid;
-                max-width: 1120px;
-                grid-template-columns: 1fr 1fr 1fr 240px;
-                grid-template-rows: repeat(2, 160px);
-                row-gap: 24px;
-                min-height: 380px;
-                padding-left: 0;
-
-                .container__slide__appliances {
-                    margin: 0;
-                    width: 240px;
-                }
-
-                .hidden {
-                    display: none;
-                }
-            }
+        .hidden {
+          display: none;
         }
-
-        .appliances__items__btn {
-            padding-left: 32px;
-        }
-
-        .swiper-pagination-bullet,
-        .swiper-pagination,
-        .container__appliances__pagination {
-            display: none;
-        }
-
-        .btn-show::before {
-            display: block;
-            left: -5px;
-        }
-
-        .btn-show::after {
-            display: flex;
-            top: -200px;
-        }
-
-        .btn-hide::before {
-            display: block;
-        }
-
-        .btn-hide::after {
-            display: flex;
-        }
+      }
     }
+
+    .sliders__appliances {
+      padding-left: 32px;
+    }
+
+    .swiper-pagination-bullet,
+    .swiper-pagination,
+    .box__appliances__pagination {
+      display: none;
+    }
+
+    .sliders__appliances__btn_show::before {
+      display: block;
+      left: -5px;
+    }
+
+    .sliders__appliances__btn_show::after {
+      display: flex;
+      top: -200px;
+    }
+
+    .sliders__appliances__btn_hide::before {
+      display: block;
+    }
+
+    .sliders__appliances__btn_hide::after {
+      display: flex;
+    }
+  }
 }

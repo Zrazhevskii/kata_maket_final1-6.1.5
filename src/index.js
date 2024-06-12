@@ -33,7 +33,6 @@ window.addEventListener('DOMContentLoaded', () => {
       } else {
         if (swiper !== undefined) {
           swiper.destroy(true, true);
-          // swiper = undefined;
         }
         return;
       }
@@ -55,7 +54,7 @@ window.addEventListener('DOMContentLoaded', () => {
     loop: true,
   });
 
-  resizableSwiper('(max-width: 767.9px)', '.appliances__box', {
+  resizableSwiper('(max-width: 767.9px)', '.box__appliances', {
     modules: [Pagination],
     pagination: {
       el: '.swiper-pagination',

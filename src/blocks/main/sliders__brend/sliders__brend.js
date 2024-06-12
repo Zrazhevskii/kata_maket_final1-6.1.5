@@ -29,7 +29,7 @@ function checkChildren() {
   if (width < 768) {
     // slider.classList.add('swiper-wrapper');
     for (let i = 0; i < containerSlider.length; i++) {
-      containerSlider[i].classList.add('box__brend__item_hidden');
+      containerSlider[i].classList.remove('box__brend__item_hidden');
     }
   }
 

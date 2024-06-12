@@ -1,15 +1,15 @@
 /* eslint-env es6 */
 /* eslint-disable no-console */
 
-const appliancesItems = document.querySelector('.appliances__items');
-const appliancesBtn = document.querySelector('.appliances__items__btn');
-const appliancesBoxContainer = document.querySelector(
-  '.appliances__box__container'
+const appliancesItems = document.querySelector('.sliders__appliances');
+const appliancesBtn = document.querySelector('.sliders__appliances__btn');
+const appliancesContainer = document.querySelector(
+  '.box__appliances__container'
 );
-const appliancesBox = document.querySelector('.appliances__box');
+const appliancesBox = document.querySelector('.box__appliances');
 
 const appliancesArray = Array.from(
-  document.querySelectorAll('.container__slide__appliances')
+  document.querySelectorAll('.box__appliances__item')
 );
 let width = window.innerWidth;
 
@@ -21,7 +21,7 @@ window.addEventListener('resize', () => {
 });
 
 appliancesBtn.addEventListener('click', function () {
-  if (appliancesBtn.classList.contains('btn-show')) {
+  if (appliancesBtn.classList.contains('sliders__appliances__btn_show')) {
     changeHeightOpen();
   } else {
     changeHeightClose();
@@ -46,13 +46,13 @@ const changeHeightOpen = () => {
 
   if (width >= 768 && width < 1120) {
     appliancesItems.classList.add('sliders__appliances_big');
-    appliancesBoxContainer.classList.add('sliders__appliances_middle');
+    appliancesContainer.classList.add('sliders__appliances_middle');
   } else {
     appliancesItems.classList.add('sliders__appliances_little');
   }
 
-  appliancesBtn.classList.remove('btn-show');
-  appliancesBtn.classList.add('btn-hide');
+  appliancesBtn.classList.remove('sliders__appliances__btn_show');
+  appliancesBtn.classList.add('sliders__appliances__btn_hide');
 };
 
 const changeHeightClose = () => {
@@ -63,7 +63,7 @@ const changeHeightClose = () => {
       }
     }
     appliancesItems.classList.remove('sliders__appliances_big');
-    appliancesBoxContainer.classList.remove('sliders__appliances_middle');
+    appliancesContainer.classList.remove('sliders__appliances_middle');
   } else if (width >= 1120) {
     for (let i = 0; i < appliancesArray.length; i++) {
       if (i >= 4) {
@@ -73,8 +73,8 @@ const changeHeightClose = () => {
 
     appliancesItems.classList.remove('sliders__appliances_little');
   }
-  appliancesBtn.classList.add('btn-show');
-  appliancesBtn.classList.remove('btn-hide');
+  appliancesBtn.classList.add('sliders__appliances__btn_show');
+  appliancesBtn.classList.remove('sliders__appliances__btn_hide');
 };
 
 checkChildren();
