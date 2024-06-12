@@ -47,8 +47,9 @@ function checkChildren() {
   }
 
   if (width >= 1120) {
-    appliancesArray[4].classList.remove('box__appliances__item_hidden');
+    // appliancesArray[4].classList.remove('box__appliances__item_hidden');
     for (let i = 0; i < appliancesArray.length; i++) {
+      appliancesArray[4].classList.remove('box__appliances__item_hidden');
       if (i >= 4) {
         appliancesArray[i].classList.add('box__appliances__item_hidden');
       }
