@@ -296,20 +296,10 @@
       width: 240px;
       height: 75px;
     }
-  }
 
-  .swiper-wrapper,
-  .swiper-slide,
-  .swiper-pagination {
-    display: flex;
-    column-gap: 0;
-  }
-
-  .box__brend__pagination,
-  .swiper-pagination-bullets,
-  .swiper-pagination,
-  .swiper-pagination-bullet {
-    display: none;
+    &__pagination {
+      display: none;
+    }
   }
 
   .samsung {
