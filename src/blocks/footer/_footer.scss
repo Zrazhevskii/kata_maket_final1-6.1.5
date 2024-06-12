@@ -8,7 +8,9 @@
   font-size: 14px;
   color: $grey;
   padding-left: 16px;
+  padding-top: 16px;
   padding-right: 16px;
+  border-top: 1px solid $light_green;
 
   &__year__team {
     display: flex;
@@ -23,20 +25,21 @@
     padding-bottom: 16px;
   }
 
-  &_info {
+  &__info {
     text-align: center;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1119.99px) {
   .footer {
+    box-sizing: content-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background: linear-gradient(to right, $wight 120px, $light_grey 120px);
     height: 81px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 30px 24px 40px 24px;
+    border-top: 1px solid $light_green;
 
     &__year__team {
       display: flex;
@@ -52,23 +55,24 @@
       width: 240px;
     }
 
-    &_info {
-      width: 250px;
-      text-align: end;
+    &__info {
+      max-width: 250px;
+      text-align: end ;
     }
   }
 }
 
 @media (min-width: 1120px) {
   .footer {
+    box-sizing: content-box;
     max-width: 1120px;
     right: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 81px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 30px 32px 40px 32px;
+    border-top: 1px solid $light_green;
 
     &__year__team {
       display: flex;
@@ -84,7 +88,7 @@
       width: 240px;
     }
 
-    &_info {
+    &__info {
       width: 330px;
       text-align: end;
     }
