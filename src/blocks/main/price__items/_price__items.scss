@@ -202,19 +202,20 @@
     }
 
     &__btn {
-        margin-left: auto;
-        top: 17px;
-        width: 120px;
-        height: 32px;
-      }
+      margin-left: auto;
+      top: 17px;
+      width: 120px;
+      height: 32px;
+    }
   }
 }
 
 @media (min-width: 1119.9px) {
   .sliders__price {
     background: none;
-    min-height: 560px !important;
+    min-height: 526px !important;
     max-width: 1120px;
+    background: $light_grey;
   }
 
   .box__price {
@@ -229,6 +230,7 @@
       color: $wight;
       line-height: 64px;
       min-height: 500px !important;
+      padding-left: 0;
     }
 
     &__service,
@@ -261,10 +263,11 @@
       border: none;
       border-radius: 0;
       padding: 0;
+      padding-left: 16px;
 
-      // &_top {
-      //   background: linear-gradient(to right, $wight 96px, $light_grey 96px);
-      // }
+      &_top {
+        background: $light_grey;
+      }
 
       &:nth-child(n + 3)::after {
         content: '';
@@ -277,11 +280,13 @@
       }
 
       &:nth-child(2) {
-        border-top-right-radius: 10px !important;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
       }
 
       &:last-child {
-        border-bottom-right-radius: 10px !important;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
       }
 
       &:last-child {
@@ -308,128 +313,10 @@
     }
 
     &__btn {
-        margin-left: auto;
-        top: 17px;
-        width: 120px;
-        height: 32px;
-      }
+      margin-left: auto;
+      top: 17px;
+      width: 120px;
+      height: 32px;
+    }
   }
 }
-
-// @media (min-width: 1120px) {
-//   .sliders__price {
-//     max-width: 1120px;
-//     min-height: 560px;
-
-//     .title {
-//       padding-left: 32px;
-//       height: 56px;
-
-//       .title__text {
-//         padding: 0;
-//       }
-//     }
-
-//     .box__price {
-//       display: flex;
-//       flex-direction: column;
-//       padding: 0 32px 0 32px;
-//       min-height: 500px;
-
-//       .box__price__container {
-//         display: flex;
-//         flex-direction: column;
-//         width: 100%;
-//         color: $wight;
-//         line-height: 64px;
-//         padding: 0;
-
-//         .box__price__item_top {
-//           background-color: $light_grey;
-
-//           .box__price__service,
-//           .box__price__name,
-//           .box__price__time {
-//             color: $grey;
-//             font-weight: 500;
-//             font-size: 14px;
-//           }
-//         }
-
-//         .box__price__item {
-//           display: flex;
-//           flex-direction: row;
-//           width: 100%;
-//           margin: 0;
-//           padding: 0;
-//           height: 64px;
-//           border: none;
-//           border-radius: 0;
-//           padding-left: 24px;
-//           line-height: 64px;
-
-//           .box__price__title_hidden {
-//             display: none;
-//           }
-
-//           .box__price__service_width,
-//           .box__price__text_width {
-//             width: 50%;
-//           }
-
-//           .box__price__text_width,
-//           .box__price__name_width {
-//             width: 15%;
-//           }
-
-//           .box__price__cotainer {
-//             width: 33%;
-
-//             .box__price__btn {
-//               margin-left: auto;
-//               top: 17px;
-//               width: 120px;
-//               height: 32px;
-//             }
-//           }
-//         }
-
-//         .box__price__item:nth-child(n + 3)::after {
-//           content: '';
-//           display: block;
-//           position: absolute;
-//           top: 0;
-//           width: 96%;
-//           left: 10px;
-//           border-bottom: 1px solid $light_wight;
-//         }
-
-//         .box__price__item:nth-child(2) {
-//           border-top-left-radius: 10px;
-//           border-top-right-radius: 10px;
-//         }
-
-//         .box__price__item:last-child {
-//           border-bottom-left-radius: 10px;
-//           border-bottom-right-radius: 10px;
-//         }
-
-//         .box__price__item_hidden {
-//           display: flex !important;
-//           width: 100%;
-//           height: 64px;
-//         }
-
-//         .box__price__title_hidden {
-//           display: flex;
-//         }
-//       }
-//     }
-
-//     .swiper-pagination-bullet,
-//     .swiper-pagination,
-//     .container__appliances__pagination {
-//       display: none;
-//     }
-//   }
-// }
