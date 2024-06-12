@@ -43,18 +43,17 @@
     width: 40px;
     height: 40px;
   }
-
-  .logo {
-    height: 55px;
-    padding-left: 16px;
-    margin-right: auto;
-  }
-
-  .search {
-    background: url('../src/img/search.png') no-repeat;
-  }
 }
 
+.logo {
+  height: 55px;
+  padding-left: 16px;
+  margin-right: auto;
+}
+
+.search {
+  background: url('../src/img/search.png') no-repeat;
+}
 .clouse {
   background: url('../src/img/clouse.png') no-repeat;
 }
@@ -85,7 +84,6 @@
     width: 250px;
     padding: 0;
     margin: 0;
-    // padding-top: 28px;
     padding-bottom: 28px;
   }
 
@@ -159,10 +157,6 @@
     }
   }
 }
-
-// .order {
-//   order: -1;
-// }
 
 .popup__footer {
   display: flex;
@@ -262,7 +256,6 @@
     &_order {
       order: -1;
     }
-
   }
 
   &__btn,
