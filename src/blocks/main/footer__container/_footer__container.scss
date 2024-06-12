@@ -1,4 +1,4 @@
-.main__footer {
+.commercial__offer {
   display: flex;
   flex-direction: column;
   min-height: 172px;
@@ -6,14 +6,14 @@
   padding-left: 16px;
   padding-right: 16px;
 
-  .footer__container__text {
+  &__text {
     min-height: 88px;
     font-weight: 400;
     font-size: 14px;
     color: $black;
   }
 
-  .footer__container__btn {
+  &__btn {
     font-weight: 500;
     font-size: 16px;
     border: none;
@@ -38,32 +38,33 @@
     }
   }
 }
+
 @media (min-width: 768px) and (max-width: 1119.9px) {
-  .main__footer {
+  .commercial__offer {
     background: linear-gradient(to right, $wight 120px, $light_grey 120px);
     padding-left: 24px;
     padding-right: 24px;
     min-height: 140px;
 
-    .footer__container__text {
+    &__text {
       background: linear-gradient(to right, $wight 96px, $light_grey 96px);
       width: 421px;
     }
 
-    .footer__container__btn {
+    &__btn {
       background: linear-gradient(to right, $wight 96px, $light_grey 96px);
     }
   }
 }
 
 @media (min-width: 1120px) {
-  .main__footer {
+  .commercial__offer {
     max-width: 1120px;
     padding-left: 32px;
     padding-right: 32px;
     min-height: 140px;
 
-    .footer__container__text {
+    &__text {
       width: 421px;
     }
   }
