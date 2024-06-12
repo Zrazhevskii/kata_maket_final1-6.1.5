@@ -30,6 +30,10 @@
     padding: 16px;
     border: 1px solid $light_light_grey;
     border-radius: 10px;
+
+    &_hidden {
+      display: none !important;
+    }
   }
 
   &__title {
@@ -163,10 +167,6 @@
           margin: 0;
           width: 224px;
         }
-
-        .hidden {
-          display: none;
-        }
       }
     }
 
@@ -237,10 +237,6 @@
         .box__appliances {
           margin: 0;
           width: 240px;
-        }
-
-        .hidden {
-          display: none;
         }
       }
     }
