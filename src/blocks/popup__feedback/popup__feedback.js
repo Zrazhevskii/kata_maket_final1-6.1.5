@@ -16,7 +16,7 @@ let width = window.innerWidth;
 
 window.addEventListener('resize', () => {
   width = window.innerWidth;
-  clousePopup()
+  clousePopup();
 });
 
 feedbackBtn.addEventListener('click', () => {

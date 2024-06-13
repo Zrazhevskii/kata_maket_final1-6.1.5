@@ -12,11 +12,11 @@ let width = window.innerWidth;
 
 window.addEventListener('resize', () => {
   width = window.innerWidth;
-  clousePopup()
+  clousePopup();
 });
 
 headeBurger.addEventListener('click', () => {
-  popup.classList.add('popup__burger_position')
+  popup.classList.add('popup__burger_position');
   // console.log(width);
   if (width >= 768) {
     header.classList.add('popup__show_middle');
@@ -42,7 +42,7 @@ popup.addEventListener('click', (evt) => {
 });
 
 function clousePopup() {
-  popup.classList.remove('popup__burger_position')
+  popup.classList.remove('popup__burger_position');
   if (width >= 768) {
     header.classList.remove('popup__show_middle');
     main.classList.remove('popup__show_middle');

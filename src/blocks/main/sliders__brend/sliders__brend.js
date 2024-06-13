@@ -13,7 +13,7 @@ let width = window.innerWidth;
 window.addEventListener('resize', () => {
   width = window.innerWidth;
   // if (width >= 768) {
-    checkChildren();
+  checkChildren();
   // }
 });
 

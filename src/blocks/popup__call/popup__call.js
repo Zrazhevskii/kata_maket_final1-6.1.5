@@ -1,9 +1,7 @@
 /* eslint-env es6 */
 /* eslint-disable no-console */
 
-const backBtnClouse = document.querySelector(
-  '.popup__call__btn__clouse'
-);
+const backBtnClouse = document.querySelector('.popup__call__btn__clouse');
 const popupHeader = document.querySelector('.popup__burger');
 const popupModalCall = document.querySelector('.popup__call');
 const btnCall = document.querySelector('.call__btn');

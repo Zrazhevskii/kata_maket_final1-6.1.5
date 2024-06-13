@@ -4,8 +4,8 @@ import './main/sliders__price/sliders__price.js';
 import './popup__burger/popup__burger.js';
 import './popup__call/popup__call.js';
 import './popup__feedback/popup__feedback.js';
-import './main/main__description/servises/servises.js'
-import './main/main__description/content/content.js'
+import './main/main__description/servises/servises.js';
+import './main/main__description/content/content.js';
 
 const popupBurger = document.querySelector('.popup__burger');
 const desctop = document.querySelector('.desctop');
