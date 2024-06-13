@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 'auto',
     spaceBetween: 20,
     freeMode: true,
-    loop: true,
+    loop: true
   });
 
   resizableSwiper('(max-width: 767.9px)', '.box__appliances', {
@@ -63,7 +63,7 @@ window.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 'auto',
     spaceBetween: 20,
     freeMode: true,
-    loop: true,
+    loop: true
   });
 
   resizableSwiper('(max-width: 767.9px)', '.box__price', {
@@ -75,6 +75,6 @@ window.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 'auto',
     spaceBetween: 20,
     freeMode: true,
-    loop: true,
+    loop: true
   });
 });
