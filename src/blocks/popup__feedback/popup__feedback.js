@@ -40,12 +40,12 @@ feedbackBtnClouse.addEventListener('click', clousePopup);
 popupFeedbackBtn.addEventListener('click', openPopup);
 
 function openPopup() {
-  if (width >= 1120) {
+  if (width >= 1440) {
     header.classList.add('popup__show_middle');
     main.classList.add('popup__show_middle');
   }
 
-  if (width >= 768 && width < 1120) {
+  if (width >= 768 && width < 1440) {
     header.classList.remove('popup__show_middle');
     main.classList.remove('popup__show_middle');
     header.classList.add('popup__show_middle');
@@ -60,7 +60,7 @@ function openPopup() {
 }
 
 function clousePopup() {
-  if (width >= 1120) {
+  if (width >= 1440) {
     header.classList.remove('popup__show_little');
     main.classList.remove('popup__show_little');
     popupHeader.classList.remove('popup__burger_hidden');

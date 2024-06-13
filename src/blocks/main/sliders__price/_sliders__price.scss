@@ -101,7 +101,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1119.9px) {
+@media (min-width: 768px) and (max-width: 1439.9px) {
   .sliders__price {
     background: linear-gradient(to right, $wight 120px, $light_grey 120px);
     min-height: 524px !important;
@@ -110,7 +110,7 @@
   .box__price {
     display: flex;
     padding: 0 24px 0 24px !important;
-    max-width: 1120px;
+    max-width: 1440px;
     min-height: 500px;
     background: linear-gradient(to right, $wight 120px, $light_grey 120px);
 
@@ -207,7 +207,7 @@
   }
 }
 
-@media (min-width: 1119.9px) {
+@media (min-width: 1440px) {
   .sliders__price {
     background: none;
     min-height: 526px !important;

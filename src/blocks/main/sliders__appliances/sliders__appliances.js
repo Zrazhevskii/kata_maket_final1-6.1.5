@@ -33,7 +33,7 @@ function checkChildren() {
     }
   }
 
-  if (width >= 768 && width < 1120) {
+  if (width >= 768 && width < 1440) {
     for (let i = 0; i < appliancesArray.length; i++) {
       if (i >= 3) {
         appliancesArray[i].classList.add('box__appliances__item_hidden');
@@ -41,7 +41,7 @@ function checkChildren() {
     }
   }
 
-  if (width >= 1120) {
+  if (width >= 1440) {
     for (let i = 0; i < appliancesArray.length; i++) {
       appliancesArray[3].classList.remove('box__appliances__item_hidden');
       if (i >= 4) {
@@ -56,7 +56,7 @@ const changeHeightOpen = () => {
     appliancesArray[i].classList.remove('box__appliances__item_hidden');
   }
 
-  if (width >= 768 && width < 1120) {
+  if (width >= 768 && width < 1440) {
     appliancesItems.classList.add('sliders__appliances_big');
     appliancesContainer.classList.add('sliders__appliances_middle');
   } else {
@@ -68,7 +68,7 @@ const changeHeightOpen = () => {
 };
 
 const changeHeightClose = () => {
-  if (width >= 768 && width < 1120) {
+  if (width >= 768 && width < 1440) {
     for (let i = 0; i < appliancesArray.length; i++) {
       if (i >= 3) {
         appliancesArray[i].classList.add('box__appliances__item_hidden');
@@ -76,7 +76,7 @@ const changeHeightClose = () => {
     }
     appliancesItems.classList.remove('sliders__appliances_big');
     appliancesContainer.classList.remove('sliders__appliances_middle');
-  } else if (width >= 1120) {
+  } else if (width >= 1440) {
     for (let i = 0; i < appliancesArray.length; i++) {
       if (i >= 4) {
         appliancesArray[i].classList.add('box__appliances__item_hidden');

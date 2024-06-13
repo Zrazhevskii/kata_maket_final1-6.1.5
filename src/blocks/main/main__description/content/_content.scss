@@ -89,8 +89,9 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1119.99px) {
+@media (min-width: 768px) and (max-width: 1439.99px) {
   .content {
+    // max-width: 1120px;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 32px;
@@ -147,8 +148,9 @@
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1440px) {
   .content {
+    max-width: 1120px;
     flex-direction: row;
     padding-top: 30px;
 

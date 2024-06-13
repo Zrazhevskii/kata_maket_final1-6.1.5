@@ -17,7 +17,6 @@ window.addEventListener('resize', () => {
 
 headeBurger.addEventListener('click', () => {
   popup.classList.add('popup__burger_position');
-  // console.log(width);
   if (width >= 768) {
     header.classList.add('popup__show_middle');
     main.classList.add('popup__show_middle');

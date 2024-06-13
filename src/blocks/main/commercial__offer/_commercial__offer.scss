@@ -39,9 +39,10 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1119.9px) {
+@media (min-width: 768px) and (max-width: 1439.9px) {
   .commercial__offer {
     background: linear-gradient(to right, $wight 120px, $light_grey 120px);
+    // max-width: 1120px;
     padding-left: 24px;
     padding-right: 24px;
     min-height: 140px;
@@ -57,7 +58,7 @@
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1440px) {
   .commercial__offer {
     max-width: 1120px;
     padding-left: 32px;

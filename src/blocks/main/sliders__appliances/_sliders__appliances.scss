@@ -119,8 +119,9 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1119.9px) {
+@media (min-width: 768px) and (max-width: 1439.9px) {
   .sliders__appliances {
+    // max-width: 1120px;
     background: linear-gradient(to right, $wight 120px, $light_grey 120px);
     height: 308px;
 
@@ -147,7 +148,7 @@
       &__container {
         position: relative;
         display: grid;
-        max-width: 1120px;
+        max-width: 1440px;
         grid-template-columns: 1fr 1fr 224px !important;
         grid-template-rows: repeat(3, 160px);
         row-gap: 24px;
@@ -163,8 +164,9 @@
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1440px) {
   .sliders__appliances {
+    max-width: 1120px;
     padding: 0 !important;
     &__btn {
       display: flex;

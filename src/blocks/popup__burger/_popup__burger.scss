@@ -314,7 +314,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1119.99px) {
+@media (min-width: 768px) and (max-width: 1439.99px) {
   .popup__burger {
     height: 1024px;
 
@@ -341,9 +341,9 @@
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1440px) {
   .popup__burger {
-    width: 280px;
+    width: 290px;
     height: auto;
 
     &__wrapper {

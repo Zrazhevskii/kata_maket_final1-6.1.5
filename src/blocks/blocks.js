@@ -1,6 +1,5 @@
 import './main/sliders__brend/sliders__brend.js';
 import './main/sliders__appliances/sliders__appliances.js';
-import './main/sliders__price/sliders__price.js';
 import './popup__burger/popup__burger.js';
 import './popup__call/popup__call.js';
 import './popup__feedback/popup__feedback.js';
@@ -17,12 +16,12 @@ window.addEventListener('resize', () => {
 });
 
 function checkChildren() {
-  if (width >= 1120) {
+  if (width >= 1440) {
     desctop.classList.add('body__all__content');
     popupBurger.classList.remove('popup__burger_hidden');
   }
 
-  if (width < 1120) {
+  if (width < 1440) {
     popupBurger.classList.add('popup__burger_hidden');
     desctop.classList.remove('body__all__content');
   }

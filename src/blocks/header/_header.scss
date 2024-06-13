@@ -101,8 +101,9 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1119.99px) {
+@media (min-width: 768px) and (max-width: 1439.99px) {
   .navigation {
+    // max-width: 1120px;
     padding-left: 24px;
     padding-right: 24px;
 
@@ -197,7 +198,7 @@
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1440px) {
   .header {
     position: relative;
     background-color: $light_grey;

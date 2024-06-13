@@ -59,9 +59,10 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1119.99px) {
+@media (min-width: 768px) and (max-width: 1439.99px) {
   .main__description {
     background: linear-gradient(to right, $wight 120px, $light_grey 120px);
+    // max-width: 1120px;
     min-height: auto;
     padding-left: 24px;
     padding-right: 24px;
@@ -78,7 +79,7 @@
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1440px) {
   .main__description {
     max-width: 1120px;
     min-height: 445px;

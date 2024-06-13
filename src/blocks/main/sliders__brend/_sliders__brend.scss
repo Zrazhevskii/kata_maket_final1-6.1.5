@@ -79,7 +79,7 @@
   background-size: contain;
 }
 
-@media (min-width: 768px) and (max-width: 1119.9px) {
+@media (min-width: 768px) and (max-width: 1439.9px) {
   .sliders__brend {
     height: 308px;
     background: linear-gradient(to right, $wight 120px, $light_grey 120px);
@@ -156,18 +156,16 @@
   }
 
   .box__brend {
-    // display: block;
     padding: 24px 24px 0 24px;
     min-height: 320px;
 
     &__container {
       box-sizing: border-box !important;
       display: grid !important;
-      max-width: 1120px;
+      max-width: 1439.9px;
       grid-template-columns: 1fr 1fr 224px;
       grid-template-rows: repeat(4, 75px);
       row-gap: 16px;
-      // margin: auto;
       min-height: 380px;
       padding: 24px;
     }
@@ -199,7 +197,7 @@
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1440px) {
   .sliders__brend {
     max-width: 1120px;
     min-height: 320px;

@@ -32,7 +32,7 @@ function checkChildren() {
     }
   }
 
-  if (width >= 768 && width < 1120) {
+  if (width >= 768 && width < 1440) {
     for (let i = 0; i < containerSlider.length; i++) {
       if (i >= 6) {
         containerSlider[i].classList.add('box__brend__item_hidden');
@@ -40,7 +40,7 @@ function checkChildren() {
     }
   }
 
-  if (width >= 1120) {
+  if (width >= 1440) {
     for (let i = 0; i < containerSlider.length; i++) {
       if (i <= 7) {
         containerSlider[i].classList.remove('box__brend__item_hidden');
@@ -52,7 +52,7 @@ function checkChildren() {
 }
 
 const changeHeightOpen = () => {
-  if (width >= 768 && width < 1120) {
+  if (width >= 768 && width < 1440) {
     slidersBrend.classList.add('sliders__brends__screen_middle');
 
     for (let i = 0; i < containerSlider.length; i++) {
@@ -74,14 +74,14 @@ const changeHeightOpen = () => {
 };
 
 const changeHeightClose = () => {
-  if (width >= 768 && width < 1120) {
+  if (width >= 768 && width < 1440) {
     slidersBrend.classList.remove('sliders__brends__screen_middle');
     for (let i = 0; i < containerSlider.length; i++) {
       if (i >= 6) {
         containerSlider[i].classList.add('box__brend__item_hidden');
       }
     }
-  } else if (width >= 1120) {
+  } else if (width >= 1440) {
     slidersBrend.classList.remove('sliders__brend_little');
     for (let i = 0; i < containerSlider.length; i++) {
       if (i >= 8) {

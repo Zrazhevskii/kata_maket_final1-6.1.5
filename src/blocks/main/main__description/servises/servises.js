@@ -18,7 +18,7 @@ mainItem.addEventListener('click', (evt) => {
     if (item.classList.contains('servises__link_active')) {
       item.classList.remove('servises__link_active');
 
-      if (width >= 768 && width < 1120) {
+      if (width >= 768 && width < 1440) {
         if (evt.target === mainItemLink[0]) {
           mainItemLink[0].classList.add('servises__link_background');
           mainItemLink[0].classList.remove('servises__link_gradient');
@@ -38,7 +38,7 @@ mainItem.addEventListener('click', (evt) => {
 });
 
 function checkChildren() {
-  if (width < 768 || width > 1120) {
+  if (width < 768 || width > 1440) {
     if (!mainItemLink[0].classList.contains('servises__link_active')) {
       mainItemLink[0].classList.remove('servises__link_background');
       mainItemLink[0].classList.remove('servises__link_gradient');
