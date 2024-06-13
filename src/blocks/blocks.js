@@ -2,8 +2,8 @@ import './main/sliders__brend/sliders__brend.js';
 import './main/sliders__appliances/sliders__appliances.js';
 import './main/sliders__price/sliders__price.js';
 import './popup__burger/popup__burger.js';
-import './popup__modal__back/popup__modal__back.js';
-import './popup__modal__feedback/popup__modal__feedback.js';
+import './popup__call/popup__call.js';
+import './popup__feedback/popup__feedback.js';
 import './main/main__description/servises/servises.js'
 import './main/main__description/content/content.js'
 
