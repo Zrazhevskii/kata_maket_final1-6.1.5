@@ -1,4 +1,4 @@
-.popup__burger {
+.popup-burger {
   width: 100vw;
   height: 680px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -291,7 +291,7 @@
 }
 
 @media (min-width: 360px) and (max-width: 767.99px) {
-  .popup__burger {
+  .popup-burger {
     height: 680px;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 0;
@@ -315,7 +315,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1439.99px) {
-  .popup__burger {
+  .popup-burger {
     height: 1024px;
 
     &__wrapper {
@@ -342,7 +342,7 @@
 }
 
 @media (min-width: 1440px) {
-  .popup__burger {
+  .popup-burger {
     width: 290px;
     height: auto;
 

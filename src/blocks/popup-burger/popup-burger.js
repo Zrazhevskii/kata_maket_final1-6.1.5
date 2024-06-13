@@ -5,7 +5,7 @@ const headeBurger = document.querySelector('.burger__btn');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
-const popup = document.querySelector('.popup__burger');
+const popup = document.querySelector('.popup-burger');
 const clouse = document.querySelector('.clouse');
 
 let width = window.innerWidth;

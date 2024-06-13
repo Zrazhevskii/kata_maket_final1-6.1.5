@@ -1,12 +1,12 @@
 import './main/sliders__brend/sliders__brend.js';
 import './main/sliders__appliances/sliders__appliances.js';
-import './popup__burger/popup__burger.js';
+import './popup-burger/popup-burger.js';
 import './popup__call/popup__call.js';
 import './popup__feedback/popup__feedback.js';
 import './main/main__description/servises/servises.js';
 import './main/main__description/content/content.js';
 
-const popupBurger = document.querySelector('.popup__burger');
+const popupBurger = document.querySelector('.popup-burger');
 const desctop = document.querySelector('.desctop');
 let width = window.innerWidth;
 
