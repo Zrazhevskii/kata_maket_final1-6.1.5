@@ -48,6 +48,14 @@
       background-color: $wight !important;
       border-radius: 10px;
     }
+
+    &_gradient {
+      background: linear-gradient(to right, $wight 96px, $light_grey 96px);
+    }
+
+    &_background {
+      background: $wight;
+    }
   }
 }
 
@@ -68,11 +76,11 @@
     padding-left: 0;
     padding-right: 0;
 
-    &__link {
-      &_background {
-        background: linear-gradient(to right, $wight 96px, $light_grey 96px);
-      }
-    }
+    // &__link {
+    //   &_background {
+    //     background: linear-gradient(to right, $wight 96px, $light_grey 96px);
+    //   }
+    // }
   }
 }
 
