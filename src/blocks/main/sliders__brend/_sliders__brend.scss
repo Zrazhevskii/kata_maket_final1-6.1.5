@@ -118,7 +118,7 @@
         content: 'Показать всё';
         font-size: 16px;
         font-weight: 500;
-        color: black;
+        color: $black;
         position: relative;
         top: -182px;
         left: -5px;
@@ -146,7 +146,7 @@
         content: 'Скрыть';
         font-size: 16px;
         font-weight: 500;
-        color: black;
+        color: &black;
         position: relative;
         top: 4px;
         left: -5px;
@@ -231,7 +231,7 @@
         content: 'Показать всё';
         font-size: 16px;
         font-weight: 500;
-        color: black;
+        color: $black;
         position: relative;
         left: 6px;
         top: -76px;
@@ -258,7 +258,7 @@
         content: 'Скрыть';
         font-size: 16px;
         font-weight: 500;
-        color: black;
+        color: $black;
         position: relative;
         top: 18px;
         left: 5px;

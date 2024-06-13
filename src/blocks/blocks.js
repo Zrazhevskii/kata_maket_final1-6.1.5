@@ -1,11 +1,11 @@
-import './main/main_content/main_content.js';
 import './main/sliders__brend/sliders__brend.js';
-import './main/appliances__items/appliances__items.js';
-import './main/price__items/price__items.js';
+import './main/sliders__appliances/sliders__appliances.js';
+import './main/sliders__price/sliders__price.js';
 import './popup__burger/popup__burger.js';
 import './popup__modal__back/popup__modal__back.js';
 import './popup__modal__feedback/popup__modal__feedback.js';
-import './main/main__description/main__description.js';
+import './main/main__description/servises/servises.js'
+import './main/main__description/content/content.js'
 
 const popupBurger = document.querySelector('.popup__burger');
 const desctop = document.querySelector('.desctop');

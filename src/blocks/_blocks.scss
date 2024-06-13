@@ -1,15 +1,17 @@
 @import './header/header.scss';
-@import './main/main_content/main__contant';
-@import './main/appliances__items/appliances__items';
+@import './main/sliders__appliances/sliders__appliances';
 @import './main/sliders__brend/sliders__brend';
-@import './main/price__items/price__items';
-@import './main/footer__container/footer__container';
+@import './main/sliders__price/sliders__price';
+@import './main/commercial__offer/commercial__offer';
 @import './footer/footer';
 @import './popup__burger/popup__burger';
 @import './popup__modal__back/popup__modal__back.scss';
 @import './popup__modal__feedback/popup__modal__feedback';
-@import './main/main__description/main__description';
 @import './main/title/title';
+@import './main/main__description/servises/servises';
+@import './main/main__description/content/content';
+
+
 * {
   margin: 0;
   padding: 0;
