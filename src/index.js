@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
     checker();
   };
 
-  resizableSwiper('(max-width: 767.9px)', '.box__brend', {
+  resizableSwiper('(max-width: 767.9px)', '.box-brend', {
     modules: [Pagination],
     pagination: {
       el: '.swiper-pagination',

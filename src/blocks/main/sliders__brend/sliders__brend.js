@@ -3,10 +3,10 @@
 
 const slidersBrend = document.querySelector('.sliders-brend');
 const slidersBtn = document.querySelector('.sliders-brend__btn');
-const slider = document.querySelector('.box__brend__container');
+const slider = document.querySelector('.box-brend__container');
 
 const containerSlider = Array.from(
-  document.querySelectorAll('.box__brend__item')
+  document.querySelectorAll('.box-brend__item')
 );
 let width = window.innerWidth;
 
@@ -28,14 +28,14 @@ slidersBtn.addEventListener('click', function () {
 function checkChildren() {
   if (width < 768) {
     for (let i = 0; i < containerSlider.length; i++) {
-      containerSlider[i].classList.remove('box__brend__item_hidden');
+      containerSlider[i].classList.remove('box-brend__item_hidden');
     }
   }
 
   if (width >= 768 && width < 1440) {
     for (let i = 0; i < containerSlider.length; i++) {
       if (i >= 6) {
-        containerSlider[i].classList.add('box__brend__item_hidden');
+        containerSlider[i].classList.add('box-brend__item_hidden');
       }
     }
   }
@@ -43,9 +43,9 @@ function checkChildren() {
   if (width >= 1440) {
     for (let i = 0; i < containerSlider.length; i++) {
       if (i <= 7) {
-        containerSlider[i].classList.remove('box__brend__item_hidden');
+        containerSlider[i].classList.remove('box-brend__item_hidden');
       } else if (i > 7) {
-        containerSlider[i].classList.add('box__brend__item_hidden');
+        containerSlider[i].classList.add('box-brend__item_hidden');
       }
     }
   }
@@ -56,15 +56,15 @@ const changeHeightOpen = () => {
     slidersBrend.classList.add('sliders-brend__screen_middle');
 
     for (let i = 0; i < containerSlider.length; i++) {
-      if (containerSlider[i].className.includes('box__brend__item_hidden')) {
-        containerSlider[i].classList.remove('box__brend__item_hidden');
+      if (containerSlider[i].className.includes('box-brend__item_hidden')) {
+        containerSlider[i].classList.remove('box-brend__item_hidden');
       }
     }
   } else {
     slidersBrend.classList.add('sliders-brend_little');
     for (let i = 0; i < containerSlider.length; i++) {
-      if (containerSlider[i].className.includes('box__brend__item_hidden')) {
-        containerSlider[i].classList.remove('box__brend__item_hidden');
+      if (containerSlider[i].className.includes('box-brend__item_hidden')) {
+        containerSlider[i].classList.remove('box-brend__item_hidden');
       }
     }
   }
@@ -78,14 +78,14 @@ const changeHeightClose = () => {
     slidersBrend.classList.remove('sliders-brend__screen_middle');
     for (let i = 0; i < containerSlider.length; i++) {
       if (i >= 6) {
-        containerSlider[i].classList.add('box__brend__item_hidden');
+        containerSlider[i].classList.add('box-brend__item_hidden');
       }
     }
   } else if (width >= 1440) {
     slidersBrend.classList.remove('sliders-brend_little');
     for (let i = 0; i < containerSlider.length; i++) {
       if (i >= 8) {
-        containerSlider[i].classList.add('box__brend__item_hidden');
+        containerSlider[i].classList.add('box-brend__item_hidden');
       }
     }
   }
