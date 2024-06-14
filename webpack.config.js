@@ -21,7 +21,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     // clean: true,
     filename: '[name].[contenthash].js',
-    assetModuleFilename: 'assets/images/[name][ext]'
+    assetModuleFilename: 'assets/images/[name].[ext]'
   },
   watchOptions: {
     aggregateTimeout: 200
