@@ -1,6 +1,6 @@
 @import './form/form';
 
-.popup__feedback {
+.popup-feedback {
   background-color: rgba(255, 255, 255, 0.5);
   width: 100vw;
   height: 680px;
@@ -20,7 +20,7 @@
     box-shadow: -20px 0px 35px -5px $rgba;
   }
 
-  &__btn__clouse {
+  &__btn-clouse {
     width: 40px;
     height: 40px;
     background: url('../src/img/clouse.png');
@@ -54,7 +54,7 @@
 }
 
 @media (min-width: 768px) {
-  .popup__feedback {
+  .popup-feedback {
     height: 940px;
 
     &__wrapper {
@@ -64,7 +64,7 @@
       padding: 0 32px;
     }
 
-    &__btn__clouse {
+    &__btn-clouse {
       position: absolute;
       left: -74px;
       top: 25px;

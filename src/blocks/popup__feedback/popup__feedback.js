@@ -2,9 +2,9 @@
 /* eslint-disable no-console */
 
 const feedbackBtn = document.querySelector('.navigation__btn_chat');
-const feedbackPopup = document.querySelector('.popup__feedback');
+const feedbackPopup = document.querySelector('.popup-feedback');
 const feedbackBtnClouse = document.querySelector(
-  '.popup__feedback__btn__clouse'
+  '.popup-feedback__btn-clouse'
 );
 const popupHeader = document.querySelector('.popup-burger');
 const header = document.querySelector('.header');
@@ -24,8 +24,8 @@ feedbackBtn.addEventListener('click', () => {
   main.classList.add('popup__show_middle');
   footer.classList.add('popup_hidden');
   feedbackPopup.classList.add('popup__servises_position');
-  if (feedbackPopup.classList.contains('popup__feedback_hidden')) {
-    feedbackPopup.classList.remove('popup__feedback_hidden');
+  if (feedbackPopup.classList.contains('popup-feedback_hidden')) {
+    feedbackPopup.classList.remove('popup-feedback_hidden');
   }
 });
 
@@ -54,7 +54,7 @@ function openPopup() {
 
   footer.classList.add('popup_hidden');
   popupHeader.classList.remove('popup__burger_position');
-  feedbackPopup.classList.remove('popup__feedback_hidden');
+  feedbackPopup.classList.remove('popup-feedback_hidden');
   popupHeader.classList.add('popup-burger_hidden');
   feedbackPopup.classList.add('popup__servises_position');
 }
@@ -66,7 +66,7 @@ function clousePopup() {
     popupHeader.classList.remove('popup-burger_hidden');
   }
 
-  feedbackPopup.classList.add('popup__feedback_hidden');
+  feedbackPopup.classList.add('popup-feedback_hidden');
   feedbackPopup.classList.remove('popup__servises_position');
 
   if (width < 768) {
