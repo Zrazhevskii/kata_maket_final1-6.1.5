@@ -1,4 +1,4 @@
-.popup__call {
+.popup-call {
   background-color: rgba(255, 255, 255, 0.5);
   width: 100vw;
   height: 680px;
@@ -18,7 +18,7 @@
     box-shadow: -20px 0px 35px -5px $rgba;
   }
 
-  &__btn__clouse {
+  &__btn-clouse {
     width: 40px;
     height: 40px;
     background: url('../src/img/clouse.png');
@@ -80,7 +80,7 @@
     color: $red;
   }
 
-  &__btn__send {
+  &__btn-send {
     position: relative;
     border: none;
     background-color: $redBtn;
@@ -120,7 +120,7 @@
 }
 
 @media (min-width: 768px) {
-  .popup__call {
+  .popup-call {
     height: 940px;
 
     &__wrapper {
@@ -130,7 +130,7 @@
       padding: 0 32px;
     }
 
-    &__btn__clouse {
+    &__btn-clouse {
       position: absolute;
       left: -74px;
       top: 25px;
@@ -150,7 +150,7 @@
       width: 376px;
     }
 
-    &__btn__send {
+    &__btn-send {
       margin-left: 242px;
     }
   }

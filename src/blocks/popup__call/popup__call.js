@@ -1,9 +1,9 @@
 /* eslint-env es6 */
 /* eslint-disable no-console */
 
-const backBtnClouse = document.querySelector('.popup__call__btn__clouse');
+const backBtnClouse = document.querySelector('.popup-call__btn-clouse');
 const popupHeader = document.querySelector('.popup-burger');
-const popupModalCall = document.querySelector('.popup__call');
+const popupModalCall = document.querySelector('.popup-call');
 const btnCall = document.querySelector('.navigation__btn_call');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
@@ -22,8 +22,8 @@ btnCall.addEventListener('click', () => {
   main.classList.add('popup__show_middle');
   footer.classList.add('popup_hidden');
   popupModalCall.classList.add('popup__servises_position');
-  if (popupModalCall.classList.contains('popup__call_hidden')) {
-    popupModalCall.classList.remove('popup__call_hidden');
+  if (popupModalCall.classList.contains('popup-call_hidden')) {
+    popupModalCall.classList.remove('popup-call_hidden');
   }
 });
 
@@ -52,7 +52,7 @@ function openPopup() {
 
   footer.classList.add('popup_hidden');
   popupHeader.classList.remove('popup__burger_position');
-  popupModalCall.classList.remove('popup__call_hidden');
+  popupModalCall.classList.remove('popup-call_hidden');
   popupHeader.classList.add('popup-burger_hidden');
   popupModalCall.classList.add('popup__servises_position');
 }
@@ -64,7 +64,7 @@ function clousePopup() {
     popupHeader.classList.remove('popup-burger_hidden');
   }
 
-  popupModalCall.classList.add('popup__call_hidden');
+  popupModalCall.classList.add('popup-call_hidden');
   popupModalCall.classList.remove('popup__servises_position');
 
   if (width < 768) {
