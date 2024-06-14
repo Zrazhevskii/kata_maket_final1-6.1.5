@@ -1,4 +1,4 @@
-.sliders__appliances {
+.sliders-appliances {
   box-sizing: border-box;
   height: 312px;
   overflow: hidden;
@@ -70,7 +70,7 @@
   }
 }
 
-.box__appliances {
+.box-appliances {
   position: relative;
 
   &__container {
@@ -120,7 +120,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1439.9px) {
-  .sliders__appliances {
+  .sliders-appliances {
     // max-width: 1120px;
     background: linear-gradient(to right, $wight 120px, $light_grey 120px);
     height: 308px;
@@ -140,7 +140,7 @@
       }
     }
 
-    .box__appliances {
+    .box-appliances {
       display: block;
       padding: 24px 24px 0 24px;
       min-height: 320px;
@@ -165,9 +165,11 @@
 }
 
 @media (min-width: 1440px) {
-  .sliders__appliances {
+  .sliders-appliances {
     max-width: 1120px;
     padding: 0 !important;
+    min-height: 320px;
+
     &__btn {
       display: flex;
 
@@ -192,7 +194,7 @@
     }
   }
 
-  .box__appliances {
+  .box-appliances {
     display: block;
     padding: 24px 32px 0 32px;
     min-height: 320px;
