@@ -1,7 +1,7 @@
 /* eslint-env es6 */
 /* eslint-disable no-console */
 
-const mainItem = document.querySelector('.servises__box__item');
+const mainItem = document.querySelector('.servises__box-item');
 const mainItemLink = document.querySelectorAll('.servises__link');
 
 let width = window.innerWidth;

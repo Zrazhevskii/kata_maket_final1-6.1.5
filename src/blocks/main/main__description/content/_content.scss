@@ -4,18 +4,24 @@
   max-height: 90%;
   padding-top: 24px;
 
-  &__wrapper__text {
+  &__wrapper-text {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  &__more__text,
-  &__text_hidden,
-  &__more__hidden {
+  &__text {
+
+    &_hidden,
+    &_more-hidden {
+      display: none;
+    }
+  }
+
+  &__more-text {
     display: none;
   }
 
-  &__wrapper__btn {
+  &__wrapper-btn {
     position: relative;
     flex-direction: row;
     padding-bottom: 16px;
@@ -96,7 +102,7 @@
     justify-content: space-between;
     padding-top: 32px;
 
-    &__wrapper__text {
+    &__wrapper-text {
       display: flex;
       flex-direction: column;
       width: 50%;
@@ -104,7 +110,7 @@
       padding-right: 0;
     }
 
-    &__text__box {
+    &__text-box {
       padding-right: 20px;
       width: 100%;
     }
@@ -121,7 +127,7 @@
       }
     }
 
-    &__wrapper__btn {
+    &__wrapper-btn {
       padding-top: 0;
     }
 
@@ -135,7 +141,7 @@
       }
     }
 
-    &__box__image {
+    &__box-image {
       display: flex;
       justify-content: end;
       width: 50%;
@@ -154,12 +160,12 @@
     flex-direction: row;
     padding-top: 30px;
 
-    &__wrapper__text {
+    &__wrapper-text {
       padding-left: 0;
       width: 50%;
     }
 
-    &__text__box {
+    &__text-box {
       width: 100%;
       padding-right: 30px;
     }
@@ -172,11 +178,11 @@
       }
     }
 
-    &__more__text {
+    &__more-text {
       display: block;
     }
 
-    &__wrapper__btn {
+    &__wrapper-btn {
       padding-top: 0;
       padding-bottom: 0;
       padding-bottom: 24px;
@@ -194,7 +200,7 @@
       }
     }
 
-    &__box__image {
+    &__box-image {
       width: 50%;
     }
 

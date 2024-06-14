@@ -1,4 +1,4 @@
-.main__description {
+.description {
   display: flex;
   flex-direction: column;
   background-color: $light_grey;
@@ -13,7 +13,7 @@
   padding-left: 16px;
   padding-right: 16px;
 
-  &__box__item {
+  &__box-item {
     display: flex;
     flex-direction: row;
     overflow: auto;
@@ -60,7 +60,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1439.99px) {
-  .main__description {
+  .description {
     background: linear-gradient(to right, $wight 120px, $light_grey 120px);
     // max-width: 1120px;
     min-height: auto;
@@ -80,7 +80,7 @@
 }
 
 @media (min-width: 1440px) {
-  .main__description {
+  .description {
     max-width: 1120px;
     min-height: 445px;
     margin: auto;
@@ -92,7 +92,7 @@
     padding-left: 0;
     padding-right: 0;
 
-    &__box__item {
+    &__box-item {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
