@@ -17,13 +17,13 @@ window.addEventListener('resize', () => {
 
 function checkChildren() {
   if (width >= 1440) {
-    desctop.classList.add('body__all__content');
+    desctop.classList.add('body-all-content');
     popupBurger.classList.remove('popup-burger_hidden');
   }
 
   if (width < 1440) {
     popupBurger.classList.add('popup-burger_hidden');
-    desctop.classList.remove('body__all__content');
+    desctop.classList.remove('body-all-content');
   }
 }
 

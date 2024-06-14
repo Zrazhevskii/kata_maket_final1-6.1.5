@@ -67,7 +67,7 @@ body {
   z-index: -999;
 }
 
-.body__all__content {
+.body-all-content {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -75,7 +75,7 @@ body {
   margin: auto;
 }
 
-.body__content {
+.body-content {
   display: flex;
   flex-direction: column;
 }
