@@ -80,17 +80,13 @@
   }
 }
 
-// .repair__btn {
-//   background: url('../src/img/repair.png') no-repeat;
+// .header__nav__btn {
+//   border: none;
+
+//   &:hover {
+//     cursor: pointer;
+//   }
 // }
-
-.header__nav__btn {
-  border: none;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
 
 .title-conteiner {
   position: relative;
@@ -102,7 +98,7 @@
   padding-left: 18px;
 
   &__text {
-    font-family: 'TT Lakes';
+    font-family: 'TT Lakes', sans-serif;
     font-weight: 700;
     font-size: 28px;
     margin: 0;
@@ -127,7 +123,6 @@
 
 @media (min-width: 768px) and (max-width: 1439.99px) {
   .navigation {
-    // max-width: 1120px;
     padding-left: 24px;
     padding-right: 24px;
 
@@ -190,11 +185,6 @@
       }
     }
   }
-
-  // .profile__btn {
-  //   background: no-repeat url('../src/img/profile.png');
-  //   padding-right: 18px;
-  // }
 
   .title-conteiner {
     border-top: 1px solid $light_green;
