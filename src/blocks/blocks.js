@@ -1,8 +1,8 @@
 import './main/sliders__brend/sliders__brend.js';
 import './main/sliders__appliances/sliders__appliances.js';
 import './popup-burger/popup-burger.js';
-import './popup__call/popup__call.js';
-import './popup__feedback/popup__feedback.js';
+import './popup-call/popup-call.js';
+import './popup-feedback/popup-feedback.js';
 import './main/main__description/servises/servises.js';
 import './main/main__description/content/content.js';
 
