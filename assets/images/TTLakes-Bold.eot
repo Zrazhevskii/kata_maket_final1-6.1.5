@@ -1,1 +1,1 @@
-export default __webpack_public_path__ + "./fonts/TTLakes-Boldeot";
+export default __webpack_public_path__ + "./fonts/TTLakes-Bold.eot";
