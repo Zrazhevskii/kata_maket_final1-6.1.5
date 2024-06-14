@@ -1,4 +1,4 @@
-.sliders__price {
+.sliders-price {
   box-sizing: border-box;
   height: 360px;
   overflow: hidden;
@@ -6,7 +6,7 @@
   border-top: 1px solid $light_green;
 }
 
-.box__price {
+.box-price {
   position: relative;
 
   &__container {
@@ -56,7 +56,7 @@
     flex-direction: row;
   }
 
-  &__time__box {
+  &__time-box {
     display: flex;
     flex-direction: column;
   }
@@ -102,12 +102,12 @@
 }
 
 @media (min-width: 768px) and (max-width: 1439.9px) {
-  .sliders__price {
+  .sliders-price {
     background: linear-gradient(to right, $wight 120px, $light_grey 120px);
     min-height: 524px !important;
   }
 
-  .box__price {
+  .box-price {
     display: flex;
     padding: 0 24px 0 24px !important;
     max-width: 1440px;
@@ -208,14 +208,14 @@
 }
 
 @media (min-width: 1440px) {
-  .sliders__price {
+  .sliders-price {
     background: none;
     min-height: 526px !important;
     max-width: 1120px;
     background: $light_grey;
   }
 
-  .box__price {
+  .box-price {
     display: flex;
     padding: 0 32px 0 32px !important;
     max-width: 1120px;
@@ -301,8 +301,10 @@
       }
     }
 
-    &__title_hidden {
-      display: none !important;
+    &__title {
+      &_hidden {
+        display: none !important;
+      }
     }
 
     &__order {

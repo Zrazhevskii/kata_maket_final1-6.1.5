@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded', () => {
     loop: true
   });
 
-  resizableSwiper('(max-width: 767.9px)', '.box__price', {
+  resizableSwiper('(max-width: 767.9px)', '.box-price', {
     modules: [Pagination],
     pagination: {
       el: '.swiper-pagination',

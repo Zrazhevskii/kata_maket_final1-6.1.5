@@ -1,4 +1,4 @@
-.commercial__offer {
+.commercial-offer {
   display: flex;
   flex-direction: column;
   min-height: 135px;
@@ -40,7 +40,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1439.9px) {
-  .commercial__offer {
+  .commercial-offer {
     background: linear-gradient(to right, $wight 120px, $light_grey 120px);
     // max-width: 1120px;
     padding-left: 24px;
@@ -59,7 +59,7 @@
 }
 
 @media (min-width: 1440px) {
-  .commercial__offer {
+  .commercial-offer {
     max-width: 1120px;
     padding-left: 32px;
     padding-right: 32px;
