@@ -1,12 +1,12 @@
 /* eslint-env es6 */
 /* eslint-disable no-console */
 
-const headeBurger = document.querySelector('.burger__btn');
+const headeBurger = document.querySelector('.navigation__btn_burger');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
 const popup = document.querySelector('.popup-burger');
-const clouse = document.querySelector('.clouse');
+const clouse = document.querySelector('.header-popup__btn_clouse');
 
 let width = window.innerWidth;
 
@@ -27,8 +27,8 @@ headeBurger.addEventListener('click', () => {
 
   footer.classList.add('popup_hidden');
 
-  if (popup.classList.contains('popup__burger_hidden')) {
-    popup.classList.remove('popup__burger_hidden');
+  if (popup.classList.contains('popup-burger_hidden')) {
+    popup.classList.remove('popup-burger_hidden');
   }
 });
 
@@ -51,5 +51,5 @@ function clousePopup() {
   }
 
   footer.classList.remove('popup_hidden');
-  popup.classList.add('popup__burger_hidden');
+  popup.classList.add('popup-burger_hidden');
 }

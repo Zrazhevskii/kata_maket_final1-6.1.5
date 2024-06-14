@@ -1,7 +1,7 @@
 /* eslint-env es6 */
 /* eslint-disable no-console */
 
-const feedbackBtn = document.querySelector('.chat__btn');
+const feedbackBtn = document.querySelector('.navigation__btn_chat');
 const feedbackPopup = document.querySelector('.popup__feedback');
 const feedbackBtnClouse = document.querySelector(
   '.popup__feedback__btn__clouse'
@@ -10,7 +10,7 @@ const popupHeader = document.querySelector('.popup-burger');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
-const popupFeedbackBtn = document.querySelector('.popup__footer__item .chat');
+const popupFeedbackBtn = document.querySelector('.popup-footer__item .popup-footer__btn_chat');
 
 let width = window.innerWidth;
 
@@ -55,7 +55,7 @@ function openPopup() {
   footer.classList.add('popup_hidden');
   popupHeader.classList.remove('popup__burger_position');
   feedbackPopup.classList.remove('popup__feedback_hidden');
-  popupHeader.classList.add('popup__burger_hidden');
+  popupHeader.classList.add('popup-burger_hidden');
   feedbackPopup.classList.add('popup__servises_position');
 }
 
@@ -63,7 +63,7 @@ function clousePopup() {
   if (width >= 1440) {
     header.classList.remove('popup__show_little');
     main.classList.remove('popup__show_little');
-    popupHeader.classList.remove('popup__burger_hidden');
+    popupHeader.classList.remove('popup-burger_hidden');
   }
 
   feedbackPopup.classList.add('popup__feedback_hidden');

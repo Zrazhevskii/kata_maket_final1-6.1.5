@@ -12,7 +12,6 @@
     height: 676px;
     background-color: $wight;
     box-shadow: 20px 0px 35px -5px $rgba;
-    // padding-top: 4px;
   }
 
   &_hidden {
@@ -20,7 +19,7 @@
   }
 }
 
-.header__popup {
+.header-popup {
   box-sizing: border-box;
   width: 320px;
   padding: 24px;
@@ -34,40 +33,45 @@
     align-items: center;
     font-size: 0;
   }
+
   &__list {
     width: 40px;
     height: 40px;
+
+    &_logo {
+      height: 55px;
+      padding-left: 16px;
+      margin-right: auto;
+    }
   }
+
   &__btn {
     display: block;
     width: 40px;
     height: 40px;
+
+    &_clouse {
+      background: url('../src/img/clouse.png') no-repeat;
+    }
+
+    &_search {
+      background: url('../src/img/search.png') no-repeat;
+    }
+
+    &_clouse,
+    &_search {
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        transition-duration: 1s;
+      }
+    }
   }
 }
 
-.logo {
-  height: 55px;
-  padding-left: 16px;
-  margin-right: auto;
-}
-
-.search {
-  background: url('../src/img/search.png') no-repeat;
-}
-.clouse {
-  background: url('../src/img/clouse.png') no-repeat;
-}
-
-.clouse,
-.search {
-  border: none;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.popup__main {
+.popup-main {
   display: flex;
   flex-direction: column;
   width: 250px;
@@ -98,11 +102,11 @@
       padding-bottom: 0;
     }
 
-    &:hover ~ & .popup__main__link_active {
+    &:hover ~ & .popup-main__link_active {
       color: $black;
     }
 
-    &:hover ~ & .popup__main__link_active::before {
+    &:hover ~ & .popup-main__link_active::before {
       display: none;
     }
 
@@ -160,7 +164,7 @@
   }
 }
 
-.popup__footer {
+.popup-footer {
   display: flex;
   flex-direction: column;
   min-width: 220px;
@@ -194,27 +198,29 @@
   &__btn {
     width: 40px;
     height: 40px;
-  }
 
-  .call {
-    background: url('../src/img/call.png') no-repeat;
-  }
+    &_call {
+      background: url('../src/img/call.png') no-repeat;
+    }
 
-  .chat {
-    background: url('../src/img/chat.png') no-repeat;
-  }
+    &_chat {
+      background: url('../src/img/chat.png') no-repeat;
+    }
 
-  .profile {
-    background: url('../src/img/profile.png') no-repeat;
-  }
+    &_profile {
+      background: url('../src/img/profile.png') no-repeat;
+    }
 
-  .call,
-  .chat,
-  .profile {
-    border: none;
+    &_call,
+    &_chat,
+    &_profile {
+      border: none;
 
-    &:hover {
-      cursor: pointer;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        transition-duration: 1s;
+      }
     }
   }
 
@@ -237,7 +243,7 @@
   }
 }
 
-.lang__box {
+.lang-box {
   padding-bottom: 32px;
 
   &__list {
@@ -251,7 +257,7 @@
     list-style: none;
     padding-right: 7px;
 
-    &:hover ~ & .lang__box__link__abbr_active {
+    &:hover ~ & .lang-box__btn-abbr_active {
       color: $black;
     }
 
@@ -261,7 +267,7 @@
   }
 
   &__btn,
-  &__link__abbr {
+  &__btn-abbr {
     font-weight: 500;
     color: $black;
     text-decoration: none;
@@ -279,17 +285,6 @@
   }
 }
 
-.clouse,
-.search,
-.chat,
-.call,
-.profile {
-  &:hover {
-    opacity: 0.5;
-    transition-duration: 1s;
-  }
-}
-
 @media (min-width: 360px) and (max-width: 767.99px) {
   .popup-burger {
     height: 680px;
@@ -302,15 +297,17 @@
     }
   }
 
-  .header__popup {
+  .header-popup {
     box-sizing: border-box;
     width: 336px;
     padding: 24px 0 28px 16px;
-  }
 
-  .logo {
-    padding-left: 32px;
-    margin-right: auto;
+    &__list {
+      &_logo {
+        padding-left: 32px;
+        margin-right: auto;
+      }
+    }
   }
 }
 
@@ -324,15 +321,17 @@
     }
   }
 
-  .header__popup {
+  .header-popup {
     width: 320px;
+
+    &__list {
+      &_logo {
+        padding-left: 16px;
+      }
+    }
   }
 
-  .logo {
-    padding-left: 16px;
-  }
-
-  .popup__main {
+  .popup-main {
     height: 920px;
 
     &__list {
@@ -353,7 +352,7 @@
     }
   }
 
-  .header__popup {
+  .header-popup {
     width: 290px;
 
     &__cap {
@@ -363,20 +362,20 @@
     &__list {
       list-style-type: none;
     }
-  }
 
-  .popup__footer {
-    margin-top: 241px;
-  }
-
-  .clouse {
-    display: none;
-  }
-
-  .logo {
     &__img {
       position: relative;
       left: -60px;
     }
+
+    &__btn {
+      &_clouse {
+        display: none;
+      }
+    }
+  }
+
+  .popup-footer {
+    margin-top: 241px;
   }
 }
