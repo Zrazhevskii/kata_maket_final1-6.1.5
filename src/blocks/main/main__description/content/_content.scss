@@ -10,6 +10,9 @@
   }
 
   &__text {
+    font-family: $font;
+    font-size: 14px;
+    color: $black;
 
     &_hidden,
     &_more-hidden {
@@ -28,7 +31,7 @@
   }
 
   &__btn {
-    font-family: $font;
+    font-family: $fontMedium;
     background-color: $light_grey;
     border: none;
     padding-left: 24px;

@@ -9,6 +9,9 @@
     display: none;
     flex-direction: row;
     align-items: center;
+    font-family: $fontMedium;
+    font-size: 16px;
+    color: $black;
     width: 200px;
     border: none;
     background-color: $light_grey;
@@ -95,7 +98,7 @@
   }
 
   &__title {
-    font-weight: 500;
+    font-family: $fontMedium;
     font-size: 16px;
   }
 

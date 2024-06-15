@@ -5,7 +5,7 @@
   background: linear-gradient(to right, $light_grey 0%, $wight 50%);
 
   &__text {
-    font-weight: 400;
+    font-family: $font;
     font-size: 16px;
     color: $grey;
     padding-left: 16px;

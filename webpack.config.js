@@ -4,18 +4,15 @@
 const path = require('path');
 
 const mode = process.env.NODE_ENV || 'development';
-const devMode = mode === 'development';
-const target = devMode ? 'web' : 'browserlist';
-const devtool = devMode ? 'source-map' : undefined;
+// const devMode = mode === 'development';
+// const target = devMode ? 'web' : 'browserlist';
+// const devtool = devMode ? 'source-map' : undefined;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  mode,
-  devtool,
-  target,
   entry: path.resolve(__dirname, 'src', 'index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -42,7 +39,11 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, './src/img'),
-          to: path.resolve(__dirname, './dist/images')
+          to: path.resolve(__dirname, './dist/assets/images')
+        },
+        {
+          from: path.resolve(__dirname, './src/fonts'),
+          to: path.resolve(__dirname, './dist/assets/fonts')
         }
       ]
     }),
@@ -78,14 +79,14 @@ module.exports = {
           }
         }
       },
-      {
-        test: /\.(eot|ttf|woff|woff2)$/,
-        use: [
-          {
-            loader: 'file-loader?name=./fonts/[name].[ext]'
-          }
-        ]
-      }
+      // {
+      //   test: /\.(eot|ttf|woff|woff2)$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader?name=./fonts/[name].[ext]'
+      //     }
+      //   ]
+      // }
       // {
       //     test: /\.(svg|png|jpg|jpeg|webp)$/,
       //     type: 'asset/resource'
