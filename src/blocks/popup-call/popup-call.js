@@ -8,7 +8,9 @@ const btnCall = document.querySelector('.navigation__btn_call');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
-const popupModalBtn = document.querySelector('.popup-footer__item .popup-footer__btn_call');
+const popupModalBtn = document.querySelector(
+  '.popup-footer__item .popup-footer__btn_call'
+);
 
 let width = window.innerWidth;
 

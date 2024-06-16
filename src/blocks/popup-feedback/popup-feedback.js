@@ -3,14 +3,14 @@
 
 const feedbackBtn = document.querySelector('.navigation__btn_chat');
 const feedbackPopup = document.querySelector('.popup-feedback');
-const feedbackBtnClouse = document.querySelector(
-  '.popup-feedback__btn-clouse'
-);
+const feedbackBtnClouse = document.querySelector('.popup-feedback__btn-clouse');
 const popupHeader = document.querySelector('.popup-burger');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
-const popupFeedbackBtn = document.querySelector('.popup-footer__item .popup-footer__btn_chat');
+const popupFeedbackBtn = document.querySelector(
+  '.popup-footer__item .popup-footer__btn_chat'
+);
 
 let width = window.innerWidth;
 

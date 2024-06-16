@@ -78,7 +78,7 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
-      },
+      }
       // {
       //   test: /\.(eot|ttf|woff|woff2)$/,
       //   use: [

@@ -120,7 +120,6 @@
         height: 30px;
         content: 'Показать всё';
         font-size: 16px;
-        font-weight: 500;
         color: $black;
         position: relative;
         top: -182px;
@@ -148,7 +147,6 @@
       &_hide::after {
         content: 'Скрыть';
         font-size: 16px;
-        font-weight: 500;
         color: $black;
         position: relative;
         top: 4px;
@@ -207,6 +205,9 @@
 
     &__btn {
       display: flex;
+      font-family: $fontMedium;
+      font-size: 16px;
+      color: $black;
       flex-direction: row;
       align-items: center;
       border: none;
@@ -230,9 +231,6 @@
 
       &_show::after {
         content: 'Показать всё';
-        font-size: 16px;
-        font-weight: 500;
-        color: $black;
         position: relative;
         left: 6px;
         top: -76px;
@@ -258,8 +256,6 @@
       &_hide::after {
         content: 'Скрыть';
         font-size: 16px;
-        font-weight: 500;
-        color: $black;
         position: relative;
         top: 18px;
         left: 5px;
