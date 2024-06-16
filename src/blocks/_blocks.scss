@@ -18,11 +18,6 @@
   box-sizing: border-box;
 }
 
-// body {
-//   font-family: $font;
-//   line-height: 20px;
-// }
-
 .sliders-brend__screen_middle {
   height: 490px;
 }
@@ -43,11 +38,11 @@
   height: 680px;
 }
 
-.popup__show_middle {
-  z-index: -99;
-  overflow: hidden;
-  max-height: calc(100vh + 120px);
-}
+// .popup__show_middle {
+//   z-index: -99;
+//   overflow: hidden;
+//   max-height: calc(100vh + 120px);
+// }
 
 .popup__show_little {
   z-index: -99;

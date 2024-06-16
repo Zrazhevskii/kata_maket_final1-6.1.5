@@ -32,8 +32,9 @@
   }
 
   &__title {
-    font-weight: 700;
+    font-family: $fontBold;
     font-size: 24px;
+    color: $black;
 
     &::before {
       content: '';

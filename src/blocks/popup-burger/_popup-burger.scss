@@ -8,6 +8,9 @@
   right: 0;
 
   &__wrapper {
+    font-family: $fontMedium;
+    font-size: 16px;
+
     width: 320px;
     height: 676px;
     background-color: $wight;
@@ -237,7 +240,8 @@
   }
 
   &__phone {
-    font-weight: 700;
+    font-family: $fontBold;
+    font-size: 24px;
     margin: 0;
     padding-bottom: 16px;
   }
@@ -245,6 +249,8 @@
 
 .lang-box {
   padding-bottom: 32px;
+  font-family: $fontMedium;
+  font-size: 16px;
 
   &__list {
     display: flex;
@@ -268,7 +274,8 @@
 
   &__btn,
   &__btn-abbr {
-    font-weight: 500;
+    font-family: $fontMedium;
+    font-size: 16px;
     color: $black;
     text-decoration: none;
     background-color: $wight;

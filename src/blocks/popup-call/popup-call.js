@@ -38,14 +38,14 @@ popupModalCall.addEventListener('click', (evt) => {
 });
 
 function openPopup() {
-  if (width >= 1440) {
-    header.classList.add('popup__show_middle');
-    main.classList.add('popup__show_middle');
-  }
+  // if (width >= 1440) {
+  //   header.classList.add('popup__show_middle');
+  //   main.classList.add('popup__show_middle');
+  // }
 
-  if (width >= 768 && width < 1440) {
-    header.classList.remove('popup__show_middle');
-    main.classList.remove('popup__show_middle');
+  if (width >= 768) {
+    // header.classList.remove('popup__show_middle');
+    // main.classList.remove('popup__show_middle');
     header.classList.add('popup__show_middle');
     main.classList.add('popup__show_middle');
   }

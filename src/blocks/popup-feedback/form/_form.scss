@@ -11,7 +11,7 @@
 
     &::placeholder {
       color: $grey_input;
-      font-weight: 500;
+      font-family: $fontMedium;
       font-size: 16px;
     }
   }
@@ -27,24 +27,22 @@
 
     &::placeholder {
       color: $grey_input;
-      font-weight: 500;
+      font-family: $fontMedium;
       font-size: 16px;
     }
   }
 
   &__text {
     margin-top: 16px;
-    font-weight: 500;
+    font-family: $fontMedium;
     font-size: 14px;
     padding-bottom: 18px;
-
-
   }
 
   &__link {
-      text-decoration: none;
-      color: $red;
-    }
+    text-decoration: none;
+    color: $red;
+  }
 
   &__btn-send {
     position: relative;
@@ -53,8 +51,8 @@
     color: $wight;
     width: 136px;
     height: 32px;
-    font-weight: 700;
-    font-size: 10px;
+    font-family: $fontBold;
+    font-size: 12px;
     border-radius: 20px;
     margin-left: 152px;
     top: 8px;
@@ -84,6 +82,10 @@
 @media (min-width: 768px) {
   .form {
     &__input {
+      width: 376px;
+    }
+
+    &__textarea {
       width: 376px;
     }
 
