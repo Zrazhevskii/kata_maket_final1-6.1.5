@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
     checker();
   };
 
-  resizableSwiper('(max-width: 767.9px)', '.box__brend', {
+  resizableSwiper('(max-width: 767.9px)', '.box-brend', {
     modules: [Pagination],
     pagination: {
       el: '.swiper-pagination',
@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', () => {
     loop: true
   });
 
-  resizableSwiper('(max-width: 767.9px)', '.appliances__box', {
+  resizableSwiper('(max-width: 767.9px)', '.box-appliances', {
     modules: [Pagination],
     pagination: {
       el: '.swiper-pagination',
@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded', () => {
     loop: true
   });
 
-  resizableSwiper('(max-width: 767.9px)', '.price__box', {
+  resizableSwiper('(max-width: 767.9px)', '.box-price', {
     modules: [Pagination],
     pagination: {
       el: '.swiper-pagination',

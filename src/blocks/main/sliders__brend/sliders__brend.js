@@ -1,23 +1,24 @@
 /* eslint-env es6 */
 /* eslint-disable no-console */
 
-const slidersBrend = document.querySelector('.sliders__brend');
-const slidersBtn = document.querySelector('.sliders__brend__btn');
+const slidersBrend = document.querySelector('.sliders-brend');
+const slidersBtn = document.querySelector('.sliders-brend__btn');
+const slider = document.querySelector('.box-brend__container');
 
 const containerSlider = Array.from(
-  document.querySelectorAll('.container__slide__brend')
+  document.querySelectorAll('.box-brend__item')
 );
 let width = window.innerWidth;
 
 window.addEventListener('resize', () => {
   width = window.innerWidth;
-  if (width >= 768) {
-    checkChildren();
-  }
+  // if (width >= 768) {
+  checkChildren();
+  // }
 });
 
 slidersBtn.addEventListener('click', function () {
-  if (slidersBtn.classList.contains('btn-show')) {
+  if (slidersBtn.classList.contains('sliders-brend__btn_show')) {
     changeHeightOpen();
   } else {
     changeHeightClose();
@@ -27,70 +28,70 @@ slidersBtn.addEventListener('click', function () {
 function checkChildren() {
   if (width < 768) {
     for (let i = 0; i < containerSlider.length; i++) {
-      containerSlider[i].classList.add('hidden');
+      containerSlider[i].classList.remove('box-brend__item_hidden');
     }
   }
 
-  if (width >= 768 && width < 1120) {
+  if (width >= 768 && width < 1440) {
     for (let i = 0; i < containerSlider.length; i++) {
       if (i >= 6) {
-        containerSlider[i].classList.add('hidden');
+        containerSlider[i].classList.add('box-brend__item_hidden');
       }
     }
   }
 
-  if (width >= 1120) {
+  if (width >= 1440) {
     for (let i = 0; i < containerSlider.length; i++) {
       if (i <= 7) {
-        containerSlider[i].classList.remove('hidden');
+        containerSlider[i].classList.remove('box-brend__item_hidden');
       } else if (i > 7) {
-        containerSlider[i].classList.add('hidden');
+        containerSlider[i].classList.add('box-brend__item_hidden');
       }
     }
   }
 }
 
 const changeHeightOpen = () => {
-  if (width >= 768 && width < 1120) {
-    slidersBrend.classList.add('popup__open__sliders--middle');
+  if (width >= 768 && width < 1440) {
+    slidersBrend.classList.add('sliders-brend__screen_middle');
 
     for (let i = 0; i < containerSlider.length; i++) {
-      if (containerSlider[i].className.includes('hidden')) {
-        containerSlider[i].classList.remove('hidden');
+      if (containerSlider[i].className.includes('box-brend__item_hidden')) {
+        containerSlider[i].classList.remove('box-brend__item_hidden');
       }
     }
   } else {
-    slidersBrend.classList.add('popup__open__sliders--little');
+    slidersBrend.classList.add('sliders-brend_little');
     for (let i = 0; i < containerSlider.length; i++) {
-      if (containerSlider[i].className.includes('hidden')) {
-        containerSlider[i].classList.remove('hidden');
+      if (containerSlider[i].className.includes('box-brend__item_hidden')) {
+        containerSlider[i].classList.remove('box-brend__item_hidden');
       }
     }
   }
 
-  slidersBtn.classList.remove('btn-show');
-  slidersBtn.classList.add('btn-hide');
+  slidersBtn.classList.remove('sliders-brend__btn_show');
+  slidersBtn.classList.add('sliders-brend__btn_hide');
 };
 
 const changeHeightClose = () => {
-  if (width >= 768 && width < 1120) {
-    slidersBrend.classList.remove('popup__open__sliders--middle');
+  if (width >= 768 && width < 1440) {
+    slidersBrend.classList.remove('sliders-brend__screen_middle');
     for (let i = 0; i < containerSlider.length; i++) {
       if (i >= 6) {
-        containerSlider[i].classList.add('hidden');
+        containerSlider[i].classList.add('box-brend__item_hidden');
       }
     }
-  } else if (width >= 1120) {
-    slidersBrend.classList.remove('popup__open__sliders--little');
+  } else if (width >= 1440) {
+    slidersBrend.classList.remove('sliders-brend_little');
     for (let i = 0; i < containerSlider.length; i++) {
       if (i >= 8) {
-        containerSlider[i].classList.add('hidden');
+        containerSlider[i].classList.add('box-brend__item_hidden');
       }
     }
   }
 
-  slidersBtn.classList.add('btn-show');
-  slidersBtn.classList.remove('btn-hide');
+  slidersBtn.classList.add('sliders-brend__btn_show');
+  slidersBtn.classList.remove('sliders-brend__btn_hide');
 };
 
 checkChildren();

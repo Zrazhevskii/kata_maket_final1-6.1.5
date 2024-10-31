@@ -1,0 +1,35 @@
+.title {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background: linear-gradient(to right, $light_grey 0%, $wight 50%);
+
+  &__text {
+    font-family: $font;
+    font-size: 16px;
+    color: $grey;
+    padding-left: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439.9px) {
+  .title {
+    padding-left: 24px;
+    height: 56px;
+
+    &__text {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .title {
+    padding-left: 32px;
+    height: 56px;
+
+    &__text {
+      padding-left: 0;
+    }
+  }
+}

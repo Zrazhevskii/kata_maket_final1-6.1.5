@@ -1,0 +1,96 @@
+.form {
+  padding-top: 24px;
+
+  &__input {
+    width: 288px;
+    height: 48px;
+    border: 1px solid $light_light_grey;
+    border-radius: 10px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+
+    &::placeholder {
+      color: $grey_input;
+      font-family: $fontMedium;
+      font-size: 16px;
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    height: 118px;
+    width: 288px;
+    border: 1px solid $light_light_grey;
+    border-radius: 10px;
+    padding-left: 16px;
+    padding-top: 16px;
+
+    &::placeholder {
+      color: $grey_input;
+      font-family: $fontMedium;
+      font-size: 16px;
+    }
+  }
+
+  &__text {
+    margin-top: 16px;
+    font-family: $fontMedium;
+    font-size: 14px;
+    padding-bottom: 18px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $red;
+  }
+
+  &__btn-send {
+    position: relative;
+    border: none;
+    background-color: $redBtn;
+    color: $wight;
+    width: 136px;
+    height: 32px;
+    font-family: $fontBold;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-left: 152px;
+    top: 8px;
+    padding-right: 20px;
+    padding-top: 3px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 5px;
+      height: 5px;
+      color: $wight;
+      border-top: 2px solid $wight;
+      border-right: 2px solid $wight;
+      transform: rotate(45deg);
+      right: 16px;
+      bottom: 12px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    &__input {
+      width: 376px;
+    }
+
+    &__textarea {
+      width: 376px;
+    }
+
+    &__btn-send {
+      margin-left: 242px;
+    }
+  }
+}

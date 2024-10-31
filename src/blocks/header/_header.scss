@@ -22,7 +22,7 @@
       display: block;
       width: 2px;
       height: 32px;
-      background-color: #eaeaea;
+      background-color: $light_wight;
       margin-top: 4px;
     }
   }
@@ -34,6 +34,44 @@
     &_hidden {
       display: none;
     }
+
+    &_burger {
+      background: url('../src/img/burger.png') no-repeat;
+    }
+
+    &_call {
+      background: no-repeat url('../src/img/call.png');
+    }
+
+    &_chat {
+      background: no-repeat url('../src/img/chat.png');
+    }
+
+    &_profile {
+      background: no-repeat url('../src/img/profile.png');
+      padding-right: 18px;
+    }
+
+    &_repair {
+      background: url('../src/img/repair.png') no-repeat;
+    }
+
+    &_checkstatus {
+      background: url('../src/img/checkstatus.png');
+    }
+
+    &_call,
+    &_burger,
+    &_chat,
+    &_profile,
+    &_repair,
+    &_checkstatus {
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 
   &__logo {
@@ -42,33 +80,7 @@
   }
 }
 
-.burger__btn {
-  background: url('../src/img/burger.png') no-repeat;
-}
-
-.repair__btn {
-  background: url('../src/img/repair.png') no-repeat;
-}
-
-.checkstatus__btn {
-  background: url('../src/img/checkstatus.png');
-}
-
-.burger__btn,
-.header__nav__btn,
-.call__btn,
-.chat__btn,
-.profile__btn,
-.repair__btn,
-.checkstatus__btn {
-  border: none;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.title__conteiner {
+.title-conteiner {
   position: relative;
   box-sizing: content-box;
   height: 40px;
@@ -78,8 +90,7 @@
   padding-left: 18px;
 
   &__text {
-    font-family: 'TT Lakes';
-    font-weight: 700;
+    font-family: $fontBold;
     font-size: 28px;
     margin: 0;
 
@@ -96,12 +107,12 @@
     }
   }
 
-  &__buttons__box {
+  &__buttons-box {
     display: none;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1119.99px) {
+@media (min-width: 768px) and (max-width: 1439.99px) {
   .navigation {
     padding-left: 24px;
     padding-right: 24px;
@@ -128,6 +139,24 @@
       &_hidden {
         display: block;
       }
+
+      &_burger {
+        padding-right: 20px;
+      }
+
+      &_repair {
+        margin-left: 18px;
+
+        &::before {
+          content: '';
+          display: block;
+          width: 2px;
+          height: 32px;
+          background-color: $light_wight;
+          margin-top: 5px;
+          margin-left: -3.3vw;
+        }
+      }
     }
 
     &__logo {
@@ -148,38 +177,7 @@
     }
   }
 
-  .burger__btn {
-    padding-right: 20px;
-  }
-
-  .repair__btn {
-    margin-left: 18px;
-
-    &::before {
-      content: '';
-      display: block;
-      width: 2px;
-      height: 32px;
-      background-color: $light_wight;
-      margin-top: 5px;
-      margin-left: -3.3vw;
-    }
-  }
-
-  .call__btn {
-    background: no-repeat url('../src/img/call.png');
-  }
-
-  .chat__btn {
-    background: no-repeat url('../src/img/chat.png');
-  }
-
-  .profile__btn {
-    background: no-repeat url('../src/img/profile.png');
-    padding-right: 18px;
-  }
-
-  .title__conteiner {
+  .title-conteiner {
     border-top: 1px solid $light_green;
     background-color: $wight;
     padding-bottom: 0;
@@ -191,13 +189,13 @@
       }
     }
 
-    &__buttons__box {
+    &__buttons-box {
       display: none;
     }
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1440px) {
   .header {
     position: relative;
     background-color: $light_grey;
@@ -210,7 +208,7 @@
     display: none;
   }
 
-  .title__conteiner {
+  .title-conteiner {
     position: static;
     display: flex;
     flex-direction: row;
@@ -239,13 +237,13 @@
       }
     }
 
-    &__buttons__box {
+    &__buttons-box {
       display: flex;
       flex-direction: row;
     }
 
     &__button {
-      font-family: $font;
+      font-family: $fontMedium;
       font-size: 16px;
       border: none;
       width: 220px;
@@ -254,14 +252,14 @@
       &:hover {
         cursor: pointer;
       }
+
+      &_repair {
+        background: url('../src/img/repair.png') no-repeat right;
+      }
+
+      &_checkstatus {
+        background: url('../src/img/checkstatus.png') no-repeat right;
+      }
     }
-  }
-
-  .repair__btn {
-    background: url('../src/img/repair.png') no-repeat right;
-  }
-
-  .checkstatus__btn {
-    background: url('../src/img/checkstatus.png') no-repeat right;
   }
 }

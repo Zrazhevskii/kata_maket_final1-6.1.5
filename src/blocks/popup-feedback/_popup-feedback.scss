@@ -1,0 +1,84 @@
+@import './form/form';
+
+.popup-feedback {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100vw;
+  height: 680px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: $wight;
+    width: 320px;
+    height: 676px;
+    padding: 16px;
+    margin-left: auto;
+    box-shadow: -20px 0px 35px -5px $rgba;
+  }
+
+  &__btn-clouse {
+    width: 40px;
+    height: 40px;
+    background: url('../src/img/clouse.png');
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    font-family: $fontBold;
+    font-size: 24px;
+    color: $black;
+
+    &::before {
+      content: '';
+      display: block;
+      position: relative;
+      left: -21px;
+      top: 26px;
+      width: 5px;
+      height: 40px;
+      border-right: 5px solid $light_green;
+      border-radius: 15px;
+    }
+  }
+
+  &_hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup-feedback {
+    height: 940px;
+
+    &__wrapper {
+      position: relative;
+      width: 440px;
+      height: 940px;
+      padding: 0 32px;
+    }
+
+    &__btn-clouse {
+      position: absolute;
+      left: -74px;
+      top: 25px;
+    }
+
+    &__title {
+      display: inline;
+      margin: 0;
+      padding: 0;
+
+      &::before {
+        left: -38px;
+      }
+    }
+  }
+}
